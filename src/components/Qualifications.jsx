@@ -45,12 +45,15 @@ function Qualifications() {
   return (
     <div>
       <section className="flex-col">
-        <div id="qualifications" className=" cont my-9">
-          <h2 className=" abt-me relative text-[8em] uppercase font-semibold text-[#ffffffef]">
+        <div
+          id="qualifications"
+          className=" relative cont my-9 flex flex-col items-center justify-center relative"
+        >
+          <h2 className=" abt-me text-[8em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-[#ffffffef] text-center">
             <a className="relative"> QUALIFICATIONS</a>
           </h2>
 
-          <p className="absolute text-[.9em] right-[2em] w-125 tracking-widest opacity-65 bottom-[1.5em] capitalize italic">
+          <p className="relative md:absolute text-[.9em] md:right-[2em] w-full px-5 md:px-0 md:w-125 tracking-widest opacity-65 md:bottom-[1.5em] capitalize italic text-center md:text-right mt-4 md:mt-0">
             If the perfection of a virtue is found in the removal of the tragedy
             that requires it, is charity's ultimate moral achievement its own
             disappearance?
@@ -58,7 +61,7 @@ function Qualifications() {
             <span className="text-secondary">- ELITE</span>
           </p>
 
-          <div className="border p-3 rounded-full">
+          <div className="border p-3 rounded-full absolute bottom-[2em] left-[50%]">
             <a href="#qual" onClick={toggleShow}>
               {" "}
               <MoveDown />
@@ -67,11 +70,11 @@ function Qualifications() {
         </div>
         <div
           id="qual"
-          className={` relative cont flex flex-row justify-center items-center ${
+          className={` relative cont flex flex-col md:flex-row items-center justify-center gap-10 md:gap-0 ${
             show ? "block" : "hidden"
           }`}
         >
-          <div className="absolute left-[1em] bottom-[2em] flex flex-col gap-6">
+          <div className="relative md:absolute md:left-[1em] md:bottom-[2em] flex flex-col items-center gap-6 w-full md:w-auto px-5 md:px-0">
             <h4 className="text-white font-bold text-[12px]">
               {" "}
               TECHNOLOGIES I WORK WITH :
@@ -98,17 +101,16 @@ function Qualifications() {
             </div>
           </div>
 
-          <div className=" cont">
-            <div className="cont">
-              <h4 className="text-white text-2xl font-semibold text-start underline underline-offset-6">
-                {" "}
+          <div className=" cont w-full">
+            <div className="cont w-full">
+              <h4 className="text-white text-2xl font-semibold mb-6 md:mb-0">
                 QUALIFICATIONS
               </h4>
 
-              <div className="grid grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full place-items-center">
                 {qual.map((qual) => {
                   return (
-                    <div>
+                    <div className="flex flex-col items-center">
                       <h5 key={qual.place}>{qual.position}</h5>
                       <p className="opacity-55">
                         {qual.place ? qual.place : ""}

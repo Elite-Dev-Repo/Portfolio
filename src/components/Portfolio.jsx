@@ -17,6 +17,7 @@ function Qualifications() {
       description: "basic landing page Website for a company",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://reactwind-two.vercel.app/",
+      label: "front end",
     },
 
     {
@@ -24,38 +25,43 @@ function Qualifications() {
       description: "basic landing page Website for a company",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://reactwind-two.vercel.app/",
+      label: "front end",
     },
     {
       image: reactwind,
       description: "basic landing page Website for a company",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://reactwind-two.vercel.app/",
+      label: "front end",
     },
     {
       image: reactwind,
       description: "basic landing page Website for a company",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://reactwind-two.vercel.app/",
+      label: "front end",
     },
   ];
 
   return (
     <div>
       <section className="flex-col">
-        <div id="portfolio" className=" cont my-9">
-          <h2 className=" abt-me relative text-[8em] uppercase font-semibold text-[#ffffffef]">
+        <div
+          id="portfolio"
+          className=" cont my-9 flex flex-col items-center justify-center relative"
+        >
+          <h2 className=" abt-me text-[8em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-[#ffffffef] text-center">
             <a className="relative"> MY PORTFOLIO</a>
           </h2>
-
-          <p className="absolute text-[.9em] right-[2em] w-125 tracking-widest opacity-65 bottom-[1.5em] capitalize italic">
+          <p className="relative md:absolute text-[.9em] md:right-[2em] w-full px-5 md:px-0 md:w-125 tracking-widest opacity-65 md:bottom-[1.5em] capitalize italic text-center md:text-right mt-4 md:mt-0">
             Have a cat walk on a hot stove and it will never walk on a hot
             stove, it won't even walk on a cold stove.
             <br />
             <span className="text-secondary">- Anonymous</span>
           </p>
 
-          <div className="border p-3 rounded-full">
-            <a href="#port" onClick={toggleShow}>
+          <div className="border p-3 rounded-full absolute bottom-[2em] left-[50%]">
+            <a href="#qual" onClick={toggleShow}>
               {" "}
               <MoveDown />
             </a>
@@ -65,20 +71,20 @@ function Qualifications() {
           id="port"
           className={` relative cont flex flex-row justify-center items-center ${
             show ? "block" : "hidden"
-          }`}
+          } mb-5`}
         >
-          <div className="cont g">
+          <div className="cont">
             <div className=" flex flex-row gap-2">
               {categories.map((category, index) => (
                 <button
                   key={index}
-                  className=" bg-white text-secondary font-semibold px-5 py-2 text-[1em] hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
+                  className=" bg-white max-sm:text-[.8em] text-secondary font-semibold px-5 py-2 text-[1em] hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
                 >
                   {category}
                 </button>
               ))}
             </div>
-            <div className=" grid grid-cols-2 gap-4 cont mt-[4em]">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 cont mt-[4em]">
               {works.map((work, index) => (
                 <div
                   key={index}
@@ -105,7 +111,7 @@ function Qualifications() {
                       {work.techs.map((tech) => (
                         <p
                           key={tech}
-                          className=" bg-secondary px-5 py-2 rounded-full text-light text-[.9em] hover:bg-white hover:text-secondary transition duration-300 ease-in-out"
+                          className=" bg-secondary px-5 py-2 rounded-full text-light text-[.9em] max-sm:text-[.8em] hover:bg-white hover:text-secondary transition duration-300 ease-in-out"
                         >
                           {tech}
                         </p>

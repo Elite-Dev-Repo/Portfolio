@@ -33,21 +33,24 @@ function Contact() {
   ];
 
   return (
-    <section id="contact">
+    <section id="contact" className="border-t-[1px] border-t-[#ffffff7a]">
       <div className="cont">
-        <div className="grid grid-cols-3 ">
+        <h2 className="text-4xl font-bold max-sm:text-2xl max-sm:font-light text-center mt-5">
+          Give me a Message let's work together
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-9">
           {contact.map((item, index) => (
             <div
               key={index}
-              className="bg-[#030303] p-5 shadow flex flex-col justify-center items-center"
+              className=" p-5 hover:shadow-[inset_0_0_5px_0_rgba(255,1,145,0.7),_0_0_5px_0_rgba(255,1,145,0.9)] hover:scale-105 transition-all rounded-lg flex flex-col justify-center items-center"
             >
               <a
                 href={item.link}
-                className="text-2xl"
+                className="text-[2.5em] font-light"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="text-[2.5em] font-light">{item.icon}</div>
+                {item.icon}
               </a>
               <p className="text-center">{item.name}</p>
             </div>

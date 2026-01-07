@@ -14,19 +14,21 @@ function About() {
   return (
     <div>
       <section className="flex-col">
-        <div id="about" className=" cont my-9">
-          <h2 className=" abt-me relative text-[8em] uppercase font-semibold text-[#ffffffef]">
+        <div
+          id="about"
+          className=" cont my-9 flex flex-col items-center justify-center relative"
+        >
+          <h2 className=" abt-me relative text-5xl md:text-[8em] uppercase font-semibold text-[#ffffffef] text-center">
             <a className="relative"> About Me</a>
           </h2>
 
-          <p className="absolute right-[4em] w-[500px] tracking-widest opacity-65 bottom-[1.5em] capitalize italic">
+          <p className="relative md:absolute md:right-[4em] w-full md:w-[500px] tracking-widest opacity-65 md:bottom-[1.5em] capitalize italic px-5 md:px-0 text-center md:text-right mt-4 md:mt-0">
             See the difference without losing peace.
             <br />
             <span className="text-secondary"> - ELITE</span>
           </p>
-
-          <div className="border p-3 rounded-full">
-            <a href="#me" onClick={toggleShow}>
+          <div className="border p-3 rounded-full absolute bottom-[2em] left-[50%]">
+            <a href="#qual" onClick={toggleShow}>
               {" "}
               <MoveDown />
             </a>
@@ -34,9 +36,11 @@ function About() {
         </div>
         <div
           id="me"
-          className={`about cont flex flex-row ${show ? "block" : "hidden"}`}
+          className={`about cont max-sm:flex-col-reverse max-md:flex-col flex flex-row ${
+            show ? "block" : "hidden"
+          }`}
         >
-          <div className="cont border border-[#fff8]">
+          <div className="cont border border-[#fff8] max-sm:py-5">
             <h4 className="text-2xl font-semibold opacity-40 text-start underline underline-offset-6">
               {" "}
               The Developer behind the screen.
@@ -44,7 +48,7 @@ function About() {
 
             <p className="leading-7 tracking-widest text-[15px] ">
               I’m <span className="text-[#ff018f]"> Oyenekan Emmanuel</span> , a
-              Fullstack Developer hailing from the tech hub of{" "}
+              Fullstack Developer from{" "}
               <span className="text-[#ff018f]"> Lagos, Nigeria</span>. I thrive
               at the intersection of logic and creativity, turning complex
               problems into elegant, functional websites. With deep proficiency
@@ -53,13 +57,15 @@ function About() {
                 React, TypeScript, and Django
               </span>{" "}
               , I have spent years perfecting the art of the "complete build."
-              My portfolio spans from highly interactive UI/UX projects to fully
-              functional blogs and high-converting e-commerce stores. I also
-              leverage Wix for clients needing rapid, high-quality deployments
-              without compromising on design. Beyond the code, I am a chess
-              player which keeps my analytical mind sharp and a music enthusiast
-              with a passion for discovering great sounds. I believe every
-              project, like a good melody, should have a perfect rhythm.{" "}
+              with <span className="text-[#ff018f]"> 5 Years</span> of
+              experience My portfolio spans from highly interactive UI/UX
+              projects to fully functional blogs and high-converting e-commerce
+              stores. I also leverage Wix for clients needing rapid,
+              high-quality deployments without compromising on design. Beyond
+              the code, I am a chess player which keeps my analytical mind sharp
+              and a music enthusiast with a passion for discovering great
+              sounds. I believe every project, like a good melody, should have a
+              perfect rhythm.{" "}
             </p>
           </div>
 

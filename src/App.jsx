@@ -4,6 +4,7 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Qualifications from "./components/Qualifications.jsx";
+import Footer from "./components/Footer.jsx";
 
 function TorchlightCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -74,6 +75,7 @@ function App() {
       <Qualifications />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   );
 }
