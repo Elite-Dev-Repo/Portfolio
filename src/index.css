@@ -30,7 +30,7 @@ body {
 
 @theme {
   --color-primary: #010001;
-  --color-secondary: #2a0c62;
+  --color-secondary: #ff018f;
 }
 
 @layer components {
@@ -67,6 +67,11 @@ h1 {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #fff;
   color: transparent;
+
+  span {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--color-secondary);
+  }
 }
 
 section {
@@ -111,6 +116,15 @@ section {
   /* filter: blur(100px); */
 }
 
+.img-cont::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
 .about {
   animation: come 400ms forwards 1;
   scale: 0%;
@@ -151,4 +165,19 @@ section {
 
 .abt-me:hover::before {
   width: 100%;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover {
+  img {
+    transition: 300ms ease-in-out;
+    filter: blur(5px);
+  }
+  button {
+    transition: 300ms ease-in-out;
+    display: block;
+  }
 }

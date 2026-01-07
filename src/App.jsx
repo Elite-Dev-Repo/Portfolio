@@ -74,7 +74,6 @@ function App() {
       <Qualifications />
       <Portfolio />
       <Contact />
-      <Header />
     </div>
   );
 }

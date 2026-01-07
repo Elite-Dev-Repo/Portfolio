@@ -1,4 +1,4 @@
-import { MoveDown } from "lucide-react";
+import { MoveDown, MoveDownIcon } from "lucide-react";
 import React from "react";
 import { useState } from "react";
 
@@ -22,7 +22,7 @@ function About() {
           <p className="absolute right-[4em] w-[500px] tracking-widest opacity-65 bottom-[1.5em] capitalize italic">
             See the difference without losing peace.
             <br />
-            <span className="text-[#fff7]">- ELITE</span>
+            <span className="text-secondary"> - ELITE</span>
           </p>
 
           <div className="border p-3 rounded-full">

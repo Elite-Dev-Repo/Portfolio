@@ -8,6 +8,8 @@ import {
   Send,
 } from "lucide-react";
 
+import logo from "../assets/logo.png";
+
 function Header() {
   const proof = [
     {
@@ -42,7 +44,7 @@ function Header() {
         key={proof.name}
         className="text-[15px] flex items-center gap-3 text-[#ffffff73]"
       >
-        <span className="text-3xl text-white">
+        <span className="text-3xl text-white opacity-65">
           {proof.icon ? proof.icon : <i className="fa-solid fa-code"></i>}
         </span>{" "}
         {proof.name}
@@ -81,10 +83,10 @@ function Header() {
         key={social.name}
         href={social.link}
         target="_blank"
-        className="text-2xl flex items-center gap-2 socials transition"
+        className=" flex items-center gap-2 socials font-extralight transition"
       >
-        <p className="social-name opacity-0">{social.name} </p>
-        <span className="social-icon">{social.icon}</span>
+        <p className=" text-[1em] social-name opacity-0">{social.name} </p>
+        <span className="social-icon text-[1.5em] ">{social.icon}</span>
       </a>
     );
   });
@@ -112,11 +114,9 @@ function Header() {
       <li className="" key={link.name}>
         <a
           href={`#${link.name.toLowerCase()}`}
-          className="nav-link transition flex flex-row-reverse gap-4 text-[#ffffff73] hover:text-white cursor-none transition"
+          className="nav-link transition  text-[#ffffff73] hover:text-secondary cursor-none transition"
         >
           {link.name}
-
-          <span className="opacity-0"> {link.icon}</span>
         </a>
       </li>
     );
@@ -125,27 +125,29 @@ function Header() {
   return (
     <header className="text-white">
       <nav className="nav justify-around items-center">
-        <div className="font-bold"> Elite</div>
-        <ul className="flex gap-4">{navItems}</ul>
+        <div className="font-bold">
+          {" "}
+          <a href="#">
+            <img src={logo} alt="" className="w-[5em]" />
+          </a>
+        </div>
+        <ul className="flex gap-6">{navItems}</ul>
         <a
           href="#"
-          className="px-8 rounded border py-2 bg-transparent text-white flex gap-3 items-center font-semibold hover:border transition cursor-none border-white"
+          className="uppercase px-7 rounded border py-2 bg-secondary text-white flex gap-3 items-center font-semibold hover:border transition cursor-none border-secondary"
         >
           Blog
-          <span>
-            <Rss />
-          </span>
         </a>
       </nav>
 
       <div className="px-5 ">
         <main className="w-full h-screen flex flex-col justify-between relative">
           <h1 className="opacity-60 absolute text-[9em] left-1/2 -translate-x-1/2 font-semibold mt-[.3em]">
-            ELITE<span>.Dev</span>
+            ELITE<span className="">.Dev</span>
           </h1>
 
           <div className="list py-8 flex flex-col gap-4 absolute bottom-[6em] left-[2em]">
-            <h3 className="text-2xl font-semibold tracking-wider uppercase">
+            <h3 className="text-2xl font-semibold tracking-wider uppercase text-secondary">
               FullStack Website Developer
             </h3>
             <p className="text-[#ffffff7a]">
@@ -160,7 +162,7 @@ function Header() {
                 >
                   Download Resume
                   <span>
-                    <Download />
+                    <Download className="text-secondary" />
                   </span>
                 </a>
               </button>
@@ -185,7 +187,7 @@ function Header() {
             </h3>
 
             {/* Marquee Wrapper */}
-            <div className="relative flex overflow-hidden w-[600px] [--gap:3rem] [gap:var(--gap)]">
+            <div className="relative flex overflow-hidden w-[500px] [--gap:3rem] [gap:var(--gap)]">
               {/* First set of items */}
               <div className="flex shrink-0 items-center justify-around [gap:var(--gap)] animate-marquee min-w-full">
                 {proofitem}
