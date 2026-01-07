@@ -194,7 +194,7 @@ function Header() {
               </button>
               <button className="sm:text-[.9rem] md:text-[1rem]">
                 <a
-                  href="#"
+                  href="mailto:oyenekantomiwa2@gmail.com"
                   className="flex items-center gap-2 px-6 py-3 text-white border border-white"
                 >
                   Message Me <Send />
