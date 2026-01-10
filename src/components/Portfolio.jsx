@@ -1,6 +1,7 @@
 import { Circle, MoveDown } from "lucide-react";
 import { useState } from "react";
 import reactwind from "../assets/reactwind.png";
+import weebschat from "../assets/weebschat.png";
 
 function Qualifications() {
   const [show, setShow] = useState(false);
@@ -21,11 +22,11 @@ function Qualifications() {
     },
 
     {
-      image: reactwind,
-      description: "basic landing page Website for a company",
-      techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://reactwind-two.vercel.app/",
-      label: "front end",
+      image: weebschat,
+      description: "FullStack Chat Application",
+      techs: ["Vanilla Js", "TailwindCSS", "Django", "PostgreSQL"],
+      link: "https://chatapp-rdia.onrender.com/",
+      label: "FullStack",
     },
     {
       image: reactwind,
@@ -61,7 +62,7 @@ function Qualifications() {
           </p>
 
           <div className="border p-3 rounded-full absolute bottom-[2em] left-[50%]">
-            <a href="#qual" onClick={toggleShow}>
+            <a href="#port" onClick={toggleShow}>
               {" "}
               <MoveDown />
             </a>
@@ -69,11 +70,11 @@ function Qualifications() {
         </div>
         <div
           id="port"
-          className={` relative cont flex flex-row justify-center items-center ${
+          className={` relative flex flex-row justify-center items-center ${
             show ? "block" : "hidden"
           } mb-5`}
         >
-          <div className="cont">
+          <div className="">
             <div className=" flex flex-row gap-2">
               {categories.map((category, index) => (
                 <button
@@ -104,14 +105,14 @@ function Qualifications() {
                   </div>
 
                   <div className="flex flex-col gap-2 items-center">
-                    <p className=" text-[1em] capitalize font-light tracking-wider ">
+                    <p className=" text-[1em] capitalize font-light text-center tracking-wide ">
                       {work.description}
                     </p>
                     <div className=" flex flex-row gap-2 p-5">
                       {work.techs.map((tech) => (
                         <p
                           key={tech}
-                          className=" bg-secondary px-5 py-2 rounded-full text-light text-[.9em] max-sm:text-[.8em] hover:bg-white hover:text-secondary transition duration-300 ease-in-out"
+                          className=" bg-secondary p-2 rounded-full text-light text-[.9em] max-sm:text-[.8em] hover:bg-white hover:text-secondary transition duration-300 ease-in-out"
                         >
                           {tech}
                         </p>

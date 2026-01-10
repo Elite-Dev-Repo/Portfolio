@@ -54,7 +54,7 @@ function TorchlightCursor() {
 
       {/* Bulb dot */}
       <div
-        className=" fixed w-[10px] h-[10px] bg-[rgba(255,255,200,0.8)] rounded-full pointer-events-none z-[10000]"
+        className=" sticky z-[10001] w-[10px] h-[10px] bg-[rgba(255,255,200,0.8)] rounded-full pointer-events-none z-[10000]"
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
