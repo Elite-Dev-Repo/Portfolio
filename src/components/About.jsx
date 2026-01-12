@@ -47,17 +47,25 @@ function About() {
             </h4>
 
             <p className="leading-7 tracking-widest text-[15px] ">
-              I’m <span className="text-[#ff018f]"> Oyenekan Emmanuel</span> , a
-              Fullstack Developer from{" "}
-              <span className="text-[#ff018f]"> Lagos, Nigeria</span>. I thrive
-              at the intersection of logic and creativity, turning complex
-              problems into elegant, functional websites. With deep proficiency
-              in{" "}
-              <span className="text-[#ff018f]">
+              I’m{" "}
+              <span className="text-[var(--color-secondary)]">
+                {" "}
+                Oyenekan Emmanuel
+              </span>{" "}
+              , a Fullstack Developer from{" "}
+              <span className="text-[var(--color-secondary)]">
+                {" "}
+                Lagos, Nigeria
+              </span>
+              . I thrive at the intersection of logic and creativity, turning
+              complex problems into elegant, functional websites. With deep
+              proficiency in{" "}
+              <span className="text-[var(--color-secondary)]">
                 React, TypeScript, and Django
               </span>{" "}
               , I have spent years perfecting the art of the "complete build."
-              with <span className="text-[#ff018f]"> 5 Years</span> of
+              with{" "}
+              <span className="text-[var(--color-secondary)]"> 5 Years</span> of
               experience My portfolio spans from highly interactive UI/UX
               projects to fully functional blogs and high-converting e-commerce
               stores. I also leverage Wix for clients needing rapid,

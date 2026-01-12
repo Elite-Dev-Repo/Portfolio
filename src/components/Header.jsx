@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-import logo from "../assets/logo.png";
+import elitelogo from "../assets/elitelogo.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -134,7 +134,7 @@ function Header() {
         <div className="font-bold">
           {" "}
           <a href="#">
-            <img src={logo} alt="" className="w-[4em] md:w-[5em]" />
+            <img src={elitelogo} alt="" className="w-[4em] md:w-[5em]" />
           </a>
         </div>
         <ul className="hidden md:flex gap-6">{navItems}</ul>
