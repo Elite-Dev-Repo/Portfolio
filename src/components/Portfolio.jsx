@@ -2,6 +2,7 @@ import { Circle, MoveDown } from "lucide-react";
 import { useState } from "react";
 import reactwind from "../assets/reactwind.png";
 import weebschat from "../assets/weebschat.png";
+import tabbiebites from "../assets/tabbiebites.png";
 
 function Qualifications() {
   const [show, setShow] = useState(false);
@@ -14,17 +15,17 @@ function Qualifications() {
 
   const works = [
     {
-      image: reactwind,
-      description: "basic landing page Website for a company",
+      image: tabbiebites,
+      description: "Landing Page for a Bakery",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://reactwind-two.vercel.app/",
+      link: "https://tabbiebites.pxxl.click/",
       label: "front end",
     },
 
     {
       image: weebschat,
       description: "FullStack Chat Application",
-      techs: ["Vanilla Js", "TailwindCSS", "Django", "PostgreSQL"],
+      techs: ["Vanilla Js", "Django", "PostgreSQL"],
       link: "https://chatapp-rdia.onrender.com/",
       label: "FullStack",
     },
