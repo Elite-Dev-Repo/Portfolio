@@ -52,7 +52,7 @@ function Qualifications() {
           id="portfolio"
           className=" cont my-9 flex flex-col items-center justify-center relative"
         >
-          <h2 className=" abt-me text-[8em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-[#ffffffef] text-center">
+          <h2 className=" abt-me text-[7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-[#ffffffef] text-center">
             <a className="relative"> MY PORTFOLIO</a>
           </h2>
           <p className="relative md:absolute text-[.9em] md:right-[2em] w-full px-5 md:px-0 md:w-125 tracking-widest opacity-65 md:bottom-[1.5em] capitalize italic text-center md:text-right mt-4 md:mt-0">

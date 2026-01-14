@@ -49,7 +49,7 @@ function Qualifications() {
           id="qualifications"
           className=" relative cont my-9 flex flex-col items-center justify-center relative"
         >
-          <h2 className=" abt-me text-[8em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-[#ffffffef] text-center">
+          <h2 className=" abt-me text-[7em] relative max-sm:text-[2.5em] max-lg:text-[6em] uppercase font-semibold text-[#ffffffef] text-center">
             <a className="relative"> QUALIFICATIONS</a>
           </h2>
 

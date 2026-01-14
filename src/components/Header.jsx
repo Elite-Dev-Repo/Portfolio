@@ -9,13 +9,18 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import StarfieldHero from "./StarFieldHero";
 
 import elitelogo from "../assets/elitelogo.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  // useEffect(() => {
+  //   alert("hello");
+  // }, []);
 
   const proof = [
     {
@@ -130,20 +135,15 @@ function Header() {
 
   return (
     <header className="text-white relative overflow-hidden min-h-[screen] max-sm:min-h-[calc(100vh+10em)]  max-lg:min-h-[calc(100vh+10em)]">
-      <nav className="nav justify-between md:justify-around items-center relative z-50">
+      <StarfieldHero />
+      <nav className="nav justify-around md:justify-around items-center relative z-50">
         <div className="font-bold">
           {" "}
           <a href="#">
-            <img src={elitelogo} alt="" className="w-[4em] md:w-[5em]" />
+            <img src={elitelogo} alt="" className="w-[3em] md:w-[3em]" />
           </a>
         </div>
         <ul className="hidden md:flex gap-6">{navItems}</ul>
-        <a
-          href="/blog"
-          className="hidden md:flex uppercase px-7 rounded border py-2 bg-secondary text-white gap-3 items-center font-semibold hover:border transition cursor-none border-secondary"
-        >
-          Blog
-        </a>
 
         {/* Mobile Toggle */}
         <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
@@ -156,19 +156,13 @@ function Header() {
             <ul className="flex flex-col gap-8 text-2xl text-center">
               {navItems}
             </ul>
-            <a
-              href="/blog"
-              className="uppercase px-7 rounded border py-2 bg-secondary text-white flex gap-3 items-center font-semibold hover:border transition cursor-none border-secondary text-xl"
-            >
-              Blog
-            </a>
           </div>
         )}
       </nav>
 
       <div className="px-5 ">
         <main className="w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
-          <h1 className="opacity-60 relative md:absolute text-6xl md:text-[9em] md:left-1/2 md:-translate-x-1/2 font-semibold md:mt-[.3em] order-1 md:order-0 text-center w-full md:w-auto">
+          <h1 className="opacity-90 relative md:absolute text-6xl md:text-[9em] md:left-1/2 md:-translate-x-1/2 font-semibold md:mt-[.3em] order-1 md:order-0 text-center w-full md:w-auto">
             ELITE<span className="">.Dev</span>
           </h1>
 

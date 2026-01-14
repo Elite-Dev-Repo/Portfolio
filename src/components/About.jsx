@@ -1,6 +1,7 @@
 import { MoveDown, MoveDownIcon } from "lucide-react";
 import React from "react";
 import { useState } from "react";
+import Elite from "../assets/Elite.jpeg";
 
 MoveDown;
 
@@ -18,7 +19,7 @@ function About() {
           id="about"
           className=" cont my-9 flex flex-col items-center justify-center relative"
         >
-          <h2 className=" abt-me relative text-5xl md:text-[8em] uppercase font-semibold text-[#ffffffef] text-center">
+          <h2 className=" max-sm:text-[2.5em] abt-me relative text-[7em] md:text-[8em] uppercase font-semibold text-[#ffffffef] text-center">
             <a className="relative"> About Me</a>
           </h2>
 
@@ -36,11 +37,11 @@ function About() {
         </div>
         <div
           id="me"
-          className={`about cont max-sm:flex-col-reverse max-md:flex-col flex flex-row ${
+          className={`about cont max-sm:flex-col-reverse md:flex-col-reverse  max-md:flex-col w-full flex min-lg:flex-row ${
             show ? "block" : "hidden"
           }`}
         >
-          <div className="cont border border-[#fff8] max-sm:py-5">
+          <div className="cont w-[40%] md:w-full max-sm:py-5 max-sm:w-full ">
             <h4 className="text-2xl font-semibold opacity-40 text-start underline underline-offset-6">
               {" "}
               The Developer behind the screen.
@@ -77,7 +78,9 @@ function About() {
             </p>
           </div>
 
-          <div className="img-cont cont "></div>
+          <div className="img-cont cont w-[40%] max-sm:w-full md:w-full flex items-center justify-center">
+            <img src={Elite} alt="" className="max-sm:w-full " />
+          </div>
         </div>
       </section>
     </div>

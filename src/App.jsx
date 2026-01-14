@@ -68,7 +68,7 @@ function TorchlightCursor() {
 
 function App() {
   return (
-    <div style={{ cursor: "none" }}>
+    <div style={{ cursor: "none", marginTop: "-1em" }}>
       <TorchlightCursor />
       <Header />
       <About />
