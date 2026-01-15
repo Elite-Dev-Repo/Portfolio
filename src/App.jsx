@@ -49,17 +49,17 @@ function TorchlightCursor() {
         }}
         className={`z-10001 absolute top-[1.2em] right-[2em] fa-${
           on ? "solid" : "regular"
-        } fa-lightbulb ${!on ? "text-[#fff7]" : "text-white"}`}
+        } fa-lightbulb ${!on ? "text-[#0007]" : "text-black"}`}
       ></i>
 
       {/* Bulb dot */}
       <div
-        className=" sticky z-[10001] w-[10px] h-[10px] bg-[rgba(255,255,200,0.8)] rounded-full pointer-events-none z-[10000]"
+        className=" sticky z-[10001] w-[10px] h-[10px] bg-[rgba(0,0,0,0.24)] rounded-full pointer-events-none z-[10000]"
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
           transform: "translate(-50%, -50%)",
-          boxShadow: "0 0 20px 5px white",
+          boxShadow: "0 0 20px 5px #111",
         }}
       />
     </>

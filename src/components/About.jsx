@@ -19,11 +19,11 @@ function About() {
           id="about"
           className=" cont my-9 flex flex-col items-center justify-center relative"
         >
-          <h2 className=" max-sm:text-[2.5em] abt-me relative text-[7em] md:text-[8em] uppercase font-semibold text-[#ffffffef] text-center">
+          <h2 className=" max-sm:text-[2.5em] abt-me relative text-[7em] md:text-[8em] uppercase font-semibold text-tertiary text-center">
             <a className="relative"> About Me</a>
           </h2>
 
-          <p className="relative md:absolute md:right-[4em] w-full md:w-[500px] tracking-widest opacity-65 md:bottom-[1.5em] capitalize italic px-5 md:px-0 text-center md:text-right mt-4 md:mt-0">
+          <p className="relative md:absolute md:right-[4em] w-full md:w-[500px] tracking-widest md:bottom-[1.5em] capitalize italic px-5 md:px-0 text-center md:text-right mt-4 md:mt-0">
             See the difference without losing peace.
             <br />
             <span className="text-secondary"> - ELITE</span>
@@ -42,7 +42,7 @@ function About() {
           }`}
         >
           <div className="cont w-[40%] md:w-full max-sm:py-5 max-sm:w-full ">
-            <h4 className="text-2xl font-semibold opacity-40 text-start underline underline-offset-6">
+            <h4 className="text-2xl font-semibold opacity-95  text-start underline underline-offset-6">
               {" "}
               The Developer behind the screen.
             </h4>
