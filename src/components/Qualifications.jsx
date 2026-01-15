@@ -25,13 +25,13 @@ function Qualifications() {
       duration: "2021 - Till Date",
     },
     {
-      position: "Elite DEV",
-      place: "",
+      position: "Enigma",
+      place: "Founder",
       duration: "2023 - Till Date",
     },
     {
-      position: "B.Sc, Philosophy",
-      place: "Lagos State University",
+      position: "Elite DEV",
+      place: "",
       duration: "2021 - 2025",
     },
   ];
@@ -74,7 +74,7 @@ function Qualifications() {
             show ? "block" : "hidden"
           }`}
         >
-          <div className="relative md:absolute md:left-[1em] md:bottom-[2em] flex flex-col items-center gap-6 w-full md:w-auto px-5 md:px-0">
+          <div className="relative md:absolute md:left-[40%] md:bottom-[1em] flex flex-col items-center gap-6 w-full md:w-auto px-5 md:px-0">
             <h4 className="text-tertiary font-bold text-[12px]">
               {" "}
               TECHNOLOGIES I WORK WITH :

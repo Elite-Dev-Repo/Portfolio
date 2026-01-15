@@ -28,7 +28,7 @@ function About() {
             <br />
             <span className="text-secondary"> - ELITE</span>
           </p>
-          <a href="#me" onClick={toggleShow}>
+          <a href="#me" className="" onClick={toggleShow}>
             <div className="border p-3 rounded-full  md:bottom-[-3em] absolute bottom-[2em] left-[50%]">
               {" "}
               <MoveDown />
@@ -37,7 +37,7 @@ function About() {
         </div>
         <div
           id="me"
-          className={`about cont max-sm:flex-col-reverse md:flex-col-reverse  max-md:flex-col w-full flex min-lg:flex-row ${
+          className={`about mt-[2em] cont max-sm:flex-col-reverse md:flex-col-reverse  max-md:flex-col w-full flex min-lg:flex-row ${
             show ? "block" : "hidden"
           }`}
         >

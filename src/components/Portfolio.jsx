@@ -72,7 +72,7 @@ function Qualifications() {
         </div>
         <div
           id="port"
-          className={` relative flex flex-row justify-center items-center ${
+          className={` relative mt-[2em] flex flex-row justify-center items-center ${
             show ? "block" : "hidden"
           } mb-5`}
         >

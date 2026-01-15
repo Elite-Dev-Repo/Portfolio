@@ -153,7 +153,7 @@ function Header() {
               I am
             </div>
             <div className="">
-              Oyenekan<span className=""> Emmanuel</span>
+              Oyenekan<span className="opacity-60"> Emmanuel</span>
             </div>
           </h1>
 
