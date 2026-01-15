@@ -28,12 +28,12 @@ function About() {
             <br />
             <span className="text-secondary"> - ELITE</span>
           </p>
-          <div className="border p-3 rounded-full absolute bottom-[2em] left-[50%]">
-            <a href="#qual" onClick={toggleShow}>
+          <a href="#me" onClick={toggleShow}>
+            <div className="border p-3 rounded-full  md:bottom-[-3em] absolute bottom-[2em] left-[50%]">
               {" "}
               <MoveDown />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
         <div
           id="me"

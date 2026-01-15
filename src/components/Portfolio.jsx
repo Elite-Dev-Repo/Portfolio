@@ -3,7 +3,7 @@ import { useState } from "react";
 import reactwind from "../assets/reactwind.png";
 import weebschat from "../assets/weebschat.png";
 import tabbiebites from "../assets/tabbiebites.png";
-
+import enigma from "../assets/enigma.png";
 function Qualifications() {
   const [show, setShow] = useState(false);
 
@@ -14,6 +14,13 @@ function Qualifications() {
   const categories = ["All", "Wix", "Front End", "Back End"];
 
   const works = [
+    {
+      image: enigma,
+      description: "Landing Page for a Company",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://enigma.pxxl.click/",
+      label: "front end",
+    },
     {
       image: tabbiebites,
       description: "Landing Page for a Bakery",
@@ -29,13 +36,7 @@ function Qualifications() {
       link: "https://chatapp-rdia.onrender.com/",
       label: "FullStack",
     },
-    {
-      image: reactwind,
-      description: "basic landing page Website for a company",
-      techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://reactwind-two.vercel.app/",
-      label: "front end",
-    },
+
     {
       image: reactwind,
       description: "basic landing page Website for a company",
@@ -62,12 +63,12 @@ function Qualifications() {
             <span className="text-secondary">- Anonymous</span>
           </p>
 
-          <div className="border p-3 rounded-full absolute bottom-[2em] left-[50%]">
-            <a href="#port" onClick={toggleShow}>
+          <a href="#port" onClick={toggleShow}>
+            <div className="border p-3 rounded-full  md:bottom-[-3em] absolute bottom-[2em] left-[50%]">
               {" "}
               <MoveDown />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
         <div
           id="port"
