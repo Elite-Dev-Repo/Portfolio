@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import StarfieldHero from "./StarFieldHero";
+import resume from "../assets/resume.pdf";
 
 import elitelogo from "../assets/elitelogo.png";
 
@@ -153,7 +154,7 @@ function Header() {
               I am
             </div>
             <div className="">
-              Oyenekan<span className="opacity-60"> Emmanuel</span>
+              Oyenekan<span className="opacity-70"> Emmanuel</span>
             </div>
           </h1>
 
@@ -168,7 +169,7 @@ function Header() {
             <div className="ctas flex flex-wrap justify-center md:justify-start gap-8">
               <button className="sm:text-[.9rem] md:text-[1rem]">
                 <a
-                  href="#"
+                  href={resume}
                   className=" gap-2 flex items-center px-6 py-3 text-primary bg-tertiary"
                 >
                   Download Resume
