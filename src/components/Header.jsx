@@ -154,7 +154,7 @@ function Header() {
               I am
             </div>
             <div className="">
-              Oyenekan<span className="opacity-70"> Emmanuel</span>
+              Oyenekan<span className="opacity-65"> Emmanuel</span>
             </div>
           </h1>
 
