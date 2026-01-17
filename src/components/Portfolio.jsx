@@ -26,7 +26,7 @@ function Qualifications() {
     {
       image: rantsarena,
       description: "Fullstack Blog Application.",
-      techs: ["React", "TailwindCSS", "TypeScript", "Django", "Supabase"],
+      techs: ["TypeScript", "Django", "TailwindCSS", "Supabase"],
       link: "https://rantsarena.pxxl.click/",
       label: "FullStack",
     },
@@ -104,7 +104,7 @@ function Qualifications() {
               {works.map((work, index) => (
                 <div
                   key={index}
-                  className=" border border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary"
+                  className="overflow-scroll max-sm:overflow-x-scroll border border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary"
                 >
                   <div className=" img-container relative">
                     <button className=" hidden absolute top-[50%] left-[50%] z-10 translate-y-[-50%] translate-x-[-50%] bg-white text-secondary font-semibold px-5 py-2 text-[1em] hover:bg-secondary hover:text-white transition duration-300 ease-in-out">
@@ -127,7 +127,7 @@ function Qualifications() {
                       {work.techs.map((tech) => (
                         <p
                           key={tech}
-                          className=" bg-secondary p-2 rounded-full text-white text-[.9em] max-sm:text-[.8em] hover:bg-white hover:text-secondary transition duration-300 ease-in-out"
+                          className=" bg-secondary p-2 rounded-full text-white text-[.9em] max-sm:text-[11px] hover:bg-white hover:text-secondary transition duration-300 ease-in-out "
                         >
                           {tech}
                         </p>
