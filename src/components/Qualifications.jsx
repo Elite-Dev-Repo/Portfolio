@@ -15,7 +15,7 @@ function Qualifications() {
   ];
   const qual = [
     {
-      position: "B.Sc, Philosophy",
+      position: "B.A, Philosophy",
       place: "Lagos State University",
       duration: "2022 - 2025",
     },

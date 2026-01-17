@@ -91,10 +91,6 @@ function Header() {
 
   const navLinks = [
     {
-      name: "Home",
-      icon: <House />,
-    },
-    {
       name: "About",
       icon: <ScrollText />,
     },
@@ -149,6 +145,13 @@ function Header() {
 
       <div className="px-5">
         <main className="w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
+          <div className="mt-8 mb-8 w-fit mx-auto flex items-center gap-2 px-3 py-1 border border-black/10 rounded-sm bg-black/5">
+            <div className="w-2 h-2 rounded-full bg-[#383736] shadow-[0_0_8px_#383736] animate-pulse" />
+            <h3 className="text-[13px] uppercase tracking-[0.3em] font-mono text-black/50">
+              FullStack Website Developer
+            </h3>
+          </div>
+
           <h1 className="flex flex-col items-center md:absolute text-4xl md:text-[6em] md:left-1/2 md:-translate-x-1/2 font-semibold md:mt-[.3em] order-1 md:order-0 text-center w-full md:w-auto">
             <div className="bg-tertiary text-primary text-[25px] px-3 py-1">
               I am
@@ -159,9 +162,6 @@ function Header() {
           </h1>
 
           <div className="list py-4 md:py-8 flex flex-col gap-4 relative md:absolute md:bottom-[6em] md:left-[2em] items-center md:items-start text-center md:text-left order-2 md:order-0 w-full md:w-auto px-4 md:px-0">
-            <h3 className="text-xl md:text-[1.2rem] font-semibold tracking-wider uppercase text-secondary">
-              FullStack Website Developer
-            </h3>
             <p className="text-tertiary sm:text-[.9rem] md:text-[1rem]">
               Frontend Development, Backend Development, Wix Development. <br />{" "}
               SEO friendly websites, Modern and Responsive.
@@ -190,7 +190,7 @@ function Header() {
             </div>
           </div>
 
-          <div className="trust py-4 md:py-8 flex flex-col gap-4 bottom-[4em] relative md:absolute max-lg:bottom-[-3em] md:right-[2em] items-center md:items-end order-3 md:order-0 w-full md:w-auto">
+          <div className="trust py-4  md:py-8 flex flex-col gap-4 bottom-[5.5em] relative md:absolute max-lg:bottom-[-3em] md:right-[2em] items-center md:items-end order-3 md:order-0 w-full md:w-auto">
             <h3 className="text-center text-tertiary text-sm uppercase tracking-widest">
               Trusted By Hundreds of People Worldwide.
             </h3>

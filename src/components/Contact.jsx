@@ -36,7 +36,7 @@ function Contact() {
     <section id="contact" className="border-t-[1px] border-t-[#ffffff7a]">
       <div className="cont">
         <h2 className="text-4xl font-bold max-sm:text-2xl max-sm:font-light text-center mt-5">
-          Give me a Message let's work together
+          Give me a message let's work together
         </h2>
         <div className="grid grid-cols-3 md:grid-cols-3 gap-9">
           {contact.map((item, index) => (
