@@ -147,7 +147,7 @@ function Header() {
         <main className="w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
           <div className="mt-8 mb-8 w-fit mx-auto flex items-center gap-2 px-3 py-1 border border-black/10 rounded-sm bg-black/5">
             <div className="w-2 h-2 rounded-full bg-[#383736] shadow-[0_0_8px_#383736] animate-pulse" />
-            <h3 className="text-[13px] uppercase tracking-[0.3em] font-mono text-black/50">
+            <h3 className="text-[13px] max-sm:text-[10px] uppercase tracking-[0.3em] font-mono text-black/50">
               FullStack Website Developer
             </h3>
           </div>

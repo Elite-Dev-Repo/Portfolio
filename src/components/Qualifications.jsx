@@ -61,8 +61,8 @@ function Qualifications() {
             <span className="text-secondary">- ELITE</span>
           </p>
 
-          <a href="#qual" onClick={toggleShow}>
-            <div className="border p-3 rounded-full  md:bottom-[-3em] absolute bottom-[2em] left-[50%]">
+          <a href="#qual" onClick={toggleShow} className="max-sm:mx-auto">
+            <div className="border p-3 rounded-full  md:bottom-[-3em] relative bottom-[-4em]">
               {" "}
               <MoveDown />
             </div>
@@ -111,8 +111,13 @@ function Qualifications() {
                 {qual.map((qual) => {
                   return (
                     <div className="flex flex-col items-center">
-                      <h5 key={qual.place}>{qual.position}</h5>
-                      <p className="opacity-85 text-tertiary">
+                      <h5
+                        key={qual.place}
+                        className="text-tertiary text-center"
+                      >
+                        {qual.position}
+                      </h5>
+                      <p className="opacity-85 text-tertiary text-center">
                         {qual.place ? qual.place : ""}
                       </p>
                       <p className="text-secondary">{qual.duration}</p>

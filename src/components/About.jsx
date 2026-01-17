@@ -28,8 +28,8 @@ function About() {
             <br />
             <span className="text-secondary"> - ELITE</span>
           </p>
-          <a href="#me" className="" onClick={toggleShow}>
-            <div className="border p-3 rounded-full  md:bottom-[-3em] absolute bottom-[2em] left-[50%]">
+          <a href="#me" onClick={toggleShow} className="max-sm:mx-auto">
+            <div className="border p-3 rounded-full  md:bottom-[-3em] relative bottom-[-4em]">
               {" "}
               <MoveDown />
             </div>
