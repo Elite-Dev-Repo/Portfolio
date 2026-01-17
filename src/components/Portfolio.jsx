@@ -4,6 +4,7 @@ import reactwind from "../assets/reactwind.png";
 import weebschat from "../assets/weebschat.png";
 import tabbiebites from "../assets/tabbiebites.png";
 import enigma from "../assets/enigma.png";
+import rantsarena from "../assets/rantsarena.png";
 function Qualifications() {
   const [show, setShow] = useState(false);
 
@@ -16,11 +17,20 @@ function Qualifications() {
   const works = [
     {
       image: enigma,
-      description: "Landing Page for a Company",
+      description: "Landing Page for a Company.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://enigma.pxxl.click/",
       label: "front end",
     },
+
+    {
+      image: rantsarena,
+      description: "Fullstack Blog Application.",
+      techs: ["React", "TailwindCSS", "TypeScript", "Django", "Supabase"],
+      link: "https://rantsarena.pxxl.click/",
+      label: "FullStack",
+    },
+
     {
       image: tabbiebites,
       description: "Landing Page for a Bakery",
