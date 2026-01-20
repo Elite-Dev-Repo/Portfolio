@@ -6,6 +6,35 @@ import Portfolio from "./components/Portfolio.jsx";
 import Qualifications from "./components/Qualifications.jsx";
 import Footer from "./components/Footer.jsx";
 
+import { Supermouse } from "@supermousejs/core";
+import { Dot } from "@supermousejs/dot";
+import { SmartRing } from "@supermousejs/labs";
+import { Stick } from "@supermousejs/stick";
+
+const app = new Supermouse({
+  hideCursor: true,
+});
+
+app
+  .use(
+    Stick({
+      padding: 10,
+    }),
+  )
+  .use(
+    Dot({
+      size: 8,
+      color: "#000000",
+      hideOnShape: true,
+    }),
+  )
+  .use(
+    SmartRing({
+      size: 30,
+      color: "#000000",
+      enableSkew: true,
+    }),
+  );
 // function TorchlightCursor() {
 //   const [position, setPosition] = useState({ x: 0, y: 0 });
 

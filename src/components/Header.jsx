@@ -13,8 +13,6 @@ import { useState, useEffect } from "react";
 import StarfieldHero from "./StarFieldHero";
 import resume from "../assets/resume.pdf";
 
-import elitelogo from "../assets/elitelogo.png";
-
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
