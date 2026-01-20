@@ -17,29 +17,7 @@ function About() {
       <section className="flex-col">
         <div
           id="about"
-          className=" cont my-9 flex flex-col items-center justify-center relative"
-        >
-          <h2 className=" max-sm:text-[2.5em] abt-me relative text-[7em] md:text-[8em] uppercase font-semibold text-tertiary text-center">
-            <a className="relative"> About Me</a>
-          </h2>
-
-          <p className="relative md:absolute md:right-[4em] w-full md:w-[500px] tracking-widest md:bottom-[1.5em] capitalize italic px-5 md:px-0 text-center md:text-right mt-4 md:mt-0">
-            See the difference without losing peace.
-            <br />
-            <span className="text-secondary"> - ELITE</span>
-          </p>
-          <a href="#me" onClick={toggleShow} className="max-sm:mx-auto">
-            <div className="border p-3 rounded-full  md:bottom-[-3em] relative bottom-[-4em]">
-              {" "}
-              <MoveDown />
-            </div>
-          </a>
-        </div>
-        <div
-          id="me"
-          className={`about mt-[2em] cont max-sm:flex-col-reverse md:flex-col-reverse  max-md:flex-col w-full flex min-lg:flex-row ${
-            show ? "block" : "hidden"
-          }`}
+          className={`about mt-[2em] cont max-sm:flex-col-reverse md:flex-col-reverse  max-md:flex-col w-full flex min-lg:flex-row block`}
         >
           <div className="cont w-[40%] md:w-full max-sm:py-5 max-sm:w-full ">
             <h4 className="text-2xl font-semibold opacity-95  text-start underline underline-offset-6">

@@ -5,7 +5,6 @@
 
   list-style: none;
   font-family: "Space Grotesk", sans-serif;
-  cursor: none;
 }
 body {
   color: #111;
@@ -36,10 +35,6 @@ body {
 }
 
 @layer components {
-  .nav {
-    @apply w-full px-4 border-b-[1px] border-b-[#0000007a] h-[80px] flex justify-center items-center;
-  }
-
   .cont {
     padding-inline: 20px;
     max-width: 1200px;
@@ -63,6 +58,10 @@ header {
 
 .nav-link:hover span {
   opacity: 1;
+}
+
+nav {
+  border-radius: 10px 3px;
 }
 
 /* h1 {

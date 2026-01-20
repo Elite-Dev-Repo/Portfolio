@@ -42,7 +42,7 @@ function Contact() {
           {contact.map((item, index) => (
             <div
               key={index}
-              className=" p-5 hover:shadow-[inset_0_0_5px_0_var(--color-secondary),_0_0_5px_0_var(--color-secondary)]  hover:scale-105 transition-all rounded-lg flex flex-col justify-center items-center"
+              className=" p-6 border border-transparent hover:border-black/40  transition-all rounded-lg flex flex-col justify-center items-center"
             >
               <a
                 href={item.link}
