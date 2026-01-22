@@ -1,9 +1,8 @@
-import { Circle, MoveDown, MoveDownIcon } from "lucide-react";
+import { Circle } from "lucide-react";
 import React from "react";
 // import { useState } from "react";
 Circle;
 
-MoveDown;
 function Qualifications() {
   const techs = [
     "JavaScript",
@@ -60,13 +59,6 @@ function Qualifications() {
             <br />
             <span className="text-secondary">- ELITE</span>
           </p>
-
-          <a href="#qual" className="max-sm:mx-auto">
-            <div className="border p-3 rounded-full  md:bottom-[-3em] relative bottom-[-4em]">
-              {" "}
-              <MoveDown />
-            </div>
-          </a>
         </div>
         <div
           id="qual"

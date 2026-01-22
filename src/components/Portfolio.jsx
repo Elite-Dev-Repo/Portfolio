@@ -1,4 +1,4 @@
-import { Circle, MoveDown, MoveRight, ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import reactwind from "../assets/reactwind.png";
 import weebschat from "../assets/weebschat.png";
@@ -20,7 +20,7 @@ function Portfolio() {
       image: enigma,
       title: "Enigma | the action agent.",
       description:
-        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
+        "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://enigma.pxxl.click/",
       label: "Front End",
@@ -30,8 +30,8 @@ function Portfolio() {
       image: rantsarena,
       title: "Rantsarena",
       description:
-        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
-      techs: ["TypeScript", "Django", "TailwindCSS", "Supabase"],
+        "A dynamic social platform where users can share thoughts in real-time. Built with Supabase for instant data synchronization and secure authentication across a seamless UI.",
+      techs: ["TypeScript", "TailwindCSS", "Supabase"],
       link: "https://rantsarena.pxxl.click/",
       label: "FullStack",
     },
@@ -40,7 +40,7 @@ function Portfolio() {
       image: tabbiebites,
       title: "Tabbiebites",
       description:
-        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
+        "A sleek, mobile-friendly landing page for a boutique bakery. Designed to showcase culinary products with high-fidelity imagery and a focus on essential decision-making details.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://tabbiebites.pxxl.click/",
       label: "Front End",
@@ -50,7 +50,7 @@ function Portfolio() {
       image: weebschat,
       title: "Weebschat",
       description:
-        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
+        "A full-featured chat application built for community engagement. Utilizing Django and PostgreSQL, it handles real-time messaging and persistent user data with ease.",
       techs: ["Vanilla Js", "Django", "PostgreSQL"],
       link: "https://chatapp-rdia.onrender.com/",
       label: "FullStack",
@@ -60,7 +60,7 @@ function Portfolio() {
       image: reactwind,
       title: "Reactwind",
       description:
-        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
+        "A developer-centric utility tool or component library landing page. It emphasizes speed, utility-first styling, and modern React patterns for rapid UI development.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://reactwind-two.vercel.app/",
       label: "Front End",
@@ -91,13 +91,6 @@ function Portfolio() {
             <br />
             <span className="text-secondary">- Anonymous</span>
           </p>
-
-          <a href="#port" className="max-sm:mx-auto">
-            <div className="border p-3 rounded-full  md:bottom-[-3em] relative bottom-[-4em]">
-              {" "}
-              <MoveDown />
-            </div>
-          </a>
         </div>
         <div
           id="port"
@@ -120,7 +113,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-4 cont mt-[4em] items-stretch">
+            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-2 cont mt-[4em] items-stretch">
               {works.map((work, index) => (
                 <div
                   key={index}
@@ -134,12 +127,12 @@ function Portfolio() {
                     />
                   </div>
                   <div className="w-[95%] mx-auto flex flex-col gap-2">
-                    <h3 className=" text-[1.4em] capitalize font-bold text-left tracking-wide text-white ">
+                    <h3 className=" text-[1.3em] capitalize font-semibold text-left tracking-wide text-white ">
                       {work.title}
                     </h3>
 
                     <div className="flex flex-col gap-2 items-center">
-                      <p className=" text-sm font-extralight opacity-70 tracking-wide w-full mx-auto text-white line-clamp-3 ">
+                      <p className=" text-sm font-extralight opacity-70  w-full mx-auto text-white line-clamp-3 ">
                         {work.description}
                       </p>
                       <div className=" flex flex-row gap-2 p-5 ">
@@ -161,13 +154,13 @@ function Portfolio() {
                             target="_blank"
                             className="text-sm"
                           >
-                            View Project{" "}
+                            Visit Site{" "}
                           </a>
                           <span>
-                            <ArrowRight />
+                            <ArrowRight size={16} strokeWidth={1.3} />
                           </span>
                         </button>{" "}
-                        <button className="rounded-lg flex gap-2 items-center font-light bg-transparent border border-primary px-3 py-1.5 text-[1em] text-white transition duration-300 ease-in-out">
+                        <button className="rounded-lg flex gap-2 items-center font-light bg-transparent border border-primary/50 px-3 py-1.5 text-[1em] text-white transition duration-300 ease-in-out">
                           <a
                             href={work.link}
                             target="_blank"
@@ -176,7 +169,7 @@ function Portfolio() {
                             View Repo{" "}
                           </a>
                           <span className="font-extralight">
-                            <ArrowRight />
+                            <ExternalLink size={18} strokeWidth={1.5} />
                           </span>
                         </button>
                       </div>

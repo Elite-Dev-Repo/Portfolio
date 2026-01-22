@@ -20,7 +20,8 @@ function About() {
             </h4>
 
             <p className="leading-7 tracking-widest text-[15px] ">
-              I’m{" "}
+              <span className=" text-4xl font-light">I</span>
+              ’m{" "}
               <span className="text-[var(--color-secondary)]">
                 {" "}
                 Oyenekan Emmanuel

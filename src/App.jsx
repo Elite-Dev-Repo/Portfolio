@@ -17,12 +17,12 @@ const app = new Supermouse({
 app
   .use(
     Stick({
-      padding: 10,
+      padding: 15,
     }),
   )
   .use(
     Dot({
-      size: 8,
+      size: 6,
       color: "#000000",
       hideOnShape: true,
     }),

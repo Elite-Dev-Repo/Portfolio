@@ -136,7 +136,7 @@ function Header() {
               </h3>
             </div>
 
-            <h1 className="flex flex-col items-center md:absolute text-3xl md:text-[4.5em] md:left-1/2 md:-translate-x-1/2  font-semibold md:mt-[.4em] order-1 md:order-0 text-center w-full md:w-auto">
+            <h1 className="flex flex-col items-center md:absolute text-5xl md:text-[5em] md:left-1/2 md:-translate-x-1/2  font-semibold md:mt-[.4em] order-1 md:order-0 text-center w-full md:w-auto">
               <div className="bg-tertiary text-primary text-[25px] px-3 py-1">
                 I am
               </div>
