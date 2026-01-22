@@ -1,31 +1,36 @@
-import { Circle, MoveDown } from "lucide-react";
+import { Circle, MoveDown, MoveRight, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import reactwind from "../assets/reactwind.png";
 import weebschat from "../assets/weebschat.png";
 import tabbiebites from "../assets/tabbiebites.png";
 import enigma from "../assets/enigma.png";
 import rantsarena from "../assets/rantsarena.png";
-function Qualifications() {
-  const [show, setShow] = useState(false);
+function Portfolio() {
+  // const [show, setShow] = useState(false);
+  const [filter, setFilter] = useState("");
 
-  function toggleShow() {
-    setShow((prev) => !prev);
-  }
+  // function toggleShow() {
+  //   setShow((prev) => !prev);
+  // }
 
-  const categories = ["All", "Wix", "Front End", "Back End"];
+  const categories = ["All", "FullStack", "Wix", "Front End"];
 
   const works = [
     {
       image: enigma,
-      description: "Landing Page for a Company.",
+      title: "Enigma | the action agent.",
+      description:
+        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://enigma.pxxl.click/",
-      label: "front end",
+      label: "Front End",
     },
 
     {
       image: rantsarena,
-      description: "Fullstack Blog Application.",
+      title: "Rantsarena",
+      description:
+        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
       techs: ["TypeScript", "Django", "TailwindCSS", "Supabase"],
       link: "https://rantsarena.pxxl.click/",
       label: "FullStack",
@@ -33,15 +38,19 @@ function Qualifications() {
 
     {
       image: tabbiebites,
-      description: "Landing Page for a Bakery",
+      title: "Tabbiebites",
+      description:
+        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://tabbiebites.pxxl.click/",
-      label: "front end",
+      label: "Front End",
     },
 
     {
       image: weebschat,
-      description: "FullStack Chat Application",
+      title: "Weebschat",
+      description:
+        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
       techs: ["Vanilla Js", "Django", "PostgreSQL"],
       link: "https://chatapp-rdia.onrender.com/",
       label: "FullStack",
@@ -49,13 +58,23 @@ function Qualifications() {
 
     {
       image: reactwind,
-      description: "basic landing page Website for a company",
+      title: "Reactwind",
+      description:
+        "A sleek mobile friendly landing page for a privately owned bakery, designed specially to aid users to see what is crucial to their making a decision. easy and modern.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://reactwind-two.vercel.app/",
-      label: "front end",
+      label: "Front End",
     },
   ];
+  function filterProj(category) {
+    if (category === "All") {
+      return setFilter("");
+    } else {
+      setFilter(category);
+    }
+  }
 
+  categories.forEach;
   return (
     <div>
       <section className="flex-col">
@@ -73,7 +92,7 @@ function Qualifications() {
             <span className="text-secondary">- Anonymous</span>
           </p>
 
-          <a href="#port" onClick={toggleShow} className="max-sm:mx-auto">
+          <a href="#port" className="max-sm:mx-auto">
             <div className="border p-3 rounded-full  md:bottom-[-3em] relative bottom-[-4em]">
               {" "}
               <MoveDown />
@@ -82,15 +101,16 @@ function Qualifications() {
         </div>
         <div
           id="port"
-          className={` relative mt-[2em] flex flex-row justify-center items-center ${
-            show ? "block" : "hidden"
-          } mb-5`}
+          className={` relative mt-[2em] w-full flex flex-row justify-center items-center mb-5`}
         >
           <div className="">
             <div className="flex w-full justify-center">
               <div className=" flex flex-row gap-2">
                 {categories.map((category, index) => (
                   <button
+                    onClick={() => {
+                      filterProj(category);
+                    }}
                     key={index}
                     className=" bg-tertiary max-sm:text-[.8em] text-primary font-semibold px-5 py-2 text-[1em] hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
                   >
@@ -100,38 +120,66 @@ function Qualifications() {
               </div>
             </div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 cont mt-[4em] items-stretch">
+            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-4 cont mt-[4em] items-stretch">
               {works.map((work, index) => (
                 <div
                   key={index}
-                  className="overflow-scroll max-sm:overflow-x-scroll border border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary"
+                  className={`h-fit border border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary ${filter === "" || filter === work.label ? "flex" : "hidden"}`}
                 >
                   <div className=" img-container relative">
-                    <button className=" hidden absolute top-[50%] left-[50%] z-10 translate-y-[-50%] translate-x-[-50%] bg-white text-secondary font-semibold px-5 py-2 text-[1em] hover:bg-secondary hover:text-white transition duration-300 ease-in-out">
-                      <a href={work.link} target="_blank">
-                        View Project
-                      </a>
-                    </button>
                     <img
-                      className=" w-[90%] mt-4 object-cover mx-auto"
+                      className=" w-[95%] rounded-lg mt-4 object-cover mx-auto"
                       src={work.image}
                       alt=""
                     />
                   </div>
+                  <div className="w-[95%] mx-auto flex flex-col gap-2">
+                    <h3 className=" text-[1.4em] capitalize font-bold text-left tracking-wide text-white ">
+                      {work.title}
+                    </h3>
 
-                  <div className="flex flex-col gap-2 items-center">
-                    <p className=" text-[1em] capitalize font-light text-center tracking-wide text-white ">
-                      {work.description}
-                    </p>
-                    <div className=" flex flex-row gap-2 p-5">
-                      {work.techs.map((tech) => (
-                        <p
-                          key={tech}
-                          className=" bg-secondary p-2 rounded-full text-white text-[.9em] max-sm:text-[11px] hover:bg-white hover:text-secondary transition duration-300 ease-in-out "
-                        >
-                          {tech}
-                        </p>
-                      ))}
+                    <div className="flex flex-col gap-2 items-center">
+                      <p className=" text-sm font-extralight opacity-70 tracking-wide w-full mx-auto text-white line-clamp-3 ">
+                        {work.description}
+                      </p>
+                      <div className=" flex flex-row gap-2 p-5 ">
+                        {work.techs.map((tech) => (
+                          <p
+                            key={tech}
+                            className=" bg-[#000] p-2 rounded-sm text-white text-[11px] max-sm:text-[11px] tracking-wide"
+                          >
+                            {tech}
+                          </p>
+                        ))}
+                      </div>
+
+                      <div className="mb-4 flex w-full justify-between">
+                        {" "}
+                        <button className="rounded-lg flex gap-2 items-center font-light bg-white text-tertiary px-3 py-1.5 text-[1em] hover:gap-3 transition duration-300 ease-in-out">
+                          <a
+                            href={work.link}
+                            target="_blank"
+                            className="text-sm"
+                          >
+                            View Project{" "}
+                          </a>
+                          <span>
+                            <ArrowRight />
+                          </span>
+                        </button>{" "}
+                        <button className="rounded-lg flex gap-2 items-center font-light bg-transparent border border-primary px-3 py-1.5 text-[1em] text-white transition duration-300 ease-in-out">
+                          <a
+                            href={work.link}
+                            target="_blank"
+                            className="text-sm"
+                          >
+                            View Repo{" "}
+                          </a>
+                          <span className="font-extralight">
+                            <ArrowRight />
+                          </span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -144,4 +192,4 @@ function Qualifications() {
   );
 }
 
-export default Qualifications;
+export default Portfolio;

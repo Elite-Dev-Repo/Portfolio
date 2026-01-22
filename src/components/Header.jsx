@@ -9,14 +9,10 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { useState, useEffect } from "react";
 import StarfieldHero from "./StarFieldHero";
 import resume from "../assets/resume.pdf";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
   // useEffect(() => {
   //   alert("hello");
   // }, []);
@@ -24,15 +20,15 @@ function Header() {
   const proof = [
     {
       name: "JavaScript",
-      icon: <i class="fa-brands fa-node-js"></i>,
+      icon: <i className="fa-brands fa-node-js"></i>,
     },
     {
       name: "React Js",
-      icon: <i class="fa-brands fa-react"></i>,
+      icon: <i className="fa-brands fa-react"></i>,
     },
     {
       name: "Django",
-      icon: <i class="fa-brands fa-python"></i>,
+      icon: <i className="fa-brands fa-python"></i>,
     },
     {
       name: "TypeScript",
@@ -40,11 +36,11 @@ function Header() {
     },
     {
       name: "Wix",
-      icon: <i class="fa-brands fa-wix"></i>,
+      icon: <i className="fa-brands fa-wix"></i>,
     },
     {
       name: "HTML/ CSS",
-      icon: <i class="fa-solid fa-code"></i>,
+      icon: <i className="fa-solid fa-code"></i>,
     },
   ];
 
@@ -62,30 +58,30 @@ function Header() {
     );
   });
 
-  const socialList = [
-    {
-      name: "Twitter",
-      link: `https://x.com/elite_developer`,
-      icon: <i class="fa-brands fa-x-twitter"></i>,
-    },
-    {
-      name: "LinkedIn",
-      link: `https://x.com/elite_developer`,
-      icon: <i class="fa-brands fa-linkedin"></i>,
-    },
+  // const socialList = [
+  //   {
+  //     name: "Twitter",
+  //     link: `https://x.com/elite_developer`,
+  //     icon: <i class="fa-brands fa-x-twitter"></i>,
+  //   },
+  //   {
+  //     name: "LinkedIn",
+  //     link: `https://x.com/elite_developer`,
+  //     icon: <i class="fa-brands fa-linkedin"></i>,
+  //   },
 
-    {
-      name: "Tiktok",
-      link: `https://x.com/elite_developer`,
-      icon: <i class="fa-brands fa-tiktok"></i>,
-    },
+  //   {
+  //     name: "Tiktok",
+  //     link: `https://x.com/elite_developer`,
+  //     icon: <i class="fa-brands fa-tiktok"></i>,
+  //   },
 
-    {
-      name: "Instagram",
-      link: `https://x.com/elite_developer`,
-      icon: <i class="fa-brands fa-instagram"></i>,
-    },
-  ];
+  //   {
+  //     name: "Instagram",
+  //     link: `https://x.com/elite_developer`,
+  //     icon: <i class="fa-brands fa-instagram"></i>,
+  //   },
+  // ];
 
   const navLinks = [
     {
@@ -122,7 +118,9 @@ function Header() {
 
           <div className="text-3xl">
             {" "}
-            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Elite-Dev-Repo" target="_blank">
+              <i className="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
       </nav>

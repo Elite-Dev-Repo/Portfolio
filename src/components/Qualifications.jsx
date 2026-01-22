@@ -1,6 +1,6 @@
 import { Circle, MoveDown, MoveDownIcon } from "lucide-react";
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 Circle;
 
 MoveDown;
@@ -36,11 +36,11 @@ function Qualifications() {
     },
   ];
 
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  function toggleShow() {
-    setShow((prev) => !prev);
-  }
+  // function toggleShow() {
+  //   setShow((prev) => !prev);
+  // }
 
   return (
     <div>
@@ -61,7 +61,7 @@ function Qualifications() {
             <span className="text-secondary">- ELITE</span>
           </p>
 
-          <a href="#qual" onClick={toggleShow} className="max-sm:mx-auto">
+          <a href="#qual" className="max-sm:mx-auto">
             <div className="border p-3 rounded-full  md:bottom-[-3em] relative bottom-[-4em]">
               {" "}
               <MoveDown />
@@ -70,9 +70,7 @@ function Qualifications() {
         </div>
         <div
           id="qual"
-          className={` relative cont flex flex-col md:flex-row items-center justify-center gap-10 md:gap-0 ${
-            show ? "block" : "hidden"
-          }`}
+          className={` relative cont flex flex-col md:flex-row items-center justify-center gap-10 md:gap-0`}
         >
           <div className="relative md:absolute md:left-[40%] md:bottom-[1em] flex flex-col items-center gap-6 w-full md:w-auto px-5 md:px-0">
             <h4 className="text-tertiary font-bold text-[12px]">
@@ -83,7 +81,7 @@ function Qualifications() {
             <div className="grid grid-cols-2 gap-5">
               {techs.map((tech) => {
                 return (
-                  <div className="">
+                  <div className="" key={tech}>
                     <p className="text-[15px] flex items-center gap-2 text-tertiary">
                       {" "}
                       <span>
@@ -110,7 +108,10 @@ function Qualifications() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full place-items-center">
                 {qual.map((qual) => {
                   return (
-                    <div className="flex flex-col items-center">
+                    <div
+                      key={qual.duration}
+                      className="flex flex-col items-center"
+                    >
                       <h5
                         key={qual.place}
                         className="text-tertiary text-center"
