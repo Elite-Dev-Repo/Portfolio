@@ -13,7 +13,7 @@ function Portfolio() {
   //   setShow((prev) => !prev);
   // }
 
-  const categories = ["All", "FullStack", "Wix", "Front End"];
+  const categories = ["All", "Full Stack", "Wix", "Front End"];
 
   const works = [
     {
@@ -23,7 +23,7 @@ function Portfolio() {
         "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://enigma.pxxl.click/",
-      label: "Front End",
+      label: "Full Stack",
     },
 
     {
@@ -33,7 +33,7 @@ function Portfolio() {
         "A dynamic social platform where users can share thoughts in real-time. Built with Supabase for instant data synchronization and secure authentication across a seamless UI.",
       techs: ["TypeScript", "TailwindCSS", "Supabase"],
       link: "https://rantsarena.pxxl.click/",
-      label: "FullStack",
+      label: "Full Stack",
     },
 
     {
@@ -53,7 +53,7 @@ function Portfolio() {
         "A full-featured chat application built for community engagement. Utilizing Django and PostgreSQL, it handles real-time messaging and persistent user data with ease.",
       techs: ["Vanilla Js", "Django", "PostgreSQL"],
       link: "https://chatapp-rdia.onrender.com/",
-      label: "FullStack",
+      label: "Full Stack",
     },
 
     {

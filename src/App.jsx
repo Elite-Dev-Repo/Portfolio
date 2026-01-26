@@ -99,8 +99,7 @@ function App() {
     <>
       <Header />
       <About />
-      <Qualifications />
-      <Portfolio />
+      <Portfolio /> <Qualifications />
       <Contact />
       <Footer />
     </>
