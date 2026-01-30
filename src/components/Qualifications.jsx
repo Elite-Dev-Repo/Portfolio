@@ -46,19 +46,11 @@ function Qualifications() {
       <section className="flex-col">
         <div
           id="qualifications"
-          className=" relative cont my-9 flex flex-col items-center justify-center relative"
+          className=" relative mx-auto px-5 h-[60vh] my-9 flex flex-col items-center justify-center relative"
         >
           <h2 className=" abt-me text-[7em] relative max-sm:text-[2.5em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center">
             <a className="relative"> QUALIFICATIONS</a>
           </h2>
-
-          <p className="relative md:absolute text-[.9em] md:right-[2em] w-full px-5 md:px-0 md:w-125 tracking-widest opacity-90 md:bottom-[1.5em] capitalize italic text-center md:text-right mt-4 md:mt-0">
-            If the perfection of a virtue is found in the removal of the tragedy
-            that requires it, is charity's ultimate moral achievement its own
-            disappearance?
-            <br />
-            <span className="text-secondary">- ELITE</span>
-          </p>
         </div>
         <div
           id="qual"
@@ -93,10 +85,6 @@ function Qualifications() {
 
           <div className=" cont w-full">
             <div className="cont w-full">
-              <h4 className="text-tertiary text-2xl font-semibold mb-6 md:mb-0">
-                QUALIFICATIONS
-              </h4>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full place-items-center">
                 {qual.map((qual) => {
                   return (

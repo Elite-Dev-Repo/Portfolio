@@ -5,6 +5,7 @@ import weebschat from "../assets/weebschat.png";
 import tabbiebites from "../assets/tabbiebites.png";
 import enigma from "../assets/enigma.png";
 import rantsarena from "../assets/rantsarena.png";
+import dashboard from "../assets/dashboard.png";
 function Portfolio() {
   // const [show, setShow] = useState(false);
   const [filter, setFilter] = useState("");
@@ -24,6 +25,15 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://enigma.pxxl.click/",
       label: "Full Stack",
+    },
+    {
+      image: dashboard,
+      title: "Dashboard",
+      description:
+        "A high-performance analytics interface designed for data-driven decision-making. This dashboard features a responsive layout and modular component architecture, ensuring seamless data visualization across all device types while maintaining strict type safety.",
+      techs: ["React .js", "TailwindCSS", "Typescript"],
+      link: "https://enigma-analytics.pxxl.click/",
+      label: "Front End",
     },
 
     {
@@ -80,25 +90,19 @@ function Portfolio() {
       <section className="flex-col">
         <div
           id="portfolio"
-          className=" cont my-9 flex flex-col items-center justify-center relative"
+          className=" mx-auto px-5 h-[60vh] my-9 flex flex-col items-center justify-center relative"
         >
           <h2 className=" abt-me text-[7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center">
             <a className="relative"> MY PORTFOLIO</a>
           </h2>
-          <p className="relative md:absolute text-[.9em] md:right-[2em] w-full px-5 md:px-0 md:w-125 tracking-widest opacity-90 md:bottom-[1.5em] capitalize italic text-center md:text-right mt-4 md:mt-0">
-            Have a cat walk on a hot stove and it will never walk on a hot
-            stove, it won't even walk on a cold stove.
-            <br />
-            <span className="text-secondary">- Anonymous</span>
-          </p>
         </div>
         <div
           id="port"
           className={` relative mt-[2em] w-full flex flex-row justify-center items-center mb-5`}
         >
           <div className="">
-            <div className="flex w-full justify-center">
-              <div className=" flex flex-row gap-2">
+            <div className="flex w-full justify-center items-stretch">
+              <div className=" flex flex-row gap-2 ">
                 {categories.map((category, index) => (
                   <button
                     onClick={() => {
@@ -113,7 +117,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-2 cont mt-[4em] items-stretch">
+            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-2 cont mt-[4em] ">
               {works.map((work, index) => (
                 <div
                   key={index}
