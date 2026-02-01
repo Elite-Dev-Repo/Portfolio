@@ -6,6 +6,7 @@ import tabbiebites from "../assets/tabbiebites.png";
 import enigma from "../assets/enigma.png";
 import rantsarena from "../assets/rantsarena.png";
 import dashboard from "../assets/dashboard.png";
+import beadchef from "../assets/beadchef.png";
 function Portfolio() {
   // const [show, setShow] = useState(false);
   const [filter, setFilter] = useState("");
@@ -27,8 +28,18 @@ function Portfolio() {
       label: "Full Stack",
     },
     {
+      image: beadchef,
+      title: "Beadchef",
+      description:
+        "A modern storefront interface for an artisanal bead brand. Built with a mobile-first approach, it features clean typography and smooth transitions to provide a premium shopping feel.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://beadchef.vercel.app/",
+      label: "Front End",
+    },
+
+    {
       image: dashboard,
-      title: "Dashboard",
+      title: "Enigma Analytics",
       description:
         "A high-performance analytics interface designed for data-driven decision-making. This dashboard features a responsive layout and modular component architecture, ensuring seamless data visualization across all device types while maintaining strict type safety.",
       techs: ["React .js", "TailwindCSS", "Typescript"],
