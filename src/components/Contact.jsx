@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 function Contact() {
   const contact = [
     {
@@ -35,12 +36,20 @@ function Contact() {
   return (
     <section id="contact" className="border-t-[1px] border-t-[#ffffff7a]">
       <div className="cont">
-        <h2 className="text-4xl font-bold max-sm:text-2xl max-sm:font-light text-center mt-5">
+        <motion.h2
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl font-bold max-sm:text-2xl max-sm:font-light text-center mt-5"
+        >
           Give me a message let's work together
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-3 md:grid-cols-3 gap-9">
           {contact.map((item, index) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 70 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
               key={index}
               className=" p-6 border border-transparent hover:border-black/40  transition-all rounded-lg flex flex-col justify-center items-center"
             >
@@ -53,7 +62,7 @@ function Contact() {
                 {item.icon}
               </a>
               <p className="text-center">{item.name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

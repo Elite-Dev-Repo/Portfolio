@@ -1,4 +1,5 @@
 import { Circle } from "lucide-react";
+import { motion } from "framer-motion";
 import React from "react";
 // import { useState } from "react";
 Circle;
@@ -48,15 +49,25 @@ function Qualifications() {
           id="qualifications"
           className=" relative mx-auto px-5 h-[60vh] my-9 flex flex-col items-center justify-center relative"
         >
-          <h2 className=" abt-me text-[7em] relative max-sm:text-[2.5em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: -70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className=" abt-me text-[7em] relative max-sm:text-[2.5em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center"
+          >
             <a className="relative"> QUALIFICATIONS</a>
-          </h2>
+          </motion.h2>
         </div>
         <div
           id="qual"
           className={` relative cont flex flex-col md:flex-row items-center justify-center gap-10 md:gap-0`}
         >
-          <div className="relative md:absolute md:left-[40%] md:bottom-[1em] flex flex-col items-center gap-6 w-full md:w-auto px-5 md:px-0">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="relative md:absolute md:left-[40%] md:bottom-[1em] flex flex-col items-center gap-6 w-full md:w-auto px-5 md:px-0"
+          >
             <h4 className="text-tertiary font-bold text-[12px]">
               {" "}
               TECHNOLOGIES I WORK WITH :
@@ -81,14 +92,17 @@ function Qualifications() {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
 
           <div className=" cont w-full">
             <div className="cont w-full">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full place-items-center">
                 {qual.map((qual) => {
                   return (
-                    <div
+                    <motion.div
+                      initial={{ opacity: 0, y: -100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5 }}
                       key={qual.duration}
                       className="flex flex-col items-center"
                     >
@@ -102,7 +116,7 @@ function Qualifications() {
                         {qual.place ? qual.place : ""}
                       </p>
                       <p className="text-secondary">{qual.duration}</p>
-                    </div>
+                    </motion.div>
                   );
                 })}
               </div>

@@ -1,4 +1,5 @@
 import { MoveDown, MoveDownIcon } from "lucide-react";
+import { motion } from "framer-motion";
 import React from "react";
 
 import Elite from "../assets/Elite.jpeg";
@@ -13,7 +14,12 @@ function About() {
           id="about"
           className={`about mt-[2em] cont max-sm:flex-col md:flex-col  max-md:flex-col w-full flex min-lg:flex-row block`}
         >
-          <div className="cont md:w-[100%] flex-1 w-full max-sm:py-5 max-sm:w-full ">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="cont md:w-[100%] flex-1 w-full max-sm:py-5 max-sm:w-full "
+          >
             <h4 className="text-2xl font-semibold opacity-95  text-start underline underline-offset-6">
               {" "}
               The Developer behind the screen.
@@ -49,11 +55,16 @@ function About() {
               sounds. I believe every project, like a good melody, should have a
               perfect rhythm.{" "}
             </p>
-          </div>
+          </motion.div>
 
-          <div className="img-cont cont md:w-[40%] flex-1 max-sm:w-full  md:w-full flex items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0, x: 120 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="img-cont cont md:w-[40%] flex-1 max-sm:w-full  md:w-full flex items-center justify-center"
+          >
             <img src={Elite} alt="" className="max-sm:w-full object-cover" />
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>

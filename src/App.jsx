@@ -23,15 +23,16 @@ app
   .use(
     Dot({
       size: 6,
-      color: "#000000",
+      color: "#222",
       hideOnShape: true,
     }),
   )
   .use(
     SmartRing({
       size: 30,
-      color: "#000000",
+      color: "#222",
       enableSkew: true,
+      enableScale: true,
     }),
   );
 // function TorchlightCursor() {

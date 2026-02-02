@@ -9,6 +9,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { motion } from "framer-motion";
 import StarfieldHero from "./StarFieldHero";
 import resume from "../assets/resume.pdf";
 
@@ -112,7 +113,12 @@ function Header() {
 
   return (
     <>
-      <nav className="max-w-screen w-fit mx-auto h-[60px] bg-white/20 border border-black/20 top-5 sticky z-5 backdrop-blur-[2px]">
+      <motion.nav
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-screen w-fit mx-auto h-[60px] bg-white/20 border border-black/20 top-5 sticky z-5 backdrop-blur-[2px]"
+      >
         <div className="px-5 flex justify-between items-center h-full max-sm:gap-2 gap-10 ">
           {navItems}
 
@@ -123,7 +129,7 @@ function Header() {
             </a>
           </div>
         </div>
-      </nav>
+      </motion.nav>
       <header className="text-tertiary relative overflow-hidden min-h-[screen] max-sm:min-h-[calc(100vh+10em)]  max-lg:min-h-[calc(100vh+10em)] ">
         <StarfieldHero />
 
@@ -136,16 +142,26 @@ function Header() {
               </h3>
             </div>
 
-            <h1 className="flex flex-col items-center md:absolute text-5xl md:text-[5em] md:left-1/2 md:-translate-x-1/2  font-semibold md:mt-[.4em] order-1 md:order-0 text-center w-full md:w-auto">
+            <motion.h1
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center md:absolute text-5xl md:text-[5em] md:left-1/2 md:-translate-x-1/2  font-semibold md:mt-[.4em] order-1 md:order-0 text-center w-full md:w-auto"
+            >
               <div className="bg-tertiary text-primary text-[25px] px-3 py-1">
                 I am
               </div>
               <div className="">
                 Oyenekan<span className="opacity-65"> Emmanuel</span>
               </div>
-            </h1>
+            </motion.h1>
 
-            <div className="list py-4 md:py-8 flex flex-col gap-4 relative md:absolute md:bottom-[8em] md:left-[2em] items-center md:items-start text-center md:text-left order-2 md:order-0 w-full md:w-auto px-4 md:px-0">
+            <motion.div
+              initial={{ opacity: 0, x: -120 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="list py-4 md:py-8 flex flex-col gap-4 relative md:absolute md:bottom-[8em] md:left-[2em] items-center md:items-start text-center md:text-left order-2 md:order-0 w-full md:w-auto px-4 md:px-0"
+            >
               <p className="text-tertiary sm:text-[.9rem] md:text-[1rem]">
                 Frontend Development, Backend Development, Wix Development.{" "}
                 <br /> SEO friendly websites, Modern and Responsive.
@@ -172,7 +188,7 @@ function Header() {
                   </a>
                 </button>
               </div>
-            </div>
+            </motion.div>
 
             <div className="trust py-4  md:py-8 flex flex-col gap-4 bottom-[7em] relative md:absolute max-lg:bottom-[-3em] md:right-[2em] items-center md:items-end order-3 md:order-0 w-full md:w-auto">
               <h3 className="text-center text-tertiary text-sm uppercase tracking-widest">

@@ -7,6 +7,8 @@ import enigma from "../assets/enigma.png";
 import rantsarena from "../assets/rantsarena.png";
 import dashboard from "../assets/dashboard.png";
 import beadchef from "../assets/beadchef.png";
+
+import { motion } from "framer-motion";
 function Portfolio() {
   // const [show, setShow] = useState(false);
   const [filter, setFilter] = useState("");
@@ -103,9 +105,14 @@ function Portfolio() {
           id="portfolio"
           className=" mx-auto px-5 h-[60vh] my-9 flex flex-col items-center justify-center relative"
         >
-          <h2 className=" abt-me text-[7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: -70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className=" abt-me text-[7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center"
+          >
             <a className="relative"> MY PORTFOLIO</a>
-          </h2>
+          </motion.h2>
         </div>
         <div
           id="port"
@@ -130,7 +137,10 @@ function Portfolio() {
 
             <div className=" grid grid-cols-1 lg:grid-cols-3 gap-2 cont mt-[4em] ">
               {works.map((work, index) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
                   key={index}
                   className={`h-fit border border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary ${filter === "" || filter === work.label ? "flex" : "hidden"}`}
                 >
@@ -190,7 +200,7 @@ function Portfolio() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
