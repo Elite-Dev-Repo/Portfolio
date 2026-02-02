@@ -7,6 +7,7 @@ import enigma from "../assets/enigma.png";
 import rantsarena from "../assets/rantsarena.png";
 import dashboard from "../assets/dashboard.png";
 import beadchef from "../assets/beadchef.png";
+import recipe from "../assets/recipe.png";
 
 import { motion } from "framer-motion";
 function Portfolio() {
@@ -77,6 +78,16 @@ function Portfolio() {
       techs: ["Vanilla Js", "Django", "PostgreSQL"],
       link: "https://chatapp-rdia.onrender.com/",
       label: "Full Stack",
+    },
+
+    {
+      image: recipe,
+      title: "Basic Recipes",
+      description:
+        "A dynamic front-end application built to fetch and display culinary data through a seamless interface.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://basicrecipe.netlify.app/",
+      label: "Front End",
     },
 
     {
