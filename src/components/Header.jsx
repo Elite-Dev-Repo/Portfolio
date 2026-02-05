@@ -182,7 +182,7 @@ function Header() {
                   <a
                     href="mailto:oyenekantomiwa2@gmail.com"
                     target="_blank"
-                    className="flex items-center gap-2 px-6 py-3 text-tertiary border border-tertiary"
+                    className="flex items-center gap-2 px-6 py-3 text-tertiary border border-tertiary shad"
                   >
                     Message Me <Send />
                   </a>
