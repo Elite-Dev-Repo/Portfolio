@@ -130,11 +130,11 @@ function Header() {
           </div>
         </div>
       </motion.nav>
-      <header className="text-tertiary relative overflow-hidden min-h-[screen] max-sm:min-h-[calc(100vh+10em)]  max-lg:min-h-[calc(100vh+10em)] ">
+      <header className="d-grid text-tertiary relative overflow-hidden min-h-[screen] max-sm:min-h-[calc(100vh+10em)]  max-lg:min-h-[calc(100vh+10em)] ">
         <StarfieldHero />
 
         <div className="px-5">
-          <main className="w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
+          <main className=" w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
             <div className="mt-8 max-sm:mt-0 md:mt-[5em] w-fit mx-auto flex items-center gap-2 px-3 py-1 border border-black/10 rounded-sm bg-black/5">
               <div className="w-2 h-2 rounded-full bg-[#383736] shadow-[0_0_8px_#383736] animate-pulse" />
               <h3 className="text-[13px] max-sm:text-[10px] uppercase tracking-[0.3em] font-mono text-black/50">

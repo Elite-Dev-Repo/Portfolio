@@ -8,15 +8,11 @@ import rantsarena from "../assets/rantsarena.png";
 import dashboard from "../assets/dashboard.png";
 import beadchef from "../assets/beadchef.png";
 import recipe from "../assets/recipe.png";
+import vesta from "../assets/vesta.png";
 
 import { motion } from "framer-motion";
 function Portfolio() {
-  // const [show, setShow] = useState(false);
   const [filter, setFilter] = useState("");
-
-  // function toggleShow() {
-  //   setShow((prev) => !prev);
-  // }
 
   const categories = ["All", "Full Stack", "Wix", "Front End"];
 
@@ -30,6 +26,17 @@ function Portfolio() {
       link: "https://enigma.pxxl.click/",
       label: "Full Stack",
     },
+
+    {
+      image: vesta,
+      title: "Vesta",
+      description:
+        "A forward-thinking Web3 interface designed for the next generation of decentralized finance. It features a high-performance landing page with a focus on connecting users to on-chain protocols through a secure, intuitive, and modern user experience.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://vesta.pxxl.click/",
+      label: "Front End",
+    },
+
     {
       image: beadchef,
       title: "Beadchef",
