@@ -9,8 +9,10 @@ import dashboard from "../assets/dashboard.png";
 import beadchef from "../assets/beadchef.png";
 import recipe from "../assets/recipe.png";
 import vesta from "../assets/vesta.png";
+import amanti from "../assets/amanti.png";
 
 import { motion } from "framer-motion";
+
 function Portfolio() {
   const [filter, setFilter] = useState("");
 
@@ -38,6 +40,15 @@ function Portfolio() {
     },
 
     {
+      image: amanti,
+      title: "Amanti",
+      description:
+        "A creative digital tool for generating heartfelt Valentine’s messages. This project features a responsive, mobile-first design that prioritizes ease of use and instant sharing, making it simple for anyone to create custom romantic notes on the fly.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://amanti-ai.vercel.app/",
+      label: "Front End",
+    },
+    {
       image: beadchef,
       title: "Beadchef",
       description:
@@ -46,27 +57,6 @@ function Portfolio() {
       link: "https://beadchef.vercel.app/",
       label: "Front End",
     },
-
-    {
-      image: dashboard,
-      title: "Enigma Analytics",
-      description:
-        "A high-performance analytics interface designed for data-driven decision-making. This dashboard features a responsive layout and modular component architecture, ensuring seamless data visualization across all device types while maintaining strict type safety.",
-      techs: ["React .js", "TailwindCSS", "Typescript"],
-      link: "https://enigma-analytics.pxxl.click/",
-      label: "Front End",
-    },
-
-    {
-      image: rantsarena,
-      title: "Rantsarena",
-      description:
-        "A dynamic social platform where users can share thoughts in real-time. Built with Supabase for instant data synchronization and secure authentication across a seamless UI.",
-      techs: ["TypeScript", "TailwindCSS", "Supabase"],
-      link: "https://rantsarena.pxxl.click/",
-      label: "Full Stack",
-    },
-
     {
       image: tabbiebites,
       title: "Tabbiebites",
@@ -76,7 +66,24 @@ function Portfolio() {
       link: "https://tabbiebites.pxxl.click/",
       label: "Front End",
     },
-
+    {
+      image: dashboard,
+      title: "Enigma Analytics",
+      description:
+        "A high-performance analytics interface designed for data-driven decision-making. This dashboard features a responsive layout and modular component architecture, ensuring seamless data visualization across all device types while maintaining strict type safety.",
+      techs: ["React .js", "TailwindCSS", "Typescript"],
+      link: "https://enigma-analytics.pxxl.click/",
+      label: "Front End",
+    },
+    {
+      image: rantsarena,
+      title: "Rantsarena",
+      description:
+        "A dynamic social platform where users can share thoughts in real-time. Built with Supabase for instant data synchronization and secure authentication across a seamless UI.",
+      techs: ["TypeScript", "TailwindCSS", "Supabase"],
+      link: "https://rantsarena.pxxl.click/",
+      label: "Full Stack",
+    },
     {
       image: weebschat,
       title: "Weebschat",
