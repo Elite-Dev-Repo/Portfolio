@@ -10,6 +10,7 @@ import beadchef from "../assets/beadchef.png";
 import recipe from "../assets/recipe.png";
 import vesta from "../assets/vesta.png";
 import amanti from "../assets/amanti.png";
+import soda from "../assets/soda.png";
 
 import { motion } from "framer-motion";
 
@@ -39,6 +40,15 @@ function Portfolio() {
       label: "Front End",
     },
 
+    {
+      image: soda,
+      title: "Soda Sphere",
+      description:
+        "A vibrant, immersive landing page for a fictional beverage brand. This project focuses on high-impact visual storytelling, utilizing bold typography and a crisp, refreshing UI to showcase product features and brand identity through a modern digital lens.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://soda-sphere.vercel.app/",
+      label: "Front End",
+    },
     {
       image: amanti,
       title: "Amanti",
