@@ -26,7 +26,7 @@ function Portfolio() {
       description:
         "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
       techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://enigma.pxxl.click/",
+      link: "https://www.enigma-agent.tech/",
       label: "Full Stack",
     },
 
