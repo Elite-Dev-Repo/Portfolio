@@ -135,12 +135,18 @@ function Header() {
 
         <div className="px-5">
           <main className=" w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
-            <div className="mt-8 max-sm:mt-0 md:mt-[5em] w-fit mx-auto flex items-center gap-2 px-3 py-1 border border-black/10 rounded-sm bg-black/5">
-              <div className="w-2 h-2 rounded-full bg-[#383736] shadow-[0_0_8px_#383736] animate-ping" />
-              <h3 className="text-[13px] max-sm:text-[10px] uppercase tracking-[0.3em] font-mono text-black/50">
+            <motion.div
+              variants={fadeInUp}
+              className="flex items-center gap-3 px-3 py-1 border border-foreground/20 bg-foreground/[0.03] rounded-full"
+            >
+              <div className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-foreground opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-foreground"></span>
+              </div>
+              <span className="font-mono text-[10px] tracking-widest uppercase font-bold px-2">
                 FullStack Website Developer
-              </h3>
-            </div>
+              </span>
+            </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, scale: 0 }}
@@ -155,7 +161,6 @@ function Header() {
                 Oyenekan<span className="opacity-65"> Emmanuel</span>
               </div>
             </motion.h1>
-
             <motion.div
               initial={{ opacity: 0, x: -120 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -189,7 +194,6 @@ function Header() {
                 </button>
               </div>
             </motion.div>
-
             <div className="trust py-4  md:py-8 flex flex-col gap-4 bottom-[7em] relative md:absolute max-lg:bottom-[-3em] md:right-[2em] items-center md:items-end order-3 md:order-0 w-full md:w-auto">
               <h3 className="text-center text-tertiary text-sm uppercase tracking-widest">
                 Trusted By Hundreds of People Worldwide.
@@ -226,7 +230,6 @@ function Header() {
                 }}
               />
             </div>
-
             <style
               dangerouslySetInnerHTML={{
                 __html: `
