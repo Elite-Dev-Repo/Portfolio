@@ -11,6 +11,7 @@ import recipe from "../assets/recipe.png";
 import vesta from "../assets/vesta.png";
 import amanti from "../assets/amanti.png";
 import soda from "../assets/soda.png";
+import unsent from "../assets/unsent.png";
 
 import { motion } from "framer-motion";
 
@@ -20,16 +21,6 @@ function Portfolio() {
   const categories = ["All", "Full Stack", "Wix", "Front End"];
 
   const works = [
-    {
-      image: enigma,
-      title: "Enigma | the action agent.",
-      description:
-        "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
-      techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://www.enigma-agent.tech/",
-      label: "Full Stack",
-    },
-
     {
       image: vesta,
       title: "Vesta",
@@ -49,6 +40,25 @@ function Portfolio() {
       link: "https://soda-sphere.vercel.app/",
       label: "Front End",
     },
+    {
+      image: unsent,
+      title: "Unsent.app",
+      description:
+        "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
+      techs: ["React .js", "TailwindCSS", "JavaScript", "Supabase"],
+      link: "https://unsent-app.pxxl.click/",
+      label: "Full Stack",
+    },
+    {
+      image: enigma,
+      title: "Enigma | the action agent.",
+      description:
+        "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://www.enigma-agent.tech/",
+      label: "Full Stack",
+    },
+
     {
       image: amanti,
       title: "Amanti",
@@ -94,15 +104,15 @@ function Portfolio() {
       link: "https://rantsarena.pxxl.click/",
       label: "Full Stack",
     },
-    {
-      image: weebschat,
-      title: "Weebschat",
-      description:
-        "A full-featured chat application built for community engagement. Utilizing Django and PostgreSQL, it handles real-time messaging and persistent user data with ease.",
-      techs: ["Vanilla Js", "Django", "PostgreSQL"],
-      link: "https://chatapp-rdia.onrender.com/",
-      label: "Full Stack",
-    },
+    // {
+    //   image: weebschat,
+    //   title: "Weebschat",
+    //   description:
+    //     "A full-featured chat application built for community engagement. Utilizing Django and PostgreSQL, it handles real-time messaging and persistent user data with ease.",
+    //   techs: ["Vanilla Js", "Django", "PostgreSQL"],
+    //   link: "https://chatapp-rdia.onrender.com/",
+    //   label: "Full Stack",
+    // },
 
     {
       image: recipe,
@@ -146,7 +156,7 @@ function Portfolio() {
             transition={{ duration: 0.5 }}
             className=" abt-me text-[7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center"
           >
-            <a className="relative"> MY PORTFOLIO</a>
+            <a className="relative"> MY PROJECTS</a>
           </motion.h2>
         </div>
         <div
