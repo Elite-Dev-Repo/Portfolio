@@ -183,8 +183,8 @@ function Portfolio() {
             <div className=" grid grid-cols-1 lg:grid-cols-3 gap-2 cont mt-[4em] ">
               {works.map((work, index) => (
                 <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ scale: 0.5 }}
+                  whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5 }}
                   key={index}
                   className={`h-fit border border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary ${filter === "" || filter === work.label ? "flex" : "hidden"}`}
@@ -209,7 +209,7 @@ function Portfolio() {
                         {work.techs.map((tech) => (
                           <p
                             key={tech}
-                            className=" bg-[#000] p-2 rounded-sm text-white text-[11px] max-sm:text-[11px] tracking-wide"
+                            className=" bg-[#000] flex items-center justify-center p-2 rounded-sm text-white text-[11px] max-sm:text-[11px] tracking-normal"
                           >
                             {tech}
                           </p>

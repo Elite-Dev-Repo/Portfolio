@@ -58,8 +58,8 @@ function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 120 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ filter: "blur(50px)" }}
+            whileInView={{ filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="img-cont cont md:w-[40%] flex-1 max-sm:w-full  md:w-full flex items-center justify-center"
           >
