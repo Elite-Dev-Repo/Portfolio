@@ -46,7 +46,7 @@ function Portfolio() {
       description:
         "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
       techs: ["React .js", "TailwindCSS", "JavaScript", "Supabase"],
-      link: "https://unsent-app.pxxl.click/",
+      link: "https://unsent-app-three.vercel.app/",
       label: "Full Stack",
     },
     {
@@ -205,7 +205,7 @@ function Portfolio() {
                       <p className=" text-sm font-extralight opacity-70  w-full mx-auto text-white line-clamp-3 ">
                         {work.description}
                       </p>
-                      <div className=" flex flex-row gap-2 p-5 ">
+                      <div className=" grid grid-cols-3 md:grid-cols-4 gap-2 p-5 ">
                         {work.techs.map((tech) => (
                           <p
                             key={tech}
