@@ -136,12 +136,14 @@ function Header() {
         <div className="px-5">
           <main className=" w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
             <motion.div
-              variants={fadeInUp}
-              className="flex items-center gap-3 px-3 py-1 border border-foreground/20 bg-foreground/[0.03] rounded-full"
+              initial={{ opacity: 0, x: -120 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className=" w-fit mx-auto  md:mt-15 flex items-center gap-3 px-3 py-1 border border-tertiary/20 bg-tertiary/[0.03] rounded-full"
             >
               <div className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-foreground opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-foreground"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
               </div>
               <span className="font-mono text-[10px] tracking-widest uppercase font-bold px-2">
                 FullStack Website Developer

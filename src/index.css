@@ -156,3 +156,8 @@ section {
 .abt-me:hover::before {
   width: 100%;
 }
+
+::selection {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
