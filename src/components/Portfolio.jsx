@@ -46,7 +46,7 @@ function Portfolio() {
       description:
         "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
       techs: ["React .js", "TailwindCSS", "JavaScript", "Supabase"],
-      link: "https://unsent-app-three.vercel.app/",
+      link: "https://unsent-ai.vercel.app/",
       label: "Full Stack",
     },
     {
