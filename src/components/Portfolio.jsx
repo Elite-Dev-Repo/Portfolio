@@ -1,7 +1,5 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { useState } from "react";
-import reactwind from "../assets/reactwind.png";
-import weebschat from "../assets/weebschat.png";
 import tabbiebites from "../assets/tabbiebites.png";
 import enigma from "../assets/enigma.png";
 import rantsarena from "../assets/rantsarena.png";
@@ -30,16 +28,6 @@ function Portfolio() {
       link: "https://vesta.pxxl.click/",
       label: "Front End",
     },
-
-    {
-      image: soda,
-      title: "Soda Sphere",
-      description:
-        "A vibrant, immersive landing page for a fictional beverage brand. This project focuses on high-impact visual storytelling, utilizing bold typography and a crisp, refreshing UI to showcase product features and brand identity through a modern digital lens.",
-      techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://soda-sphere.vercel.app/",
-      label: "Front End",
-    },
     {
       image: unsent,
       title: "Unsent.app",
@@ -49,6 +37,16 @@ function Portfolio() {
       link: "https://unsent-ai.vercel.app/",
       label: "Full Stack",
     },
+    {
+      image: soda,
+      title: "Soda Sphere",
+      description:
+        "A vibrant, immersive landing page for a fictional beverage brand. This project focuses on high-impact visual storytelling, utilizing bold typography and a crisp, refreshing UI to showcase product features and brand identity through a modern digital lens.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://soda-sphere.vercel.app/",
+      label: "Front End",
+    },
+
     {
       image: enigma,
       title: "Enigma | the action agent.",
@@ -123,16 +121,6 @@ function Portfolio() {
       link: "https://basicrecipe.netlify.app/",
       label: "Front End",
     },
-
-    {
-      image: reactwind,
-      title: "Reactwind",
-      description:
-        "A developer-centric utility tool or component library landing page. It emphasizes speed, utility-first styling, and modern React patterns for rapid UI development.",
-      techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://reactwind-two.vercel.app/",
-      label: "Front End",
-    },
   ];
   function filterProj(category) {
     if (category === "All") {
@@ -172,7 +160,7 @@ function Portfolio() {
                       filterProj(category);
                     }}
                     key={index}
-                    className=" bg-tertiary max-sm:text-[.8em] text-primary font-semibold px-5 py-2 text-[1em] hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
+                    className=" bg-tertiary max-sm:text-[.8em] text-primary font-semibold px-5 py-2 text-[1em] hover:bg-secondary hover:text-[var(--color-primary)] transition duration-300 ease-in-out"
                   >
                     {category}
                   </button>
@@ -180,36 +168,36 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-2 cont mt-[4em] ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 cont mt-[4em] ">
               {works.map((work, index) => (
                 <motion.div
                   initial={{ scale: 0.5 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5 }}
                   key={index}
-                  className={`h-fit border border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary ${filter === "" || filter === work.label ? "flex" : "hidden"}`}
+                  className={`h-fit border overflow-hidden  border-tertiary rounded-lg flex flex-col gap-2 bg-tertiary ${filter === "" || filter === work.label ? "flex" : "hidden"}`}
                 >
-                  <div className=" img-container relative">
+                  <div className="relative">
                     <img
-                      className=" w-[95%] rounded-lg mt-4 object-cover mx-auto"
+                      className="h-full  hover:scale-105 hover:opacity-70 transition duration-300 ease-in-out object-cover mx-auto"
                       src={work.image}
                       alt=""
                     />
                   </div>
-                  <div className="w-[95%] mx-auto flex flex-col gap-2">
-                    <h3 className=" text-[1.3em] capitalize font-semibold text-left tracking-wide text-white ">
+                  <div className="w-[95%] mx-auto flex flex-col  gap-3 px-3 py-2">
+                    <h3 className=" text-[1.3em] capitalize font-semibold text-left tracking-wide text-[var(--color-primary)] ">
                       {work.title}
                     </h3>
 
                     <div className="flex flex-col gap-2 items-center">
-                      <p className=" text-sm font-extralight opacity-70  w-full mx-auto text-white line-clamp-3 ">
+                      <p className=" text-sm font-extralight opacity-70  w-full mx-auto text-[var(--color-primary)] line-clamp-3 ">
                         {work.description}
                       </p>
                       <div className=" grid grid-cols-3 md:grid-cols-4 gap-2 p-5 ">
                         {work.techs.map((tech) => (
                           <p
                             key={tech}
-                            className=" bg-[#000] flex items-center justify-center p-2 rounded-sm text-white text-[11px] max-sm:text-[11px] tracking-normal"
+                            className=" bg-[#000] flex items-center justify-center p-2 rounded-sm text-[var(--color-primary)] text-[11px] max-sm:text-[11px] tracking-normal"
                           >
                             {tech}
                           </p>
@@ -218,29 +206,27 @@ function Portfolio() {
 
                       <div className="mb-4 flex w-full justify-between">
                         {" "}
-                        <button className="rounded-lg flex gap-2 items-center font-light bg-white text-tertiary px-3 py-1.5 text-[1em] hover:gap-3 transition duration-300 ease-in-out">
+                        <button className="rounded-md  text-md flex gap-2 items-center font-light bg-[var(--color-primary)] text-tertiary px-3 py-1.5 hover:bg-tertiary border hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition duration-300 ease-in-out">
                           <a
                             href={work.link}
                             target="_blank"
-                            className="text-sm"
+                            className="uppercase tracking-wide"
                           >
                             Visit Site{" "}
                           </a>
                           <span>
-                            <ArrowRight size={16} strokeWidth={1.3} />
+                            <ExternalLink size={18} strokeWidth={1.5} />
                           </span>
                         </button>{" "}
-                        <button className="rounded-lg flex gap-2 items-center font-light bg-transparent border border-primary/50 px-3 py-1.5 text-[1em] text-white transition duration-300 ease-in-out">
+                        <button className=" text-[var(--color-primary)] transition duration-300 ease-in-out">
                           <a
                             href={work.link}
                             target="_blank"
-                            className="text-sm"
+                            className="text-3xl"
                           >
-                            View Repo{" "}
+                            <i className="fa-brands fa-github"></i>
                           </a>
-                          <span className="font-extralight">
-                            <ExternalLink size={18} strokeWidth={1.5} />
-                          </span>
+                          <span className="font-extralight"></span>
                         </button>
                       </div>
                     </div>

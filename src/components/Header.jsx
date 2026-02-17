@@ -1,47 +1,46 @@
-import {
-  Rss,
-  House,
-  GraduationCap,
-  PhoneForwarded,
-  ScrollText,
-  Download,
-  Send,
-  Menu,
-  X,
-} from "lucide-react";
+import { Download, Send } from "lucide-react";
 import { motion } from "framer-motion";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  JavaScriptIcon,
+  CodeFolderIcon,
+  PythonIcon,
+  ShadcnSquareIcon,
+  ReactIcon,
+  HtmlFile01FreeIcons,
+} from "@hugeicons/core-free-icons";
 import StarfieldHero from "./StarFieldHero";
 import resume from "../assets/resume.pdf";
 
 function Header() {
-  // useEffect(() => {
-  //   alert("hello");
-  // }, []);
-
   const proof = [
     {
       name: "JavaScript",
-      icon: <i className="fa-brands fa-node-js"></i>,
+      icon: <HugeiconsIcon icon={JavaScriptIcon} size={24} strokeWidth={1.5} />,
     },
     {
       name: "React Js",
-      icon: <i className="fa-brands fa-react"></i>,
+      icon: <HugeiconsIcon icon={ReactIcon} size={24} strokeWidth={1.5} />,
     },
     {
       name: "Django",
-      icon: <i className="fa-brands fa-python"></i>,
+      icon: <HugeiconsIcon icon={PythonIcon} size={24} strokeWidth={1.5} />,
     },
     {
       name: "TypeScript",
-      icon: "",
+      icon: <HugeiconsIcon icon={CodeFolderIcon} size={24} strokeWidth={1.5} />,
     },
     {
-      name: "Wix",
-      icon: <i className="fa-brands fa-wix"></i>,
+      name: "Shadcn",
+      icon: (
+        <HugeiconsIcon icon={ShadcnSquareIcon} size={24} strokeWidth={1.5} />
+      ),
     },
     {
       name: "HTML/ CSS",
-      icon: <i className="fa-solid fa-code"></i>,
+      icon: (
+        <HugeiconsIcon icon={HtmlFile01FreeIcons} size={24} strokeWidth={1.5} />
+      ),
     },
   ];
 
@@ -51,85 +50,13 @@ function Header() {
         key={proof.name}
         className="text-[15px] flex items-center gap-3 text-tertiary"
       >
-        <span className="text-3xl text-tertiary opacity-90">
-          {proof.icon ? proof.icon : <i className="fa-solid fa-code"></i>}
-        </span>{" "}
-        {proof.name}
+        <span className="text-3xl ">{proof.icon}</span> {proof.name}
       </p>
-    );
-  });
-
-  // const socialList = [
-  //   {
-  //     name: "Twitter",
-  //     link: `https://x.com/elite_developer`,
-  //     icon: <i class="fa-brands fa-x-twitter"></i>,
-  //   },
-  //   {
-  //     name: "LinkedIn",
-  //     link: `https://x.com/elite_developer`,
-  //     icon: <i class="fa-brands fa-linkedin"></i>,
-  //   },
-
-  //   {
-  //     name: "Tiktok",
-  //     link: `https://x.com/elite_developer`,
-  //     icon: <i class="fa-brands fa-tiktok"></i>,
-  //   },
-
-  //   {
-  //     name: "Instagram",
-  //     link: `https://x.com/elite_developer`,
-  //     icon: <i class="fa-brands fa-instagram"></i>,
-  //   },
-  // ];
-
-  const navLinks = [
-    {
-      name: "About",
-      icon: <ScrollText />,
-    },
-    {
-      name: "Qualifications",
-      icon: <GraduationCap />,
-    },
-    {
-      name: "Contact",
-      icon: <PhoneForwarded />,
-    },
-  ];
-  const navItems = navLinks.map((link) => {
-    return (
-      <li className="border-r border-black/30 pr-5" key={link.name}>
-        <a
-          href={`#${link.name.toLowerCase()}`}
-          className="nav-link max-sm:text-[12px] text-tertiary hover:text-secondary transition"
-        >
-          {link.name}
-        </a>
-      </li>
     );
   });
 
   return (
     <>
-      <motion.nav
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-screen w-fit mx-auto h-[60px] bg-white/20 border border-black/20 top-5 sticky z-5 backdrop-blur-[2px]"
-      >
-        <div className="px-5 flex justify-between items-center h-full max-sm:gap-2 gap-10 ">
-          {navItems}
-
-          <div className="text-3xl">
-            {" "}
-            <a href="https://github.com/Elite-Dev-Repo" target="_blank">
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </div>
-        </div>
-      </motion.nav>
       <header className="d-grid text-tertiary relative overflow-hidden min-h-[screen] max-sm:min-h-[calc(100vh+10em)]  max-lg:min-h-[calc(100vh+10em)] ">
         <StarfieldHero />
 
@@ -145,7 +72,7 @@ function Header() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
               </div>
-              <span className="font-mono text-[10px] tracking-widest uppercase font-bold px-2">
+              <span className="font-light text-[12px] tracking-widest uppercase  px-3">
                 FullStack Website Developer
               </span>
             </motion.div>
@@ -197,8 +124,8 @@ function Header() {
               </div>
             </motion.div>
             <div className="trust py-4  md:py-8 flex flex-col gap-4 bottom-[7em] relative md:absolute max-lg:bottom-[-3em] md:right-[2em] items-center md:items-end order-3 md:order-0 w-full md:w-auto">
-              <h3 className="text-center text-tertiary text-sm uppercase tracking-widest">
-                Trusted By Hundreds of People Worldwide.
+              <h3 className="mr-45 text-tertiary text-md uppercase tracking-widest">
+                My TechStack.
               </h3>
 
               {/* Marquee Wrapper */}

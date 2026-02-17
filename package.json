@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hugeicons/core-free-icons": "^3.1.1",
+    "@hugeicons/react": "^1.1.5",
     "@supermousejs/core": "^2.0.4",
     "@supermousejs/dot": "^2.1.0",
     "@supermousejs/labs": "^2.1.0",

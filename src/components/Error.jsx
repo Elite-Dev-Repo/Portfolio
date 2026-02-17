@@ -44,7 +44,7 @@ function Error() {
           }}
           className={`z-10001 absolute top-[1.2em] right-[2em] fa-${
             on ? "solid" : "regular"
-          } fa-lightbulb ${!on ? "text-[#fff7]" : "text-white"}`}
+          } fa-lightbulb ${!on ? "text-[#fff7]" : "text-[var(--color-primary)]"}`}
         ></i>
 
         {/* Bulb dot */}
@@ -54,7 +54,7 @@ function Error() {
             left: `${position.x}px`,
             top: `${position.y}px`,
             transform: "translate(-50%, -50%)",
-            boxShadow: "0 0 20px 5px white",
+            boxShadow: "0 0 20px 5px [var(--color-primary)]",
           }}
         />
       </>

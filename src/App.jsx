@@ -6,6 +6,7 @@ import Contact from "./components/Contact.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Qualifications from "./components/Qualifications.jsx";
 import Footer from "./components/Footer.jsx";
+import Nav from "./components/Nav.jsx";
 
 // Supermouse imports
 import { Supermouse } from "@supermousejs/core";
@@ -22,22 +23,20 @@ function App() {
 
     app
       .use(Stick({ padding: 15 }))
-      .use(Dot({ size: 6, color: "#222", hideOnShape: true }))
+      .use(Dot({ size: 6, color: "#333", hideOnShape: true }))
       .use(
         SmartRing({
           size: 30,
-          color: "#222",
+          color: "#333",
           enableSkew: true,
           enableScale: true,
         }),
       );
-
-    // Optional: Cleanup if the library supports it to prevent memory leaks
-    // return () => app.destroy();
   }, []);
 
   return (
     <>
+      <Nav />
       <Header />
 
       <motion.div

@@ -36,12 +36,6 @@ function Qualifications() {
     },
   ];
 
-  // const [show, setShow] = useState(false);
-
-  // function toggleShow() {
-  //   setShow((prev) => !prev);
-  // }
-
   return (
     <div>
       <section className="flex-col">
@@ -62,6 +56,30 @@ function Qualifications() {
           id="qual"
           className={` relative cont flex flex-col md:flex-row items-center justify-center gap-10 md:gap-0`}
         >
+          <div className=" cont w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full place-items-center">
+              {qual.map((qual) => {
+                return (
+                  <motion.div
+                    initial={{ opacity: 0, y: -100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    key={qual.duration}
+                    className="flex flex-col items-center"
+                  >
+                    <h5 key={qual.place} className="text-tertiary text-center">
+                      {qual.position}
+                    </h5>
+                    <p className="opacity-85 text-tertiary text-center">
+                      {qual.place ? qual.place : ""}
+                    </p>
+                    <p className="text-secondary">{qual.duration}</p>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -93,35 +111,6 @@ function Qualifications() {
               })}
             </div>
           </motion.div>
-
-          <div className=" cont w-full">
-            <div className="cont w-full">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full place-items-center">
-                {qual.map((qual) => {
-                  return (
-                    <motion.div
-                      initial={{ opacity: 0, y: -100 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5 }}
-                      key={qual.duration}
-                      className="flex flex-col items-center"
-                    >
-                      <h5
-                        key={qual.place}
-                        className="text-tertiary text-center"
-                      >
-                        {qual.position}
-                      </h5>
-                      <p className="opacity-85 text-tertiary text-center">
-                        {qual.place ? qual.place : ""}
-                      </p>
-                      <p className="text-secondary">{qual.duration}</p>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>
