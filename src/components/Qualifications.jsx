@@ -41,7 +41,7 @@ function Qualifications() {
       <section className="flex-col">
         <div
           id="qualifications"
-          className=" relative mx-auto px-5 h-[60vh] my-9 flex flex-col items-center justify-center relative"
+          className=" relative mx-auto px-5 max-h-[60vh] my-9 flex flex-col items-center justify-center relative"
         >
           <motion.h2
             initial={{ opacity: 0, y: -70 }}
