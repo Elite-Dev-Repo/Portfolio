@@ -27,6 +27,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://vesta.pxxl.click/",
       label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/Vesta.git",
     },
     {
       image: unsent,
@@ -36,6 +37,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript", "Supabase"],
       link: "https://unsent-ai.vercel.app/",
       label: "Full Stack",
+      git: "https://github.com/Elite-Dev-Repo/Unsent.git",
     },
     {
       image: soda,
@@ -45,6 +47,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://soda-sphere.vercel.app/",
       label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/soda-sphere.git",
     },
 
     {
@@ -55,6 +58,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://www.enigma-agent.tech/",
       label: "Full Stack",
+      git: "https://github.com/Elite-Dev-Repo/Enigma.git",
     },
 
     {
@@ -65,6 +69,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://amanti-ai.vercel.app/",
       label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/Amanti.git",
     },
     {
       image: beadchef,
@@ -74,6 +79,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://beadchef.vercel.app/",
       label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/Beady.git",
     },
     {
       image: tabbiebites,
@@ -83,6 +89,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://tabbiebites.pxxl.click/",
       label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/TabbieBites.git",
     },
     {
       image: dashboard,
@@ -92,6 +99,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "Typescript"],
       link: "https://enigma-analytics.pxxl.click/",
       label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/EnigmaDashboard.git",
     },
     {
       image: rantsarena,
@@ -101,6 +109,7 @@ function Portfolio() {
       techs: ["TypeScript", "TailwindCSS", "Supabase"],
       link: "https://rantsarena.pxxl.click/",
       label: "Full Stack",
+      git: "https://github.com/Elite-Dev-Repo/Rants.git",
     },
     // {
     //   image: weebschat,
@@ -120,6 +129,7 @@ function Portfolio() {
       techs: ["React .js", "TailwindCSS", "JavaScript"],
       link: "https://basicrecipe.netlify.app/",
       label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/Recipe.git",
     },
   ];
   function filterProj(category) {
@@ -220,7 +230,7 @@ function Portfolio() {
                         </button>{" "}
                         <button className=" text-[var(--color-primary)] transition duration-300 ease-in-out">
                           <a
-                            href={work.link}
+                            href={work.git}
                             target="_blank"
                             className="text-3xl"
                           >
