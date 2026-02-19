@@ -10,6 +10,7 @@ import vesta from "../assets/vesta.png";
 import amanti from "../assets/amanti.png";
 import soda from "../assets/soda.png";
 import unsent from "../assets/unsent.png";
+import velocargo from "../assets/velocargo.png";
 
 import { motion } from "framer-motion";
 
@@ -70,6 +71,16 @@ function Portfolio() {
       link: "https://amanti-ai.vercel.app/",
       label: "Front End",
       git: "https://github.com/Elite-Dev-Repo/Amanti.git",
+    },
+    {
+      image: velocargo,
+      title: "VeloCargo - Global Logistics Solutions",
+      description:
+        "A high-performance logistics platform designed for seamless supply chain management. Features real-time tracking, mobile-responsive, and optimized delivery workflows.",
+      techs: ["React.js", "TailwindCSS", "JavaScript"],
+      link: "https://velo-cargo.vercel.app/",
+      label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/VeloCargo",
     },
     {
       image: beadchef,
