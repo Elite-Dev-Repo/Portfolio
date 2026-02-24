@@ -11,7 +11,7 @@ import amanti from "../assets/amanti.png";
 import soda from "../assets/soda.png";
 import unsent from "../assets/unsent.png";
 import velocargo from "../assets/velocargo.png";
-import child from "../assets/child.png";
+import child from "../assets/tchild.png";
 
 import { motion } from "framer-motion";
 
