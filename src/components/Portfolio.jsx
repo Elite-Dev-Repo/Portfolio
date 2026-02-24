@@ -11,6 +11,7 @@ import amanti from "../assets/amanti.png";
 import soda from "../assets/soda.png";
 import unsent from "../assets/unsent.png";
 import velocargo from "../assets/velocargo.png";
+import child from "../assets/child.png";
 
 import { motion } from "framer-motion";
 
@@ -71,6 +72,16 @@ function Portfolio() {
       link: "https://amanti-ai.vercel.app/",
       label: "Front End",
       git: "https://github.com/Elite-Dev-Repo/Amanti.git",
+    },
+    {
+      image: child,
+      title: "The Better Child",
+      description:
+        "A sophisticated educational foundation platform built with a focus on immersive UX. It features complex Framer Motion orchestrations, a custom-built responsive navigation system, and a high-performance image gallery, all styled with a mobile-first approach using TailwindCSS.",
+      techs: ["React.js", "TailwindCSS", "Framer Motion", "ShadcnUI"],
+      link: "https://thebetterchild.vercel.app/",
+      label: "Front End",
+      git: "https://github.com/Elite-Dev-Repo/thebetterchild.git",
     },
     {
       image: velocargo,
