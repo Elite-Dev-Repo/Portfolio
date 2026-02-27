@@ -1,18 +1,15 @@
-import { Circle } from "lucide-react";
-import { motion } from "framer-motion";
 import React from "react";
-// import { useState } from "react";
-Circle;
+import { motion } from "framer-motion";
+import {
+  JavaScriptIcon,
+  Typescript01Icon,
+  ReactIcon,
+  TailwindcssIcon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Database, Layers, Globe, Code2, Circle } from "lucide-react";
 
 function Qualifications() {
-  const techs = [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Wix",
-    "Node .js",
-    "Django",
-  ];
   const qual = [
     {
       position: "B.A, Philosophy",
@@ -36,80 +33,115 @@ function Qualifications() {
     },
   ];
 
+  // Tech stack data
+  // Using Hugeicons where available, Lucide components as fallbacks
+  const techData = [
+    { name: "JavaScript", huge: JavaScriptIcon },
+    { name: "TypeScript", huge: Typescript01Icon },
+    { name: "React", huge: ReactIcon },
+    { name: "Wix", lucide: Globe },
+    { name: "Django", lucide: Code2 },
+    { name: "TailwindCSS", huge: TailwindcssIcon },
+    { name: "Supabase", lucide: Database },
+    { name: "ShadcnUI", lucide: Layers },
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.9, y: 10 },
+    visible: { opacity: 1, scale: 1, y: 0 },
+  };
+
   return (
-    <div>
-      <section className="flex-col">
+    <div className="py-20 bg-background text-tertiary">
+      {/* Qualifications Section */}
+      <section className="flex flex-col mb-32">
         <div
           id="qualifications"
-          className=" relative mx-auto px-5 max-h-[60vh] my-9 flex flex-col items-center justify-center relative"
+          className="relative mx-auto px-5 my-9 flex flex-col items-center"
         >
           <motion.h2
             initial={{ opacity: 0, y: -70 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className=" abt-me text-[7em] relative max-sm:text-[2.5em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center"
+            className="text-[7em] max-sm:text-[2.5em] max-lg:text-[6em] uppercase font-semibold text-center leading-none"
           >
-            <a className="relative"> QUALIFICATIONS</a>
+            Qualifications
           </motion.h2>
         </div>
-        <div
-          id="qual"
-          className={` relative cont flex flex-col md:flex-row items-center justify-center gap-10 md:gap-0`}
-        >
-          <div className=" cont w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full place-items-center">
-              {qual.map((qual) => {
-                return (
-                  <motion.div
-                    initial={{ opacity: 0, y: -100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    key={qual.duration}
-                    className="flex flex-col items-center"
-                  >
-                    <h5 key={qual.place} className="text-tertiary text-center">
-                      {qual.position}
-                    </h5>
-                    <p className="opacity-85 text-tertiary text-center">
-                      {qual.place ? qual.place : ""}
-                    </p>
-                    <p className="text-secondary">{qual.duration}</p>
-                  </motion.div>
-                );
-              })}
-            </div>
+
+        <div className="w-full max-w-6xl mx-auto px-5 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center">
+            {qual.map((item, index) => (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                key={index}
+                className="flex flex-col items-center"
+              >
+                <h5 className="text-xl font-medium text-center">
+                  {item.position}
+                </h5>
+                <p className="opacity-70 text-center">{item.place || ""}</p>
+                <p className="text-secondary font-mono mt-2">{item.duration}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tech Stack Section */}
+      <section id="tech-stack" className="flex flex-col items-center px-5">
+        <div className="w-full max-w-5xl">
+          <div className="flex flex-col items-center gap-3 mb-16">
+            <h4 className="font-bold text-md tracking-[0.4em] uppercase opacity-50 text-secondary">
+              Tech Stack
+            </h4>
+            <div className="h-[1px] w-12 bg-secondary" />
           </div>
 
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="relative md:absolute md:left-[40%] md:bottom-[1em] flex flex-col items-center gap-6 w-full md:w-auto px-5 md:px-0"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
           >
-            <h4 className="text-tertiary font-bold text-[12px]">
-              {" "}
-              TECHNOLOGIES I WORK WITH :
-            </h4>
+            {techData.map((tech) => (
+              <motion.div
+                variants={itemVariants}
+                key={tech.name}
+                className="group relative aspect-square flex flex-col items-center justify-center gap-4 border border-tertiary/10 rounded-2xl bg-tertiary/[0.01] hover:bg-tertiary/[0.03] hover:border-secondary/40 transition-all duration-300 ease-out"
+              >
+                <div className="text-tertiary group-hover:text-secondary group-hover:scale-110 transition-all duration-300">
+                  {tech.huge ? (
+                    <HugeiconsIcon icon={tech.huge} size={40} />
+                  ) : (
+                    <tech.lucide size={40} strokeWidth={1.5} />
+                  )}
+                </div>
 
-            <div className="grid grid-cols-2 gap-5">
-              {techs.map((tech) => {
-                return (
-                  <div className="" key={tech}>
-                    <p className="text-[15px] flex items-center gap-2 text-tertiary">
-                      {" "}
-                      <span>
-                        <Circle
-                          size={10}
-                          strokeWidth={3}
-                          className="text-secondary"
-                        />
-                      </span>{" "}
-                      {tech}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+                <p className="text-[11px] tracking-[0.2em] uppercase font-bold opacity-40 group-hover:opacity-100 group-hover:text-secondary transition-all">
+                  {tech.name}
+                </p>
+
+                {/* Corner Dot decoration */}
+                <div className="absolute top-3 right-3">
+                  <Circle
+                    size={4}
+                    className="fill-secondary text-secondary opacity-0 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
