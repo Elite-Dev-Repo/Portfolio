@@ -9,7 +9,7 @@ const Nav = () => {
       icon: <ScrollText />,
     },
     {
-      name: "Qualifications",
+      name: "Projects",
       icon: <GraduationCap />,
     },
     {

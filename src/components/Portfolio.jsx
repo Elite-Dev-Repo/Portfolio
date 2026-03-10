@@ -12,13 +12,14 @@ import soda from "../assets/soda.png";
 import unsent from "../assets/unsent.png";
 import velocargo from "../assets/velocargo.png";
 import child from "../assets/tchild.png";
+import offertrail from "../assets/offertrail.png";
 
 import { motion } from "framer-motion";
 
 function Portfolio() {
   const [filter, setFilter] = useState("");
 
-  const categories = ["All", "Full Stack", "Wix", "Front End"];
+  const categories = ["All", "Full Stack", "Front End"];
 
   const works = [
     {
@@ -32,14 +33,34 @@ function Portfolio() {
       git: "https://github.com/Elite-Dev-Repo/Vesta.git",
     },
     {
+      image: offertrail,
+      title: "OfferTrail",
+      description:
+        "A comprehensive job application tracker designed to streamline the career search process. It features a robust Django REST API, real-time status filtering, and a modern dashboard built with TailwindCSS to help developers manage their professional opportunities efficiently.",
+      techs: ["React.js", "TailwindCSS", "Django", "PostgreSQL"],
+      link: "https://offer-trail.vercel.app/",
+      label: "Full Stack",
+      git: "https://github.com/Elite-Dev-Repo",
+    },
+    {
       image: unsent,
       title: "Unsent.app",
       description:
         "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
-      techs: ["React .js", "TailwindCSS", "JavaScript", "Supabase"],
+      techs: ["React .js", "TailwindCSS", "Supabase"],
       link: "https://unsent-ai.vercel.app/",
       label: "Full Stack",
       git: "https://github.com/Elite-Dev-Repo/Unsent.git",
+    },
+    {
+      image: enigma,
+      title: "Enigma | the action agent.",
+      description:
+        "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
+      techs: ["React .js", "TailwindCSS", "JavaScript"],
+      link: "https://www.enigma-agent.tech/",
+      label: "Full Stack",
+      git: "https://github.com/Elite-Dev-Repo/Enigma.git",
     },
     {
       image: soda,
@@ -50,17 +71,6 @@ function Portfolio() {
       link: "https://soda-sphere.vercel.app/",
       label: "Front End",
       git: "https://github.com/Elite-Dev-Repo/soda-sphere.git",
-    },
-
-    {
-      image: enigma,
-      title: "Enigma | the action agent.",
-      description:
-        "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
-      techs: ["React .js", "TailwindCSS", "JavaScript"],
-      link: "https://www.enigma-agent.tech/",
-      label: "Full Stack",
-      git: "https://github.com/Elite-Dev-Repo/Enigma.git",
     },
 
     {
@@ -78,7 +88,7 @@ function Portfolio() {
       title: "The Better Child",
       description:
         "A sophisticated educational foundation platform built with a focus on immersive UX. It features complex Framer Motion orchestrations, a custom-built responsive navigation system, and a high-performance image gallery, all styled with a mobile-first approach using TailwindCSS.",
-      techs: ["React.js", "TailwindCSS", "Framer Motion", "ShadcnUI"],
+      techs: ["React.js", "TailwindCSS", "ShadcnUI"],
       link: "https://thebetterchild.vercel.app/",
       label: "Front End",
       git: "https://github.com/Elite-Dev-Repo/thebetterchild.git",
@@ -167,7 +177,7 @@ function Portfolio() {
     <div>
       <section className="flex-col">
         <div
-          id="portfolio"
+          id="projects"
           className=" mx-auto px-5 max-h-[60vh] my-9 flex flex-col items-center justify-center relative"
         >
           <motion.h2
@@ -216,8 +226,8 @@ function Portfolio() {
                       alt=""
                     />
                   </div>
-                  <div className="w-[95%] mx-auto flex flex-col  gap-3 px-3 py-2">
-                    <h3 className=" text-[1.3em] capitalize font-semibold text-left tracking-wide text-[var(--color-primary)] ">
+                  <div className="w-[95%] mx-auto flex flex-col  gap-3 px-3 py-2 ">
+                    <h3 className=" text-[1.3em] capitalize font-semibold text-left tracking-wide line-clamp-1 text-[var(--color-primary)] ">
                       {work.title}
                     </h3>
 
@@ -225,7 +235,7 @@ function Portfolio() {
                       <p className=" text-sm font-extralight opacity-70  w-full mx-auto text-[var(--color-primary)] line-clamp-3 ">
                         {work.description}
                       </p>
-                      <div className=" grid grid-cols-3 md:grid-cols-4 gap-2 p-5 ">
+                      <div className=" flex flex gap-2 p-5 flex-wrap ">
                         {work.techs.map((tech) => (
                           <p
                             key={tech}

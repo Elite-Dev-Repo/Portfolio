@@ -24,7 +24,7 @@ function About() {
               The Developer behind the screen.
             </h4>
 
-            <p className="leading-7 tracking-wide text-[15px] mt-4">
+            <p className="leading-7 tracking-wide text-[19px]">
               <span className="text-4xl font-light">I</span>’m{" "}
               <span className="text-[var(--color-secondary)]">
                 Oyenekan Emmanuel
@@ -39,21 +39,14 @@ function About() {
               using
               <span className="text-[var(--color-secondary)]">
                 {" "}
-                React, TypeScript, and Django
+                React, TypeScript, and Django{" "}
               </span>
-              .
-            </p>
-
-            <p className="leading-7 tracking-wide text-[15px] mt-4">
               From high-converting e-commerce stores to intricate UI/UX
               projects, I focus on turning complex problems into elegant,
-              functional code. Whether I'm scaling robust applications or
-              deploying rapid solutions, I ensure every build is polished and
-              performant.
-            </p>
-
-            <p className="leading-7 tracking-wide text-[15px] mt-4">
-              When I’m not coding, you’ll find me over a{" "}
+              functional code.
+              <br /> Whether I'm scaling robust applications or deploying rapid
+              solutions, I ensure every build is polished and performant. When
+              I’m not coding, you’ll find me over a{" "}
               <span className="italic">chess board</span> or discovering new
               music—pursuits that keep my logic sharp and my creativity in
               rhythm.
@@ -64,7 +57,7 @@ function About() {
             initial={{ filter: "blur(50px)" }}
             whileInView={{ filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
-            className="img-cont cont md:w-[40%] flex-1 max-sm:w-full  md:w-full flex items-center justify-center"
+            className="img-cont cont md:w-[40%] flex-1 max-sm:w-full md:w-full flex items-center justify-center"
           >
             <img src={Elite} alt="" className="max-sm:w-full object-cover" />
           </motion.div>
