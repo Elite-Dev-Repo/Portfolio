@@ -13,6 +13,7 @@ import unsent from "../assets/unsent.png";
 import velocargo from "../assets/velocargo.png";
 import child from "../assets/tchild.png";
 import offertrail from "../assets/offertrail.png";
+import learnstack from "../assets/learnstack.png";
 
 import { motion } from "framer-motion";
 
@@ -22,6 +23,16 @@ function Portfolio() {
   const categories = ["All", "Full Stack", "Front End"];
 
   const works = [
+    {
+      image: learnstack,
+      title: "LearnStack",
+      description:
+        "A community-driven platform for discovering and sharing the most helpful YouTube tutorials. Users can explore curated content, bookmark valuable videos, and contribute tutorials to help others learn faster.",
+      techs: ["React.js", "TailwindCSS", "JavaScript", "Django", "SQLite"],
+      link: "https://learnstackr.vercel.app/",
+      label: "FullStack",
+      git: "https://github.com/Elite-Dev-Repo/",
+    },
     {
       image: vesta,
       title: "Vesta",
@@ -186,7 +197,10 @@ function Portfolio() {
             transition={{ duration: 0.5 }}
             className=" abt-me text-[7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center"
           >
-            <a className="relative"> MY PROJECTS</a>
+            <a className="relative text-transparent [text-stroke:1px_black] [-webkit-text-stroke:1px_black]">
+              {" "}
+              MY PROJECTS
+            </a>
           </motion.h2>
         </div>
         <div

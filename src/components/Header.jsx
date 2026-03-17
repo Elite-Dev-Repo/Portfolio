@@ -87,7 +87,7 @@ function Header() {
                 I am
               </div>
               <div className="">
-                Oyenekan<span className="opacity-65"> Emmanuel</span>
+                Oyenekan<span className="opacity-65 "> Emmanuel</span>
               </div>
             </motion.h1>
             <motion.div
