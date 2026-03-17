@@ -28,7 +28,7 @@ function Portfolio() {
       title: "LearnStack",
       description:
         "A community-driven platform for discovering and sharing the most helpful YouTube tutorials. Users can explore curated content, bookmark valuable videos, and contribute tutorials to help others learn faster.",
-      techs: ["React.js", "TailwindCSS", "JavaScript", "Django", "SQLite"],
+      techs: ["React.js", "TailwindCSS", "Django", "SQLite"],
       link: "https://learnstackr.vercel.app/",
       label: "FullStack",
       git: "https://github.com/Elite-Dev-Repo/",
@@ -253,7 +253,7 @@ function Portfolio() {
                         {work.techs.map((tech) => (
                           <p
                             key={tech}
-                            className=" bg-[#000] flex items-center justify-center p-2 rounded-sm text-[var(--color-primary)] text-[11px] max-sm:text-[11px] tracking-normal"
+                            className=" bg-[#000] flex items-center line-clamp-1 justify-center p-2 rounded-sm text-[var(--color-primary)] text-[11px] max-sm:text-[11px] tracking-normal"
                           >
                             {tech}
                           </p>
