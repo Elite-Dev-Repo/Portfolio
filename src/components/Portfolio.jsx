@@ -30,7 +30,7 @@ function Portfolio() {
             initial={{ opacity: 0, y: -70 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className=" abt-me text-[7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center"
+            className=" abt-me text-[6.7em] relative max-sm:text-[2.8em] max-lg:text-[6em] uppercase font-semibold text-tertiary text-center"
           >
             <a className="relative"> MY PROJECTS</a>
           </motion.h2>
