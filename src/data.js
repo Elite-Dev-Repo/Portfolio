@@ -22,7 +22,7 @@ const works = [
       "A community-driven platform for discovering and sharing the most helpful YouTube tutorials. Users can explore curated content, bookmark valuable videos, and contribute tutorials to help others learn faster.",
     techs: ["React.js", "TailwindCSS", "Django", "SQLite"],
     link: "https://learnstackr.vercel.app/",
-    label: "FullStack",
+    label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo/",
     howIMadeIt:
       "The core challenge was organizing a vast library of external video content into a coherent, searchable database. I built a Django REST Framework backend to handle the CRUD operations for tutorials and user bookmarks. On the frontend, I utilized React's state management to provide real-time filtering without additional API hits. I chose TailwindCSS to build a custom 'grid-card' layout that scales perfectly from mobile to ultra-wide displays, ensuring the content remains the hero of the page.",
