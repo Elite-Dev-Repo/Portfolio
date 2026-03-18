@@ -21,7 +21,7 @@ const Nav = () => {
     return (
       <li className="border-r border-black/30 pr-5" key={link.name}>
         <a
-          href={`#${link.name.toLowerCase()}`}
+          href={`/#${link.name.toLowerCase()}`}
           className="nav-link max-sm:text-[12px] text-tertiary hover:text-secondary transition"
         >
           {link.name}
