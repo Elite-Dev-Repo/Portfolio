@@ -22,10 +22,10 @@ const works = [
       "A community-driven platform for discovering and sharing the most helpful YouTube tutorials. Users can explore curated content, bookmark valuable videos, and contribute tutorials to help others learn faster.",
     techs: ["React.js", "TailwindCSS", "Django", "SQLite"],
     link: "https://learnstackr.vercel.app/",
-    label: "Full Stack",
+    label: "FullStack",
     git: "https://github.com/Elite-Dev-Repo/",
     howIMadeIt:
-      "The core challenge was organizing a vast library of external video content into a coherent, searchable database. I built a Django REST Framework backend to handle the CRUD operations for tutorials and user bookmarks. On the frontend, I utilized React's state management to provide real-time filtering without additional API hits. I chose TailwindCSS to build a custom 'grid-card' layout that scales perfectly from mobile to ultra-wide displays, ensuring the content remains the hero of the page.",
+      "Built with a Django REST Framework backend to manage the video repository and a React frontend for smooth discovery. I implemented a custom filtering logic to categorize tutorials and used SQLite for a lightweight, efficient data store during the initial rollout.",
   },
   {
     id: "vesta",
@@ -38,7 +38,7 @@ const works = [
     label: "Front End",
     git: "https://github.com/Elite-Dev-Repo/Vesta.git",
     howIMadeIt:
-      "For Vesta, the goal was to communicate 'trust' and 'innovation' through UI. I implemented a sophisticated glassmorphism effect using Tailwind's backdrop-blur utilities combined with custom linear gradients. I focused heavily on asset optimization, ensuring that high-resolution Web3-themed graphics didn't impact the initial LCP (Largest Contentful Paint). The navigation was built to be purely functional yet sleek, guiding users toward protocol connection points with subtle micro-interactions.",
+      "Focused on a 'glassmorphism' aesthetic using TailwindCSS. I leveraged high-performance React components to ensure smooth scrolling and optimized image assets to maintain a premium, high-tech feel without compromising load times.",
   },
   {
     id: "offertrail",
@@ -51,10 +51,10 @@ const works = [
     label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo",
     howIMadeIt:
-      "Managing job applications requires strict data integrity. I designed a PostgreSQL schema that tracks application stages, company details, and deadlines. The Django backend provides a secure API with JWT authentication to protect user data. For the UI, I built a Kanban-style dashboard using Tailwind's flexbox and grid systems, allowing users to visualize their progress. I also integrated custom status-filtering logic to help users prioritize applications that are 'stalled' or 'pending.'",
+      "I designed a relational database schema in PostgreSQL to handle multi-user application tracking. The backend uses Django's built-in authentication, while the frontend utilizes a modular dashboard architecture for real-time status updates.",
   },
   {
-    id: "unsent",
+    id: "unsent-app",
     image: unsent,
     title: "Unsent.app",
     description:
@@ -64,20 +64,46 @@ const works = [
     label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo/Unsent.git",
     howIMadeIt:
-      "I leveraged Supabase for rapid backend deployment, focusing on its built-in Auth and Real-time database to manage user message drafts. The frontend architecture was designed around a clean 'focus-mode' editor, built with TailwindCSS to eliminate distractions. I spent significant time fine-tuning the prompt-engineering pipeline to ensure the AI output remained empathetic and human-like, bridging the gap between raw data and genuine communication.",
+      "Integrated Supabase for rapid backend deployment, handling user sessions and message history. I focused heavily on the prompt engineering interface to ensure the UI felt intuitive for users seeking emotional clarity.",
   },
   {
-    id: "rantsarena",
-    image: rantsarena,
-    title: "Rantsarena",
+    id: "enigma",
+    image: enigma,
+    title: "Enigma | the action agent.",
     description:
-      "A dynamic social platform where users can share thoughts in real-time. Built with Supabase for instant data synchronization and secure authentication across a seamless UI.",
-    techs: ["TypeScript", "TailwindCSS", "Supabase"],
-    link: "https://rantsarena.pxxl.click/",
+      "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://www.enigma-agent.tech/",
     label: "Full Stack",
-    git: "https://github.com/Elite-Dev-Repo/Rants.git",
+    git: "https://github.com/Elite-Dev-Repo/Enigma.git",
     howIMadeIt:
-      "Real-time interactivity was the priority here. I utilized Supabase's real-time subscriptions to push new 'rants' to all connected users instantly without requiring a page refresh. I implemented TypeScript to strictly type the data coming from the database, preventing runtime errors in the feed. The UI utilizes a staggered grid layout with TailwindCSS to handle varied text lengths, giving the platform a modern, 'social-hub' aesthetic.",
+      "Developed using a component-first approach. I used TailwindCSS to build a dark-themed, sleek UI that mirrors the complexity of automation tools while keeping the user journey simple and conversion-focused.",
+  },
+  {
+    id: "soda-sphere",
+    image: soda,
+    title: "Soda Sphere",
+    description:
+      "A vibrant, immersive landing page for a fictional beverage brand. This project focuses on high-impact visual storytelling, utilizing bold typography and a crisp, refreshing UI to showcase product features and brand identity through a modern digital lens.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://soda-sphere.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/soda-sphere.git",
+    howIMadeIt:
+      "I pushed the boundaries of Tailwind's utility classes to create complex color gradients and layout shifts that respond to scroll depth, creating a refreshing, brand-aligned experience.",
+  },
+  {
+    id: "amanti",
+    image: amanti,
+    title: "Amanti",
+    description:
+      "A creative digital tool for generating heartfelt Valentine’s messages. This project features a responsive, mobile-first design that prioritizes ease of use and instant sharing, making it simple for anyone to create custom romantic notes on the fly.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://amanti-ai.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/Amanti.git",
+    howIMadeIt:
+      "Implemented a lightweight state management system to handle message generation. The UI was built with a mobile-first philosophy to ensure users could generate and share messages instantly from any device.",
   },
   {
     id: "the-better-child",
@@ -90,7 +116,85 @@ const works = [
     label: "Front End",
     git: "https://github.com/Elite-Dev-Repo/thebetterchild.git",
     howIMadeIt:
-      "This project was an exercise in high-end UI/UX. I used ShadcnUI as a base for accessible primitives like modals and carousels, but heavily customized them with Tailwind to fit the foundation's branding. To create an immersive experience, I integrated Framer Motion for scroll-triggered animations and page transitions. I also built a custom image optimization pipeline to ensure the high-resolution educational gallery loads instantly on mobile networks.",
+      "Utilized ShadcnUI for accessible, pre-built components and customized them heavily to match the brand. I used Framer Motion to create meaningful transitions that guide the user through the foundation's mission story.",
+  },
+  {
+    id: "velocargo",
+    image: velocargo,
+    title: "VeloCargo",
+    description:
+      "A high-performance logistics platform designed for seamless supply chain management. Features real-time tracking, mobile-responsive, and optimized delivery workflows.",
+    techs: ["React.js", "TailwindCSS", "JavaScript"],
+    link: "https://velo-cargo.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/VeloCargo",
+    howIMadeIt:
+      "Focused on information architecture. I built a clean, grid-based layout using Tailwind to ensure high-density logistics data remains readable and actionable for fleet managers.",
+  },
+  {
+    id: "beadchef",
+    image: beadchef,
+    title: "Beadchef",
+    description:
+      "A modern storefront interface for an artisanal bead brand. Built with a mobile-first approach, it features clean typography and smooth transitions to provide a premium shopping feel.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://beadchef.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/Beady.git",
+    howIMadeIt:
+      "Designed the UI to spotlight product imagery. I used custom CSS transitions and Tailwind for a minimalist aesthetic that emphasizes the craftsmanship of the artisanal products.",
+  },
+  {
+    id: "tabbiebites",
+    image: tabbiebites,
+    title: "Tabbiebites",
+    description:
+      "A sleek, mobile-friendly landing page for a boutique bakery. Designed to showcase culinary products with high-fidelity imagery and a focus on essential decision-making details.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://tabbiebites.pxxl.click/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/TabbieBites.git",
+    howIMadeIt:
+      "Crafted a layout that prioritizes visual appetite. I optimized asset loading to ensure high-fidelity food photography doesn't slow down the mobile user experience.",
+  },
+  {
+    id: "enigma-analytics",
+    image: dashboard,
+    title: "Enigma Analytics",
+    description:
+      "A high-performance analytics interface designed for data-driven decision-making. This dashboard features a responsive layout and modular component architecture, ensuring seamless data visualization across all device types while maintaining strict type safety.",
+    techs: ["React .js", "TailwindCSS", "Typescript"],
+    link: "https://enigma-analytics.pxxl.click/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/EnigmaDashboard.git",
+    howIMadeIt:
+      "Developed with TypeScript to ensure type safety across complex data visualizations. I built a modular component library using Tailwind to allow for flexible dashboard layouts.",
+  },
+  {
+    id: "rantsarena",
+    image: rantsarena,
+    title: "Rantsarena",
+    description:
+      "A dynamic social platform where users can share thoughts in real-time. Built with Supabase for instant data synchronization and secure authentication across a seamless UI.",
+    techs: ["TypeScript", "TailwindCSS", "Supabase"],
+    link: "https://rantsarena.pxxl.click/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/Rants.git",
+    howIMadeIt:
+      "Leveraged Supabase real-time subscriptions to create a live-feed experience. I used TypeScript for robust state handling and Tailwind for a fast-loading, social-media-ready interface.",
+  },
+  {
+    id: "basic-recipes",
+    image: recipe,
+    title: "Basic Recipes",
+    description:
+      "A dynamic front-end application built to fetch and display culinary data through a seamless interface.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://basicrecipe.netlify.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/Recipe.git",
+    howIMadeIt:
+      "Integrated a third-party recipe API to fetch real-time data. I focused on building an efficient search and filter system on the frontend to allow users to find meals by ingredients or diet.",
   },
 ];
 
