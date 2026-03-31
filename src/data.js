@@ -77,7 +77,7 @@ const works = [
     label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo/Enigma.git",
     howIMadeIt:
-      "Developed using a component-first approach. I used TailwindCSS to build a dark-themed, sleek UI that mirrors the complexity of automation tools while keeping the user journey simple and conversion-focused.",
+      "Developed using a component first approach. I used TailwindCSS to build a dark-themed, sleek UI that mirrors the complexity of automation tools while keeping the user journey simple and conversion-focused.",
   },
   {
     id: "soda-sphere",
