@@ -92,6 +92,20 @@ const works = [
     howIMadeIt:
       "I pushed the boundaries of Tailwind's utility classes to create complex color gradients and layout shifts that respond to scroll depth, creating a refreshing, brand-aligned experience.",
   },
+
+  {
+    id: "the-better-child",
+    image: child,
+    title: "The Better Child",
+    description:
+      "A sophisticated educational foundation platform built with a focus on immersive UX. It features complex Framer Motion orchestrations, a custom-built responsive navigation system, and a high-performance image gallery, all styled with a mobile-first approach using TailwindCSS.",
+    techs: ["React.js", "TailwindCSS", "ShadcnUI"],
+    link: "https://thebetterchild.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/thebetterchild.git",
+    howIMadeIt:
+      "Utilized ShadcnUI for accessible, pre-built components and customized them heavily to match the brand. I used Framer Motion to create meaningful transitions that guide the user through the foundation's mission story.",
+  },
   {
     id: "amanti",
     image: amanti,
@@ -106,17 +120,17 @@ const works = [
       "Implemented a lightweight state management system to handle message generation. The UI was built with a mobile-first philosophy to ensure users could generate and share messages instantly from any device.",
   },
   {
-    id: "the-better-child",
-    image: child,
-    title: "The Better Child",
+    id: "tabbiebites",
+    image: tabbiebites,
+    title: "Tabbiebites",
     description:
-      "A sophisticated educational foundation platform built with a focus on immersive UX. It features complex Framer Motion orchestrations, a custom-built responsive navigation system, and a high-performance image gallery, all styled with a mobile-first approach using TailwindCSS.",
-    techs: ["React.js", "TailwindCSS", "ShadcnUI"],
-    link: "https://thebetterchild.vercel.app/",
+      "A sleek, mobile-friendly landing page for a boutique bakery. Designed to showcase culinary products with high-fidelity imagery and a focus on essential decision-making details.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://tabbiebites.pxxl.click/",
     label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/thebetterchild.git",
+    git: "https://github.com/Elite-Dev-Repo/TabbieBites.git",
     howIMadeIt:
-      "Utilized ShadcnUI for accessible, pre-built components and customized them heavily to match the brand. I used Framer Motion to create meaningful transitions that guide the user through the foundation's mission story.",
+      "Crafted a layout that prioritizes visual appetite. I optimized asset loading to ensure high-fidelity food photography doesn't slow down the mobile user experience.",
   },
   {
     id: "velocargo",
@@ -144,19 +158,7 @@ const works = [
     howIMadeIt:
       "Designed the UI to spotlight product imagery. I used custom CSS transitions and Tailwind for a minimalist aesthetic that emphasizes the craftsmanship of the artisanal products.",
   },
-  {
-    id: "tabbiebites",
-    image: tabbiebites,
-    title: "Tabbiebites",
-    description:
-      "A sleek, mobile-friendly landing page for a boutique bakery. Designed to showcase culinary products with high-fidelity imagery and a focus on essential decision-making details.",
-    techs: ["React .js", "TailwindCSS", "JavaScript"],
-    link: "https://tabbiebites.pxxl.click/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/TabbieBites.git",
-    howIMadeIt:
-      "Crafted a layout that prioritizes visual appetite. I optimized asset loading to ensure high-fidelity food photography doesn't slow down the mobile user experience.",
-  },
+
   {
     id: "enigma-analytics",
     image: dashboard,
