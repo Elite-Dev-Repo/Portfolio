@@ -12,8 +12,31 @@ import velocargo from "./assets/velocargo.png";
 import child from "./assets/tchild.png";
 import offertrail from "./assets/offertrail.png";
 import learnstack from "./assets/learnstack.png";
+import akant from "./assets/akant.png";
 
 const works = [
+  {
+    id: "akant",
+    image: akant,
+    title: "Akant",
+    description:
+      "A full-stack expense splitting SaaS that makes shared finances effortless. Groups can track shared expenses, automatically calculate who owes who using a debt simplification algorithm, pay via bank transfer, and send payment reminders — all in one place.",
+    techs: [
+      "React.js",
+      "Django",
+      "PostgreSQL",
+      "DRF",
+      "TailwindCSS",
+
+      "Paystack",
+      "Resend",
+    ],
+    link: "https://akant.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/",
+    howIMadeIt:
+      "Built a Django REST Framework backend with a clean service layer separating business logic from views. Implemented a greedy min-cash-flow algorithm to simplify group debts, Django signals to auto-create expense splits, and JWT authentication with silent token refresh. The React frontend uses React Query for server state, Zustand for global auth state, and Zod with React Hook Form for validation. Integrated Paystack for subscription payments and Resend for transactional invite and reminder emails.",
+  },
   {
     id: "learnstack",
     image: learnstack,
@@ -22,7 +45,7 @@ const works = [
       "A community-driven platform for discovering and sharing the most helpful YouTube tutorials. Users can explore curated content, bookmark valuable videos, and contribute tutorials to help others learn faster.",
     techs: ["React.js", "TailwindCSS", "Django", "SQLite"],
     link: "https://learnstackr.vercel.app/",
-    label: "FullStack",
+    label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo/",
     howIMadeIt:
       "Built with a Django REST Framework backend to manage the video repository and a React frontend for smooth discovery. I implemented a custom filtering logic to categorize tutorials and used SQLite for a lightweight, efficient data store during the initial rollout.",

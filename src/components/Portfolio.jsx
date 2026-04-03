@@ -89,7 +89,7 @@ function Portfolio() {
                         </p>
                       </Link>
                       <div className=" flex flex gap-2 p-5 flex-wrap ">
-                        {work.techs.map((tech) => (
+                        {work.techs.slice(0, 3).map((tech) => (
                           <p
                             key={tech}
                             className=" bg-[#000] flex items-center line-clamp-1 justify-center p-2 rounded-sm text-[var(--color-primary)] text-[11px] max-sm:text-[11px] tracking-normal"
@@ -97,6 +97,13 @@ function Portfolio() {
                             {tech}
                           </p>
                         ))}
+
+                        {work.techs.length > 3 && (
+                          <div className="text-[var(--color-primary)] bg-black flex items-center justify-center p-2 rounded-sm text-[11px] max-sm:text-[11px] tracking-normal">
+                            {work.techs.length > 3 &&
+                              `+ ${work.techs.length - 3}`}
+                          </div>
+                        )}
                       </div>
 
                       <div className="mb-4 flex w-full justify-between">
