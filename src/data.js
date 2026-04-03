@@ -33,7 +33,7 @@ const works = [
     ],
     link: "https://akant.vercel.app/",
     label: "Full Stack",
-    git: "https://github.com/Elite-Dev-Repo/",
+    git: "https://github.com/Elite-Dev-Repo",
     howIMadeIt:
       "Built a Django REST Framework backend with a clean service layer separating business logic from views. Implemented a greedy min-cash-flow algorithm to simplify group debts, Django signals to auto-create expense splits, and JWT authentication with silent token refresh. The React frontend uses React Query for server state, Zustand for global auth state, and Zod with React Hook Form for validation. Integrated Paystack for subscription payments and Resend for transactional invite and reminder emails.",
   },
