@@ -37,17 +37,17 @@ function Project() {
       <main className="max-w-6xl mx-auto px-6 py-20">
         {/* Header Section */}
         <div className="mb-12">
-          <span className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
+          <span className="text-sm font-semibold text-tertiary/70 uppercase tracking-widest">
             {project.label}
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mt-2">
+          <h1 className="text-4xl md:text-6xl font-bold text-tertiary mt-2">
             {project.title}
           </h1>
           <div className="flex flex-wrap gap-2 mt-6">
             {project.techs.map((tech, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-black text-white text-xs font-medium rounded-full border border-gray-200"
+                className="px-3 py-1 bg-secondary text-primary text-xs font-medium rounded-full border"
               >
                 {tech}
               </span>
@@ -65,12 +65,14 @@ function Project() {
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 ">
           {/* Left Column: Description & Links */}
           <div className="lg:col-span-1 space-y-8">
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Overview</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-tertiary/70 mb-4">
+                Overview
+              </h3>
+              <p className="text-white leading-relaxed">
                 {project.description}
               </p>
             </div>
@@ -80,7 +82,7 @@ function Project() {
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block text-center bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
+                className="inline-block text-center bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
               >
                 Visit Live Project
               </a>
@@ -88,7 +90,7 @@ function Project() {
                 href={project.git}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block text-center border border-gray-200 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors"
+                className="inline-block text-center border border-gray-200 text-tertiary px-6 py-3 rounded-lg font-medium hover:bg-gray-50 hover:text-primary transition-colors"
               >
                 View Source Code
               </a>

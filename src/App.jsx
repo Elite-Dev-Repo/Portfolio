@@ -23,11 +23,11 @@ function App() {
 
     app
       .use(Stick({ padding: 15 }))
-      .use(Dot({ size: 6, color: "#333", hideOnShape: true }))
+      .use(Dot({ size: 6, color: "#ccf720", hideOnShape: true }))
       .use(
         SmartRing({
           size: 30,
-          color: "#333",
+          color: "#ccf720",
           enableSkew: true,
           enableScale: true,
         }),

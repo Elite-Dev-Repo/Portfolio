@@ -35,7 +35,7 @@ const Nav = () => {
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="max-w-screen w-fit mx-auto h-[60px] bg-[var(--color-primary)]/50 border border-black/20 top-5 sticky z-50 backdrop-blur-[2px]"
+      className="max-w-screen w-fit mx-auto h-[60px] bg-white/5 border border-white/20 top-5 sticky z-50 backdrop-blur-[2px]"
     >
       <div className="px-5 flex justify-between items-center h-full max-sm:gap-2 gap-10 ">
         {navItems}

@@ -58,19 +58,19 @@ function Header() {
   return (
     <>
       <header className="d-grid text-tertiary relative overflow-hidden min-h-[screen] max-sm:min-h-[calc(100vh+10em)]  max-lg:min-h-[calc(100vh+10em)] ">
-        <StarfieldHero />
-
+        <div className="w-80 h-80 bg-secondary/8 absolute right-30 top-20 blur-3xl"></div>
+        <StarfieldHero> </StarfieldHero>
         <div className="px-5">
           <main className=" w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
             <motion.div
               initial={{ opacity: 0, x: -120 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className=" w-fit mx-auto  md:mt-15 flex items-center gap-3 px-3 py-1 border border-tertiary/20 bg-tertiary/[0.03] rounded-full"
+              className=" w-fit mx-auto  md:mt-15 flex items-center gap-3 px-3 py-1 border border-secondary/20 bg-secondary/[0.03] rounded-full"
             >
               <div className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
               </div>
               <span className="font-light text-[12px] tracking-widest uppercase  px-3">
                 FullStack Website Developer
@@ -83,7 +83,7 @@ function Header() {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center md:absolute text-5xl md:text-[5em] md:left-1/2 md:-translate-x-1/2  font-semibold md:mt-[.4em] order-1 md:order-0 text-center w-full md:w-auto"
             >
-              <div className="bg-tertiary text-primary text-[25px] px-3 py-1">
+              <div className="bg-secondary text-primary text-[25px] px-3 py-1">
                 I am
               </div>
               <div className="">
@@ -104,7 +104,7 @@ function Header() {
                 <button className="sm:text-[.9rem] md:text-[1rem]">
                   <a
                     href={resume}
-                    className=" gap-2 flex items-center px-6 py-3 text-primary bg-tertiary"
+                    className=" gap-2 flex items-center px-6 py-3 rounded-sm text-primary bg-secondary hover:bg-tertiary border hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition duration-300 ease-in-out uppercase tracking-wide"
                   >
                     Download Resume
                     <span>
@@ -173,7 +173,7 @@ function Header() {
               }}
             />
           </main>
-        </div>
+        </div>{" "}
       </header>
     </>
   );

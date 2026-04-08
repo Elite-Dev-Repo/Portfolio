@@ -10,8 +10,8 @@ const StarfieldHero = () => {
     let stars = [];
 
     // --- Configuration ---
-    const STAR_COUNT = 100; // Number of grains
-    const CONNECTION_DIST = 20; // Distance for constellation lines
+    const STAR_COUNT = 40; // Number of grains
+    const CONNECTION_DIST = 2; // Distance for constellation lines
     const FALL_SPEED = 0.5; // Base falling speed
 
     const resizeCanvas = () => {
@@ -43,7 +43,8 @@ const StarfieldHero = () => {
         }
 
         // 2. Draw the Grain
-        ctx.fillStyle = `rgba(0,0,0, ${star.opacity})`;
+        ctx.fillStyle = `rgba(204, 247, 32, ${star.opacity}  )`;
+
         ctx.fillRect(star.x, star.y, star.size, star.size); // Square grains look more industrial
 
         // 3. Constellation Lines
@@ -56,7 +57,7 @@ const StarfieldHero = () => {
           if (dist < CONNECTION_DIST) {
             ctx.beginPath();
             // Very faint lines to match your 0.03 opacity grid
-            ctx.strokeStyle = `rgba(0, 0, 0, ${
+            ctx.strokeStyle = `rgba(204, 247, 32, ${
               (1 - dist / CONNECTION_DIST) * 0.3
             })`;
             ctx.lineWidth = 0.5;
