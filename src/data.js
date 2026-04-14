@@ -27,7 +27,7 @@ const works = [
     label: "Front End",
     git: "https://github.com/Elite-Dev-Repo/PayStack-Django-Docs",
     howIMadeIt:
-      "I built this project because Paystack currently lacks dedicated, in depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
+      "I built this project because Paystack currently lacks dedicated, in-depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
   },
   {
     id: "akant",
