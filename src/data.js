@@ -13,8 +13,22 @@ import child from "./assets/tchild.png";
 import offertrail from "./assets/offertrail.png";
 import learnstack from "./assets/learnstack.png";
 import akant from "./assets/akant.png";
+import paysctackfordja from "./assets/paystackfordja.png";
 
 const works = [
+  {
+    id: "paystack-for-django",
+    image: paysctackfordja,
+    title: "Paystack for Django",
+    description:
+      "The unofficial, definitive guide to integrating Paystack with Django and Django REST Framework. This project bridges the gap in official documentation, providing developers with structured implementation patterns for transactions, subscriptions, and secure webhook handling.",
+    techs: ["React.js", "Django", "DRF", "Paystack"],
+    link: "https://paystack-for-django.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/PayStack-Django-Docs",
+    howIMadeIt:
+      "I built this project because Paystack currently lacks dedicated, in-depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
+  },
   {
     id: "akant",
     image: akant,
