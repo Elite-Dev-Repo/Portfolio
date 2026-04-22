@@ -13,6 +13,7 @@ import child from "./assets/tchild.png";
 import offertrail from "./assets/offertrail.png";
 import learnstack from "./assets/learnstack.png";
 import akant from "./assets/akant.png";
+import lemur from "./assets/lemur.png";
 import paysctackfordja from "./assets/paystackfordja.png";
 
 const works = [
@@ -28,6 +29,19 @@ const works = [
     git: "https://github.com/Elite-Dev-Repo/PayStack-Django-Docs",
     howIMadeIt:
       "I built this project because Paystack currently lacks dedicated, in-depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
+  },
+  {
+    id: "lemur",
+    image: lemur,
+    title: "Lemur",
+    description:
+      "A Reddit-style forum platform for tech communities, enabling users to share posts, engage in discussions, like content, and participate in community-driven conversations. Built with a focus on performance, scalability, and real-time interaction patterns.",
+    techs: ["React.js", "Django", "DRF", "PostgreSQL"],
+    link: "https://lemur-devs.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/LemurFrontend",
+    howIMadeIt:
+      "I designed and built Lemur as a full-stack forum platform to explore scalable backend architecture and responsive frontend systems. On the backend, I implemented a Django REST API with optimized query handling using select_related and annotations to efficiently manage posts, likes, and comments. On the frontend, I built a React SPA with a modular architecture, custom hooks for state management, and an optimized API layer using Axios with JWT authentication. The system is structured to support real-time features and scale as a community-driven platform.",
   },
   {
     id: "akant",
