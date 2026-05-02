@@ -106,19 +106,7 @@ const works = [
     howIMadeIt:
       "Built with Vite + React + TypeScript for a fast, modern setup. Used Framer Motion for scroll-triggered animations and staggered reveals. Designed with a high-contrast black and red editorial aesthetic using TailwindCSS, with custom typography via Google Fonts (Bebas Neue, Cormorant Garamond, DM Sans).",
   },
-  {
-    id: "offertrail",
-    image: offertrail,
-    title: "OfferTrail",
-    description:
-      "A comprehensive job application tracker designed to streamline the career search process. It features a robust Django REST API, real-time status filtering, and a modern dashboard built with TailwindCSS to help developers manage their professional opportunities efficiently.",
-    techs: ["React.js", "TailwindCSS", "Django", "PostgreSQL"],
-    link: "https://offer-trail.vercel.app/",
-    label: "Full Stack",
-    git: "https://github.com/Elite-Dev-Repo",
-    howIMadeIt:
-      "I designed a relational database schema in PostgreSQL to handle multi-user application tracking. The backend uses Django's built-in authentication, while the frontend utilizes a modular dashboard architecture for real-time status updates.",
-  },
+
   {
     id: "tabbiebites",
     image: tabbiebites,
@@ -132,19 +120,32 @@ const works = [
     howIMadeIt:
       "Crafted a layout that prioritizes visual appetite. I optimized asset loading to ensure high-fidelity food photography doesn't slow down the mobile user experience.",
   },
-  // {
-  // id: "unsent-app",
-  //image: unsent,
-  //title: "Unsent.app",
-  //description:
-  // "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
-  //techs: ["React .js", "TailwindCSS", "Supabase"],
-  //link: "https://unsent-ai.vercel.app/",
-  //label: "Full Stack",
-  // git: "https://github.com/Elite-Dev-Repo/Unsent.git",
-  // howIMadeIt:
-  //  "Integrated Supabase for rapid backend deployment, handling user sessions and message history. I focused heavily on the prompt engineering interface to ensure the UI felt intuitive for users seeking emotional clarity.",
-  //},
+  {
+    id: "offertrail",
+    image: offertrail,
+    title: "OfferTrail",
+    description:
+      "A comprehensive job application tracker designed to streamline the career search process. It features a robust Django REST API, real-time status filtering, and a modern dashboard built with TailwindCSS to help developers manage their professional opportunities efficiently.",
+    techs: ["React.js", "TailwindCSS", "Django", "PostgreSQL"],
+    link: "https://offer-trail.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo",
+    howIMadeIt:
+      "I designed a relational database schema in PostgreSQL to handle multi-user application tracking. The backend uses Django's built-in authentication, while the frontend utilizes a modular dashboard architecture for real-time status updates.",
+  },
+  /* {
+   id: "unsent-app",
+  image: unsent,
+  title: "Unsent.app",
+  description:
+   "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
+  techs: ["React .js", "TailwindCSS", "Supabase"],
+  link: "https://unsent-ai.vercel.app/",
+  label: "Full Stack",
+   git: "https://github.com/Elite-Dev-Repo/Unsent.git",
+   howIMadeIt:
+    "Integrated Supabase for rapid backend deployment, handling user sessions and message history. I focused heavily on the prompt engineering interface to ensure the UI felt intuitive for users seeking emotional clarity.",
+  },*/
   {
     id: "enigma",
     image: enigma,
