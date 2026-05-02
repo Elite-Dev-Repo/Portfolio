@@ -15,6 +15,7 @@ import learnstack from "./assets/learnstack.png";
 import akant from "./assets/akant.png";
 import lemur from "./assets/lemur.png";
 import paysctackfordja from "./assets/paystackfordja.png";
+import driphvn from "./assets/driphvn.png";
 
 const works = [
   {
@@ -91,6 +92,20 @@ const works = [
     howIMadeIt:
       "Focused on a 'glassmorphism' aesthetic using TailwindCSS. I leveraged high-performance React components to ensure smooth scrolling and optimized image assets to maintain a premium, high-tech feel without compromising load times.",
   },
+
+  {
+    id: "driphvn",
+    image: driphvn,
+    title: "Driphvn",
+    description:
+      "A luxury streetwear landing page built for DRIPHVN — a Nigerian fashion brand fusing high fashion with street culture. Features editorial-style sections, smooth Framer Motion animations, and a bold black-and-red aesthetic.",
+    techs: ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
+    link: "https://driphvn-brand.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/driphvn.git",
+    howIMadeIt:
+      "Built with Vite + React + TypeScript for a fast, modern setup. Used Framer Motion for scroll-triggered animations and staggered reveals. Designed with a high-contrast black and red editorial aesthetic using TailwindCSS, with custom typography via Google Fonts (Bebas Neue, Cormorant Garamond, DM Sans).",
+  },
   {
     id: "offertrail",
     image: offertrail,
@@ -105,18 +120,31 @@ const works = [
       "I designed a relational database schema in PostgreSQL to handle multi-user application tracking. The backend uses Django's built-in authentication, while the frontend utilizes a modular dashboard architecture for real-time status updates.",
   },
   {
-    id: "unsent-app",
-    image: unsent,
-    title: "Unsent.app",
+    id: "tabbiebites",
+    image: tabbiebites,
+    title: "Tabbiebites",
     description:
-      "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
-    techs: ["React .js", "TailwindCSS", "Supabase"],
-    link: "https://unsent-ai.vercel.app/",
-    label: "Full Stack",
-    git: "https://github.com/Elite-Dev-Repo/Unsent.git",
+      "A sleek, mobile-friendly landing page for a boutique bakery. Designed to showcase culinary products with high-fidelity imagery and a focus on essential decision-making details.",
+    techs: ["React .js", "TailwindCSS", "JavaScript"],
+    link: "https://tabbiebites.pxxl.click/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/TabbieBites.git",
     howIMadeIt:
-      "Integrated Supabase for rapid backend deployment, handling user sessions and message history. I focused heavily on the prompt engineering interface to ensure the UI felt intuitive for users seeking emotional clarity.",
+      "Crafted a layout that prioritizes visual appetite. I optimized asset loading to ensure high-fidelity food photography doesn't slow down the mobile user experience.",
   },
+  // {
+  // id: "unsent-app",
+  //image: unsent,
+  //title: "Unsent.app",
+  //description:
+  // "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
+  //techs: ["React .js", "TailwindCSS", "Supabase"],
+  //link: "https://unsent-ai.vercel.app/",
+  //label: "Full Stack",
+  // git: "https://github.com/Elite-Dev-Repo/Unsent.git",
+  // howIMadeIt:
+  //  "Integrated Supabase for rapid backend deployment, handling user sessions and message history. I focused heavily on the prompt engineering interface to ensure the UI felt intuitive for users seeking emotional clarity.",
+  //},
   {
     id: "enigma",
     image: enigma,
@@ -170,19 +198,7 @@ const works = [
     howIMadeIt:
       "Implemented a lightweight state management system to handle message generation. The UI was built with a mobile-first philosophy to ensure users could generate and share messages instantly from any device.",
   },
-  {
-    id: "tabbiebites",
-    image: tabbiebites,
-    title: "Tabbiebites",
-    description:
-      "A sleek, mobile-friendly landing page for a boutique bakery. Designed to showcase culinary products with high-fidelity imagery and a focus on essential decision-making details.",
-    techs: ["React .js", "TailwindCSS", "JavaScript"],
-    link: "https://tabbiebites.pxxl.click/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/TabbieBites.git",
-    howIMadeIt:
-      "Crafted a layout that prioritizes visual appetite. I optimized asset loading to ensure high-fidelity food photography doesn't slow down the mobile user experience.",
-  },
+
   {
     id: "velocargo",
     image: velocargo,
@@ -223,7 +239,7 @@ const works = [
     howIMadeIt:
       "Developed with TypeScript to ensure type safety across complex data visualizations. I built a modular component library using Tailwind to allow for flexible dashboard layouts.",
   },
-  {
+  /*{
     id: "rantsarena",
     image: rantsarena,
     title: "Rantsarena",
@@ -235,7 +251,7 @@ const works = [
     git: "https://github.com/Elite-Dev-Repo/Rants.git",
     howIMadeIt:
       "Leveraged Supabase real-time subscriptions to create a live-feed experience. I used TypeScript for robust state handling and Tailwind for a fast-loading, social-media-ready interface.",
-  },
+  },*/
   {
     id: "basic-recipes",
     image: recipe,
