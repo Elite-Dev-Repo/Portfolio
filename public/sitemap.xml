@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://oyenekanemmanuel.xyz/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Who is Elite Dev page -->
+  <url>
+    <loc>https://oyenekanemmanuel.xyz/who-is-elite-dev</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Projects section (if route exists) -->
+  <url>
+    <loc>https://oyenekanemmanuel.xyz/projects</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Optional: About section -->
+  <url>
+    <loc>https://oyenekanemmanuel.xyz/about</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://oyenekanemmanuel.xyz/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- LLMs file (important for AI discovery) -->
+  <url>
+    <loc>https://oyenekanemmanuel.xyz/llms.txt</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
