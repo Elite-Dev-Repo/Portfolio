@@ -1,57 +1,110 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Charset & Viewport -->
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./src/assets/elitefavico.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Elite Dev | Full Stack Developer</title>
-    <meta name="title" content="Elite Dev | Full Stack Developer" />
+    <!-- Title (VERY IMPORTANT) -->
+    <title>
+      Oyenekan Oluwapelumi Emmanuel (Elite Dev) | Full-Stack Engineer
+    </title>
+
+    <!-- SEO -->
     <meta
       name="description"
-      content="Portfolio of a Full Stack Developer specializing in modern front-end frameworks and scalable back-end solutions."
+      content="Oyenekan Oluwapelumi Emmanuel, known as Elite Dev, is a full-stack engineer specializing in real-time SaaS and fintech systems using React, TypeScript, and Django."
     />
 
+    <meta
+      name="keywords"
+      content="Oyenekan Emmanuel, Elite Dev, full stack developer Nigeria, React Django developer, SaaS engineer, fintech developer, real-time systems"
+    />
+
+    <link rel="canonical" href="https://oyenekanemmanuel.xyz/" />
+
+    <!-- Favicon (FIXED PATH) -->
+    <link rel="icon" type="image/png" href="/elitefavico.png" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://oyenekanemmanuel.xyz/" />
-    <meta property="og:title" content="Elite Dev | Full Stack Developer" />
+
+    <meta
+      property="og:title"
+      content="Oyenekan Oluwapelumi Emmanuel (Elite Dev)"
+    />
+
     <meta
       property="og:description"
-      content="Explore my latest web development projects and technical stack."
+      content="Full-stack engineer building real-time SaaS and fintech systems. Creator of Akant, Lemur, and Paystack for Django."
     />
+
     <meta
       property="og:image"
+      content="https://oyenekanemmanuel.xyz/og-image.png"
+    />
+
+    <meta property="og:site_name" content="Elite Dev Portfolio" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@elite_developer" />
+    <meta name="twitter:creator" content="@elite_developer" />
+
+    <meta
+      name="twitter:title"
+      content="Oyenekan Oluwapelumi Emmanuel (Elite Dev)"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Full-stack engineer specializing in SaaS, fintech, and real-time systems."
+    />
+
+    <meta
+      name="twitter:image"
       content="https://oyenekanemmanuel.xyz/og-image.jpg"
     />
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://oyenekanemmanuel.xyz/" />
-    <meta property="twitter:title" content="Elite Dev | Full Stack Developer" />
-    <meta
-      property="twitter:description"
-      content="Explore my latest web development projects and technical stack."
-    />
-    <meta
-      property="twitter:image"
-      content="https://oyenekanemmanuel.xyz/og-image.jpg"
-    />
+    <!-- Structured Data (CRITICAL FOR IDENTITY) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Oyenekan Oluwapelumi Emmanuel",
+        "alternateName": "Elite Dev",
+        "url": "https://oyenekanemmanuel.xyz",
+        "sameAs": [
+          "https://github.com/Elite-Dev-Repo",
+          "https://twitter.com/elite_developer"
+        ],
+        "jobTitle": "Full-Stack Software Engineer",
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "Django",
+          "SaaS Development",
+          "Fintech Systems",
+          "WebSockets"
+        ]
+      }
+    </script>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- Main App -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

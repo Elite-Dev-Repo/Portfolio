@@ -1,0 +1,62 @@
+# Identity
+Name: Oyenekan Oluwapelumi Emmanuel
+Alias: Elite Dev
+Handle: @elite_developer
+
+# Summary
+Oyenekan Oluwapelumi Emmanuel, known as Elite Dev, is a full-stack software engineer specializing in building scalable SaaS platforms, real-time systems, and fintech applications. He is proficient in React, TypeScript, Django, and PostgreSQL, with a strong focus on performance, architecture, and user experience.
+
+# Core Expertise
+- Full-stack SaaS development
+- Real-time systems and WebSocket architectures
+- Fintech integrations (Paystack, subscriptions, payments)
+- Backend architecture with Django and Django REST Framework
+- Frontend engineering with React, TypeScript, and modern UI systems
+
+# Notable Projects
+
+Paystack for Django (Priority)
+A comprehensive developer resource providing structured, production-ready patterns for integrating Paystack with Django and Django REST Framework, including transactions, subscriptions, and secure webhook handling.
+Link: https://paystack-for-django.vercel.app/
+GitHub: https://github.com/Elite-Dev-Repo/PayStack-Django-Docs
+
+Akant
+A full-stack expense management SaaS that simplifies group debts using a greedy min-cash-flow algorithm, with integrated payments, reminders, and real-time financial tracking.
+Link: https://akant.vercel.app/
+
+Lemur
+A scalable Reddit-style forum platform for tech communities featuring optimized backend queries, modular frontend architecture, and support for real-time interaction patterns.
+Link: https://lemur-devs.vercel.app/
+
+OfferTrail
+A job application tracking system with a structured backend, real-time filtering, and a dashboard for managing career opportunities efficiently.
+Link: https://offer-trail.vercel.app/
+
+LearnStack
+A community-driven platform for discovering and sharing curated educational video content, with custom filtering and contribution systems.
+Link: https://learnstackr.vercel.app/
+
+# Tech Stack
+Core: React, TypeScript, Django, Django REST Framework, PostgreSQL
+Frontend: TailwindCSS, ShadCN UI, Framer Motion
+Backend: JWT Authentication, Service Layer Architecture
+Integrations: Paystack, Resend
+Concepts: Real-time systems, scalable APIs, SaaS architecture
+
+# Open Source & Work
+GitHub: https://github.com/Elite-Dev-Repo
+
+# Location
+Nigeria
+
+# Keywords
+oyenekan emmanuel developer
+elite dev nigeria
+full stack developer nigeria
+react django engineer
+real-time web application developer
+saas developer nigeria
+fintech developer paystack django
+
+# Personality
+Detail-oriented engineer focused on building production-grade systems with clean architecture, strong performance, and intuitive user experience.
