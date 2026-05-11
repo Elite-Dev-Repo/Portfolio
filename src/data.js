@@ -16,6 +16,7 @@ import akant from "./assets/akant.png";
 import lemur from "./assets/lemur.png";
 import paysctackfordja from "./assets/paystackfordja.png";
 import driphvn from "./assets/driphvn.png";
+import amber from "./assets/amber.png";
 
 const works = [
   {
@@ -44,6 +45,20 @@ const works = [
     howIMadeIt:
       "I designed and built Lemur as a full-stack forum platform to explore scalable backend architecture and responsive frontend systems. On the backend, I implemented a Django REST API with optimized query handling using select_related and annotations to efficiently manage posts, likes, and comments. On the frontend, I built a React SPA with a modular architecture, custom hooks for state management, and an optimized API layer using Axios with JWT authentication. The system is structured to support real-time features and scale as a community-driven platform.",
   },
+  {
+    id: "amber",
+    image: amber,
+    title: "Amber",
+    description:
+      "A modern frontend landing page for an AI-assisted ticket management product. Amber presents a polished workflow for organizing tickets, collaborating with teams, tracking progress, and turning event or project requests into clear, manageable systems.",
+    techs: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    link: "https://amber-saas.vercel.app/",
+    label: "Frontend",
+    git: "https://github.com/Elite-Dev-Repo/amber",
+    howIMadeIt:
+      "I built Amber as a frontend-focused product experience using React, TypeScript, Tailwind CSS, and Framer Motion. I structured the interface into reusable sections for the hero, workflow cards, about content, process steps, FAQs, and footer, keeping the messaging centered on ticket organization, collaboration, automation, and tracking. I used responsive layouts, animated section reveals, hover interactions, custom illustrations, and consistent visual patterns to make the page feel like a real SaaS product while staying smooth across desktop and mobile screens.",
+  },
+
   {
     id: "akant",
     image: akant,
