@@ -3,7 +3,7 @@ Name: Oyenekan Oluwapelumi Emmanuel
 Alias: Elite Dev
 Handle: @elite_developer
 
-# Summary
+# - Summary
 Oyenekan Oluwapelumi Emmanuel, known as Elite Dev, is a full-stack software engineer specializing in building scalable SaaS platforms, real-time systems, and fintech applications. He is proficient in React, TypeScript, Django, and PostgreSQL, with a strong focus on performance, architecture, and user experience.
 
 # Core Expertise
