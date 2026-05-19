@@ -268,19 +268,19 @@ const works = [
     howIMadeIt:
       "Leveraged Supabase real-time subscriptions to create a live-feed experience. I used TypeScript for robust state handling and Tailwind for a fast-loading, social-media-ready interface.",
   },*/
-  {
-    id: "basic-recipes",
-    image: recipe,
-    title: "Basic Recipes",
-    description:
-      "A dynamic front-end application built to fetch and display culinary data through a seamless interface.",
-    techs: ["React .js", "TailwindCSS", "JavaScript"],
-    link: "https://basicrecipe.netlify.app/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/Recipe.git",
-    howIMadeIt:
-      "Integrated a third-party recipe API to fetch real-time data. I focused on building an efficient search and filter system on the frontend to allow users to find meals by ingredients or diet.",
-  },
+  // {
+  //   id: "basic-recipes",
+  //   image: recipe,
+  //   title: "Basic Recipes",
+  //   description:
+  //     "A dynamic front-end application built to fetch and display culinary data through a seamless interface.",
+  //   techs: ["React .js", "TailwindCSS", "JavaScript"],
+  //   link: "https://basicrecipe.netlify.app/",
+  //   label: "Front End",
+  //   git: "https://github.com/Elite-Dev-Repo/Recipe.git",
+  //   howIMadeIt:
+  //     "Integrated a third-party recipe API to fetch real-time data. I focused on building an efficient search and filter system on the frontend to allow users to find meals by ingredients or diet.",
+  // },
 ];
 
 export default works;
