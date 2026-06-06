@@ -7,8 +7,12 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
-      // Treats "cookie" as an external dependency so Rollup doesn't crash trying to bundle it
       external: ['cookie'],
-    },
-  },
+      output: {
+        globals: {
+          cookie: 'cookie'
+        }
+      }
+    }
+  }
 })
