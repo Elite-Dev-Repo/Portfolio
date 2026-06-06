@@ -8,10 +8,11 @@ const Who = () => {
           {/* Header Section */}
           <div className="space-y-6 about">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter">
-              Who is{" "}
+              Who is 
               <span className="text-[var(--color-secondary)] animate-flicker">
                 Elite Dev?
               </span>
+
             </h1>
             <p className="text-xl md:text-2xl leading-relaxed text-[var(--color-tertiary)] opacity-90">
               <span className="font-bold border-b border-[var(--color-secondary)]">
