@@ -17,21 +17,35 @@ import lemur from "./assets/lemur.png";
 import paysctackfordja from "./assets/paystackfordja.png";
 import driphvn from "./assets/driphvn.png";
 import amber from "./assets/amber.png";
+import greenarchive from "./assets/greenarchive.png";
 
 const works = [
   {
+    id: "green-archive",
+    image: greenarchive,
+    title: "Green Archive",
+    description:
+      "An AI-powered Nigerian history and current affairs quiz API — backend infrastructure for quiz apps, CBT platforms, schools, and educational games, serving WAEC/JAMB-style questions with daily AI-generated content.",
+    techs: ["React.js", "TypeScript", "Django", "PostgreSQL", "DRF", "Google O-auth"],
+    link: "https://naij-archive.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/Naij-Archive",
+    howIMadeIt:
+      "I built GreenArchive to solve the lack of structured, developer-friendly access to Nigerian educational content. The frontend is built with React and TypeScript, providing an interactive API explorer and documentation interface. On the backend, I used Django and Django REST Framework to expose clean REST endpoints for question retrieval, category filtering, and AI-assisted question generation. PostgreSQL handles the question bank and metadata storage, while Google OAuth covers developer authentication. The biggest challenge was designing a schema flexible enough to support WAEC/JAMB past questions, AI-generated content, and daily current affairs — all under a single unified API.",
+  },
+  {
     id: "paystack-for-django",
     image: paysctackfordja,
-    title: "Paystack for Django",
-    description:
-      "The unofficial, definitive guide to integrating Paystack with Django and Django REST Framework. This project bridges the gap in official documentation, providing developers with structured implementation patterns for transactions, subscriptions, and secure webhook handling.",
-    techs: ["React.js", "Django", "DRF", "Paystack"],
-    link: "https://paystack-for-django.vercel.app/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/PayStack-Django-Docs",
-    howIMadeIt:
-      "I built this project because Paystack currently lacks dedicated, in-depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
-  },
+        title: "Paystack for Django",
+        description:
+          "The unofficial, definitive guide to integrating Paystack with Django and Django REST Framework. This project bridges the gap in official documentation, providing developers with structured implementation patterns for transactions, subscriptions, and secure webhook handling.",
+        techs: ["React.js", "Django", "DRF", "Paystack"],
+        link: "https://paystack-for-django.vercel.app/",
+        label: "Front End",
+        git: "https://github.com/Elite-Dev-Repo/PayStack-Django-Docs",
+        howIMadeIt:
+          "I built this project because Paystack currently lacks dedicated, in-depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
+      },
   {
     id: "lemur",
     image: lemur,
