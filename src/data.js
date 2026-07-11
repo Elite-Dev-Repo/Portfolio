@@ -1,13 +1,9 @@
 import tabbiebites from "./assets/tabbiebites.png";
-import enigma from "./assets/enigma.png";
-import rantsarena from "./assets/rantsarena.png";
 import dashboard from "./assets/dashboard.png";
 import beadchef from "./assets/beadchef.png";
-import recipe from "./assets/recipe.png";
 import vesta from "./assets/vesta.png";
 import amanti from "./assets/amanti.png";
 import soda from "./assets/soda.png";
-import unsent from "./assets/unsent.png";
 import velocargo from "./assets/velocargo.png";
 import child from "./assets/tchild.png";
 import offertrail from "./assets/offertrail.png";
@@ -22,11 +18,19 @@ import greenarchive from "./assets/greenarchive.png";
 const works = [
   {
     id: "green-archive",
+    top: 0,
     image: greenarchive,
     title: "Green Archive",
     description:
       "An AI-powered Nigerian history and current affairs quiz API — backend infrastructure for quiz apps, CBT platforms, schools, and educational games, serving WAEC/JAMB-style questions with daily AI-generated content.",
-    techs: ["React.js", "TypeScript", "Django", "PostgreSQL", "DRF", "Google O-auth"],
+    techs: [
+      "React.js",
+      "TypeScript",
+      "Django",
+      "PostgreSQL",
+      "DRF",
+      "Google O-auth",
+    ],
     link: "https://naij-archive.vercel.app/",
     label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo/Naij-Archive",
@@ -35,19 +39,21 @@ const works = [
   },
   {
     id: "paystack-for-django",
+    top: 6,
     image: paysctackfordja,
-        title: "Paystack for Django",
-        description:
-          "The unofficial, definitive guide to integrating Paystack with Django and Django REST Framework. This project bridges the gap in official documentation, providing developers with structured implementation patterns for transactions, subscriptions, and secure webhook handling.",
-        techs: ["React.js", "Django", "DRF", "Paystack"],
-        link: "https://paystack-for-django.vercel.app/",
-        label: "Front End",
-        git: "https://github.com/Elite-Dev-Repo/PayStack-Django-Docs",
-        howIMadeIt:
-          "I built this project because Paystack currently lacks dedicated, in-depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
-      },
+    title: "Paystack for Django",
+    description:
+      "The unofficial, definitive guide to integrating Paystack with Django and Django REST Framework. This project bridges the gap in official documentation, providing developers with structured implementation patterns for transactions, subscriptions, and secure webhook handling.",
+    techs: ["React.js", "Django", "DRF", "Paystack"],
+    link: "https://paystack-for-django.vercel.app/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/PayStack-Django-Docs",
+    howIMadeIt:
+      "I built this project because Paystack currently lacks dedicated, in-depth documentation specifically for the Django ecosystem. As a full-stack developer, I saw many peers struggling with the same integration hurdles, so I created a centralized resource. The documentation is built as a high-performance React SPA, featuring a custom-built, responsive sidebar navigation and a robust documentation engine. I focused on technical clarity, implementing a clean service-layer architecture for the code examples to ensure they are production-ready and easily adaptable for other developers.",
+  },
   {
     id: "lemur",
+    top: 12,
     image: lemur,
     title: "Lemur",
     description:
@@ -61,6 +67,7 @@ const works = [
   },
   {
     id: "amber",
+    top: 18,
     image: amber,
     title: "Amber",
     description:
@@ -75,6 +82,7 @@ const works = [
 
   {
     id: "akant",
+    top: 24,
     image: akant,
     title: "Akant",
     description:
@@ -97,6 +105,7 @@ const works = [
   },
   {
     id: "learnstack",
+    top: 30,
     image: learnstack,
     title: "LearnStack",
     description:
@@ -110,6 +119,7 @@ const works = [
   },
   {
     id: "vesta",
+    top: 36,
     image: vesta,
     title: "Vesta",
     description:
@@ -124,6 +134,7 @@ const works = [
 
   {
     id: "driphvn",
+    top: 42,
     image: driphvn,
     title: "Driphvn",
     description:
@@ -138,6 +149,7 @@ const works = [
 
   {
     id: "tabbiebites",
+    top: 48,
     image: tabbiebites,
     title: "Tabbiebites",
     description:
@@ -151,6 +163,7 @@ const works = [
   },
   {
     id: "offertrail",
+    top: 54,
     image: offertrail,
     title: "OfferTrail",
     description:
@@ -162,34 +175,9 @@ const works = [
     howIMadeIt:
       "I designed a relational database schema in PostgreSQL to handle multi-user application tracking. The backend uses Django's built-in authentication, while the frontend utilizes a modular dashboard architecture for real-time status updates.",
   },
-  /* {
-   id: "unsent-app",
-  image: unsent,
-  title: "Unsent.app",
-  description:
-   "A smart communication assistant that helps users draft the perfect replies to difficult or important messages. By leveraging AI-driven insights, it turns complex emotions into clear, thoughtful responses, ensuring you never leave the important things 'unsent'.",
-  techs: ["React .js", "TailwindCSS", "Supabase"],
-  link: "https://unsent-ai.vercel.app/",
-  label: "Full Stack",
-   git: "https://github.com/Elite-Dev-Repo/Unsent.git",
-   howIMadeIt:
-    "Integrated Supabase for rapid backend deployment, handling user sessions and message history. I focused heavily on the prompt engineering interface to ensure the UI felt intuitive for users seeking emotional clarity.",
-  },*/
-  {
-    id: "enigma",
-    image: enigma,
-    title: "Enigma | the action agent.",
-    description:
-      "An AI-driven automation interface designed to streamline complex workflows. It features a high-performance landing page with interactive elements focused on conversion and user action.",
-    techs: ["React .js", "TailwindCSS", "JavaScript"],
-    link: "https://www.enigma-agent.tech/",
-    label: "Full Stack",
-    git: "https://github.com/Elite-Dev-Repo/Enigma.git",
-    howIMadeIt:
-      "Developed using a component first approach. I used TailwindCSS to build a dark-themed, sleek UI that mirrors the complexity of automation tools while keeping the user journey simple and conversion-focused.",
-  },
   {
     id: "soda-sphere",
+    top: 66,
     image: soda,
     title: "Soda Sphere",
     description:
@@ -204,6 +192,7 @@ const works = [
 
   {
     id: "the-better-child",
+    top: 72,
     image: child,
     title: "The Better Child",
     description:
@@ -217,6 +206,7 @@ const works = [
   },
   {
     id: "amanti",
+    top: 78,
     image: amanti,
     title: "Amanti",
     description:
@@ -231,6 +221,7 @@ const works = [
 
   {
     id: "velocargo",
+    top: 84,
     image: velocargo,
     title: "VeloCargo",
     description:
@@ -244,6 +235,7 @@ const works = [
   },
   {
     id: "beadchef",
+    top: 90,
     image: beadchef,
     title: "Beadchef",
     description:
@@ -258,6 +250,7 @@ const works = [
 
   {
     id: "enigma-analytics",
+    top: 96,
     image: dashboard,
     title: "Enigma Analytics",
     description:

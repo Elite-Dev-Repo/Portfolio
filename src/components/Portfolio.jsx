@@ -60,12 +60,13 @@ function Portfolio() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
                   key={work.id || index}
-                  className="h-fit border overflow-hidden shadow-[0_0_15px_rgba(255,255,255,0.1)] shadow-secondary/3 border-tertiary/20 rounded-lg flex flex-col gap-2 bg-[#070707]"
+                  // style={{ top: `calc(${work.top}px + 2em)` }}
+                  className={`h-fit border sticky overflow-hidden shadow-[0_0_15px_rgba(255,255,255,0.1)] shadow-secondary/3 border-tertiary/20 rounded-lg flex flex-col gap-2 bg-[#070707]`}
                 >
                   <Link to={`/project/${work.id}`}>
-                    <div className="relative">
+                    <div className="relative overflow-hidden">
                       <img
                         className="h-full hover:scale-105 hover:opacity-70 transition duration-300 ease-in-out object-cover mx-auto"
                         src={work.image}
@@ -73,7 +74,7 @@ function Portfolio() {
                       />
                     </div>
                   </Link>
-                  <div className="w-[95%] mx-auto flex flex-col gap-3 px-3 py-2 ">
+                  <div className="w-[95%] mx-auto flex flex-col gap-3 px-3 py-2 flex-1">
                     <h3 className=" text-[1.3em] capitalize font-semibold text-left tracking-wide line-clamp-1 text-tertiary ">
                       {work.title}
                     </h3>

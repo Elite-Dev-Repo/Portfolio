@@ -22,9 +22,9 @@ function Qualifications() {
       duration: "2021 - Till Date",
     },
     {
-      position: "Enigma",
+      position: "Square",
       place: "Founder",
-      duration: "2023 - Till Date",
+      duration: "2026",
     },
     {
       position: "Elite DEV",

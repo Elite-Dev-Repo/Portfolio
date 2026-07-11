@@ -1,25 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ScrollText, GraduationCap, PhoneForwarded } from "lucide-react";
 
 const Nav = () => {
   const navLinks = [
     {
       name: "About",
-      icon: <ScrollText />,
     },
     {
       name: "Projects",
-      icon: <GraduationCap />,
     },
     {
       name: "Contact",
-      icon: <PhoneForwarded />,
     },
   ];
   const navItems = navLinks.map((link) => {
     return (
-      <li className="border-r border-black/30 pr-5" key={link.name}>
+      <li className="border-r border-white/30 pr-5" key={link.name}>
         <a
           href={`/#${link.name.toLowerCase()}`}
           className="nav-link max-sm:text-[12px] text-tertiary hover:text-secondary transition"
