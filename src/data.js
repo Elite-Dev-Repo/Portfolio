@@ -14,8 +14,32 @@ import paysctackfordja from "./assets/paystackfordja.png";
 import driphvn from "./assets/driphvn.png";
 import amber from "./assets/amber.png";
 import greenarchive from "./assets/greenarchive.png";
+import square from "./assets/square.png";
 
 const works = [
+  {
+    id: "square",
+    top: 0,
+    image: square,
+    title: "Square - The Nigerian Freelance Marketplace",
+    description:
+      "A full-stack freelance marketplace connecting Nigerian clients with verified artisans — plumbers, electricians, mechanics, carpenters, and AC technicians. Features job posting, artisan discovery, reviews, real-time chat, and Paystack-powered escrow payments for secure transactions.",
+    techs: [
+      "React.js",
+      "TypeScript",
+      "Django",
+      "PostgreSQL",
+      "DRF",
+      "Paystack",
+      "WebSocket",
+      "Google OAuth",
+    ],
+    link: "https://square-marketplace.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/square",
+    howIMadeIt:
+      "I built Square to solve the trust and verification gap in Nigeria's artisan economy. The frontend is built with React and TypeScript using Vite, with shadcn/ui components and Tailwind CSS for the design system. Framer-motion powers scroll-triggered animations throughout the landing page. For auth, I integrated Google OAuth alongside JWT token-based authentication with automatic refresh handling via axios interceptors. The backend runs on Django REST Framework with PostgreSQL. Key features include an escrow payment system backed by Paystack (with transaction initialization, verification, and dispute resolution), real-time messaging via Django Channels WebSockets, and role-based workflows for clients vs artisans. The biggest challenge was designing the escrow lifecycle — from pending funding through funded, in-progress, completed, and disputed states — ensuring both parties have clear confirmation steps before funds are released.",
+  },
   {
     id: "green-archive",
     top: 0,
