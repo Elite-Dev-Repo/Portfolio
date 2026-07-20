@@ -97,8 +97,8 @@ function Header() {
               className="list py-4 md:py-8 flex flex-col gap-4 relative md:absolute md:bottom-[8em] md:left-[2em] items-center md:items-start text-center md:text-left order-2 md:order-0 w-full md:w-auto px-4 md:px-0"
             >
               <p className="text-tertiary sm:text-[.9rem] md:text-[1rem]">
-                Frontend Development, Backend Development, Wix Development.{" "}
-                <br /> SEO friendly websites, Modern and Responsive.
+                Frontend Development, Backend Development, <br /> SEO friendly
+                websites, Modern and Responsive.
               </p>
               <div className="ctas flex flex-wrap justify-center md:justify-start gap-8">
                 <button className="sm:text-[.9rem] md:text-[1rem]">

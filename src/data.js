@@ -1,8 +1,5 @@
 import tabbiebites from "./assets/tabbiebites.png";
-import dashboard from "./assets/dashboard.png";
-import beadchef from "./assets/beadchef.png";
 import vesta from "./assets/vesta.png";
-import amanti from "./assets/amanti.png";
 import soda from "./assets/soda.png";
 import velocargo from "./assets/velocargo.png";
 import child from "./assets/tchild.png";
@@ -15,6 +12,7 @@ import driphvn from "./assets/driphvn.png";
 import amber from "./assets/amber.png";
 import greenarchive from "./assets/greenarchive.png";
 import square from "./assets/square.png";
+import cortex from "./assets/cortex.png";
 
 const works = [
   {
@@ -39,6 +37,27 @@ const works = [
     git: "https://github.com/Elite-Dev-Repo/square",
     howIMadeIt:
       "I built Square to solve the trust and verification gap in Nigeria's artisan economy. The frontend is built with React and TypeScript using Vite, with shadcn/ui components and Tailwind CSS for the design system. Framer-motion powers scroll-triggered animations throughout the landing page. For auth, I integrated Google OAuth alongside JWT token-based authentication with automatic refresh handling via axios interceptors. The backend runs on Django REST Framework with PostgreSQL. Key features include an escrow payment system backed by Paystack (with transaction initialization, verification, and dispute resolution), real-time messaging via Django Channels WebSockets, and role-based workflows for clients vs artisans. The biggest challenge was designing the escrow lifecycle — from pending funding through funded, in-progress, completed, and disputed states — ensuring both parties have clear confirmation steps before funds are released.",
+  },
+  {
+    id: "Cortex",
+    top: 0,
+    image: cortex,
+    title: "Cortex - Mind Mapping Tool for Developers",
+    description:
+      "A project structure planner and visual workspace helper for developers. It enables teams to brainstorm ideas in seconds, break them down into granular features, and visually track developmental status and progress in a clean cards-based workflow.",
+    techs: [
+      "React.js",
+      "Django",
+      "Framer Motion",
+      "DRF",
+      "PostgreSQL",
+      "Lucide Icons",
+    ],
+    link: "https://cortex-appio.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/CortexFrontend",
+    howIMadeIt:
+      "I built Cortex to help developers seamlessly scaffold project ideas and establish clear plans. The frontend is powered by React and Tailwind CSS, leveraging Vite for lightning-fast bundling. Smooth UI transitions are handled by Framer Motion, and drag-and-drop functionality for managing feature task boards is powered by @dnd-kit/react. The biggest design challenge was resolving container positioning context bugs to make card stacks stick gracefully during page scroll, and constructing a responsive collapsible navbar.",
   },
   {
     id: "green-archive",
@@ -228,20 +247,6 @@ const works = [
     howIMadeIt:
       "Utilized ShadcnUI for accessible, pre-built components and customized them heavily to match the brand. I used Framer Motion to create meaningful transitions that guide the user through the foundation's mission story.",
   },
-  {
-    id: "amanti",
-    top: 78,
-    image: amanti,
-    title: "Amanti",
-    description:
-      "A creative digital tool for generating heartfelt Valentine’s messages. This project features a responsive, mobile-first design that prioritizes ease of use and instant sharing, making it simple for anyone to create custom romantic notes on the fly.",
-    techs: ["React .js", "TailwindCSS", "JavaScript"],
-    link: "https://amanti-ai.vercel.app/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/Amanti.git",
-    howIMadeIt:
-      "Implemented a lightweight state management system to handle message generation. The UI was built with a mobile-first philosophy to ensure users could generate and share messages instantly from any device.",
-  },
 
   {
     id: "velocargo",
@@ -257,35 +262,21 @@ const works = [
     howIMadeIt:
       "Focused on information architecture. I built a clean, grid-based layout using Tailwind to ensure high-density logistics data remains readable and actionable for fleet managers.",
   },
-  {
-    id: "beadchef",
-    top: 90,
-    image: beadchef,
-    title: "Beadchef",
-    description:
-      "A modern storefront interface for an artisanal bead brand. Built with a mobile-first approach, it features clean typography and smooth transitions to provide a premium shopping feel.",
-    techs: ["React .js", "TailwindCSS", "JavaScript"],
-    link: "https://beadchef.vercel.app/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/Beady.git",
-    howIMadeIt:
-      "Designed the UI to spotlight product imagery. I used custom CSS transitions and Tailwind for a minimalist aesthetic that emphasizes the craftsmanship of the artisanal products.",
-  },
 
-  {
-    id: "enigma-analytics",
-    top: 96,
-    image: dashboard,
-    title: "Enigma Analytics",
-    description:
-      "A high-performance analytics interface designed for data-driven decision-making. This dashboard features a responsive layout and modular component architecture, ensuring seamless data visualization across all device types while maintaining strict type safety.",
-    techs: ["React .js", "TailwindCSS", "Typescript"],
-    link: "https://enigma-analytics.pxxl.click/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/EnigmaDashboard.git",
-    howIMadeIt:
-      "Developed with TypeScript to ensure type safety across complex data visualizations. I built a modular component library using Tailwind to allow for flexible dashboard layouts.",
-  },
+  // {
+  //   id: "enigma-analytics",
+  //   top: 96,
+  //   image: dashboard,
+  //   title: "Enigma Analytics",
+  //   description:
+  //     "A high-performance analytics interface designed for data-driven decision-making. This dashboard features a responsive layout and modular component architecture, ensuring seamless data visualization across all device types while maintaining strict type safety.",
+  //   techs: ["React .js", "TailwindCSS", "Typescript"],
+  //   link: "https://enigma-analytics.pxxl.click/",
+  //   label: "Front End",
+  //   git: "https://github.com/Elite-Dev-Repo/EnigmaDashboard.git",
+  //   howIMadeIt:
+  //     "Developed with TypeScript to ensure type safety across complex data visualizations. I built a modular component library using Tailwind to allow for flexible dashboard layouts.",
+  // },
   /*{
     id: "rantsarena",
     image: rantsarena,
@@ -311,6 +302,34 @@ const works = [
   //   git: "https://github.com/Elite-Dev-Repo/Recipe.git",
   //   howIMadeIt:
   //     "Integrated a third-party recipe API to fetch real-time data. I focused on building an efficient search and filter system on the frontend to allow users to find meals by ingredients or diet.",
+  // },
+  // {
+  //   id: "amanti",
+  //   top: 78,
+  //   image: amanti,
+  //   title: "Amanti",
+  //   description:
+  //     "A creative digital tool for generating heartfelt Valentine’s messages. This project features a responsive, mobile-first design that prioritizes ease of use and instant sharing, making it simple for anyone to create custom romantic notes on the fly.",
+  //   techs: ["React .js", "TailwindCSS", "JavaScript"],
+  //   link: "https://amanti-ai.vercel.app/",
+  //   label: "Front End",
+  //   git: "https://github.com/Elite-Dev-Repo/Amanti.git",
+  //   howIMadeIt:
+  //     "Implemented a lightweight state management system to handle message generation. The UI was built with a mobile-first philosophy to ensure users could generate and share messages instantly from any device.",
+  // },
+  // {
+  //   id: "beadchef",
+  //   top: 90,
+  //   image: beadchef,
+  //   title: "Beadchef",
+  //   description:
+  //     "A modern storefront interface for an artisanal bead brand. Built with a mobile-first approach, it features clean typography and smooth transitions to provide a premium shopping feel.",
+  //   techs: ["React .js", "TailwindCSS", "JavaScript"],
+  //   link: "https://beadchef.vercel.app/",
+  //   label: "Front End",
+  //   git: "https://github.com/Elite-Dev-Repo/Beady.git",
+  //   howIMadeIt:
+  //     "Designed the UI to spotlight product imagery. I used custom CSS transitions and Tailwind for a minimalist aesthetic that emphasizes the craftsmanship of the artisanal products.",
   // },
 ];
 
