@@ -104,7 +104,7 @@ function Header() {
                 <button className="sm:text-[.9rem] md:text-[1rem]">
                   <a
                     href={resume}
-                    className=" gap-2 flex items-center px-6 py-3 rounded-sm text-primary bg-secondary hover:bg-tertiary border hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition duration-300 ease-in-out uppercase tracking-wide"
+                    className=" gap-2 flex items-center px-5 py-3 rounded-sm text-primary bg-secondary hover:bg-tertiary border hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition duration-300 ease-in-out uppercase tracking-wide"
                   >
                     Download Resume
                     <span>
