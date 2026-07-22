@@ -1,7 +1,6 @@
 import tabbiebites from "./assets/tabbiebites.png";
 import vesta from "./assets/vesta.png";
 import soda from "./assets/soda.png";
-import velocargo from "./assets/velocargo.png";
 import child from "./assets/tchild.png";
 import offertrail from "./assets/offertrail.png";
 import learnstack from "./assets/learnstack.png";
@@ -13,7 +12,7 @@ import amber from "./assets/amber.png";
 import greenarchive from "./assets/greenarchive.png";
 import square from "./assets/square.png";
 import cortex from "./assets/cortex.png";
-
+import voyant from "./assets/voyant.png";
 const works = [
   {
     id: "square",
@@ -58,6 +57,28 @@ const works = [
     git: "https://github.com/Elite-Dev-Repo/CortexFrontend",
     howIMadeIt:
       "I built Cortex to help developers seamlessly scaffold project ideas and establish clear plans. The frontend is powered by React and Tailwind CSS, leveraging Vite for lightning-fast bundling. Smooth UI transitions are handled by Framer Motion, and drag-and-drop functionality for managing feature task boards is powered by @dnd-kit/react. The biggest design challenge was resolving container positioning context bugs to make card stacks stick gracefully during page scroll, and constructing a responsive collapsible navbar.",
+  },
+
+  {
+    id: "Voyant",
+    top: 0,
+    image: voyant,
+    title: "Voyant - Predict your Spotify Wrapped.",
+    description:
+      "An interactive Spotify Wrapped predictor that lets you guess and curate your top 5 artists, songs, or albums for the year, and generate a customized shareable card.",
+    techs: [
+      "React.js",
+      "Tailwind CSS",
+      "Vite",
+      "Axios",
+      "Canvas API",
+      "RapidAPI",
+    ],
+    link: "https://voyant-not-clair.vercel.app/",
+    label: "Frontend",
+    git: "https://github.com/Elite-Dev-Repo/Voyant",
+    howIMadeIt:
+      "I built Voyant to let music lovers guess and visualize their Spotify Wrapped predictions. The frontend is built using React and styled with Tailwind CSS to offer a sleek, responsive interface. I integrated the Spotify Scraper API via RapidAPI using Axios to let users search for any artist, song, or album in real-time. Once the user curates their top 5 slots, the custom card is generated dynamically on the client-side using the HTML5 Canvas API, allowing them to download high-quality images of their predictions on their choice of custom-designed backgrounds.",
   },
   {
     id: "green-archive",
@@ -248,20 +269,20 @@ const works = [
       "Utilized ShadcnUI for accessible, pre-built components and customized them heavily to match the brand. I used Framer Motion to create meaningful transitions that guide the user through the foundation's mission story.",
   },
 
-  {
-    id: "velocargo",
-    top: 84,
-    image: velocargo,
-    title: "VeloCargo",
-    description:
-      "A high-performance logistics platform designed for seamless supply chain management. Features real-time tracking, mobile-responsive, and optimized delivery workflows.",
-    techs: ["React.js", "TailwindCSS", "JavaScript"],
-    link: "https://velo-cargo.vercel.app/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/VeloCargo",
-    howIMadeIt:
-      "Focused on information architecture. I built a clean, grid-based layout using Tailwind to ensure high-density logistics data remains readable and actionable for fleet managers.",
-  },
+  // {
+  //   id: "velocargo",
+  //   top: 84,
+  //   image: velocargo,
+  //   title: "VeloCargo",
+  //   description:
+  //     "A high-performance logistics platform designed for seamless supply chain management. Features real-time tracking, mobile-responsive, and optimized delivery workflows.",
+  //   techs: ["React.js", "TailwindCSS", "JavaScript"],
+  //   link: "https://velo-cargo.vercel.app/",
+  //   label: "Front End",
+  //   git: "https://github.com/Elite-Dev-Repo/VeloCargo",
+  //   howIMadeIt:
+  //     "Focused on information architecture. I built a clean, grid-based layout using Tailwind to ensure high-density logistics data remains readable and actionable for fleet managers.",
+  // },
 
   // {
   //   id: "enigma-analytics",
