@@ -22,7 +22,7 @@ function Qualifications() {
       duration: "2021 - Till Date",
     },
     {
-      position: "Square",
+      position: "Square / Lexiq",
       place: "Founder",
       duration: "2026",
     },

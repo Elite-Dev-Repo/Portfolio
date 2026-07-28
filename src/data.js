@@ -13,6 +13,7 @@ import greenarchive from "./assets/greenarchive.png";
 import square from "./assets/square.png";
 import cortex from "./assets/cortex.png";
 import voyant from "./assets/voyant.png";
+import lexiq from "./assets/lexiq.png";
 const works = [
   {
     id: "square",
@@ -58,7 +59,28 @@ const works = [
     howIMadeIt:
       "I built Cortex to help developers seamlessly scaffold project ideas and establish clear plans. The frontend is powered by React and Tailwind CSS, leveraging Vite for lightning-fast bundling. Smooth UI transitions are handled by Framer Motion, and drag-and-drop functionality for managing feature task boards is powered by @dnd-kit/react. The biggest design challenge was resolving container positioning context bugs to make card stacks stick gracefully during page scroll, and constructing a responsive collapsible navbar.",
   },
-
+  {
+    id: "Lexiq - Vocabulary Building Quiz Application",
+    top: 0,
+    image: lexiq,
+    title: "Lexiq - Vocabulary Building Quiz Application",
+    description:
+      "A real-time multiplayer vocabulary quiz application where players can create game rooms, choose custom word decks, and compete in fast-paced head-to-head word list challenges.",
+    techs: [
+      "React.js",
+      "Tailwind CSS",
+      "DRF",
+      "Django",
+      "Django Channels",
+      "WebSockets",
+      "Axios",
+    ],
+    link: "https://lexiq-appio.vercel.app/",
+    label: "Fullstack",
+    git: "https://github.com/Elite-Dev-Repo/LexiqFrontend",
+    howIMadeIt:
+      "I built Lexiq to make mastering advanced SAT, GRE, and literary-level vocabulary interactive and competitive. The development features a React and Tailwind CSS frontend powered by a Django backend. I implemented Django Channels and WebSockets to coordinate real-time lobbies, synchronize room status transitions, track quick-time player submissions, and broadcast immediate score updates. Backend services support JWT-authenticated rooms, customizable question countdowns, and modular vocabulary decks with multiple plausible distractors.",
+  },
   {
     id: "Voyant",
     top: 0,
