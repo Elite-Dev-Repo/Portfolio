@@ -10,7 +10,7 @@ import {
   HtmlFile01FreeIcons,
 } from "@hugeicons/core-free-icons";
 import StarfieldHero from "./StarFieldHero";
-import resume from "../assets/001_Oyenekan_Oluwapelumi_Emmanuel_Resume.pdf";
+import resume from "../assets/01_Oyenekan_Oluwapelumi_Emmanuel_Resume.pdf";
 
 function Header() {
   const proof = [
