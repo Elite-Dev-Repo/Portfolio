@@ -39,7 +39,7 @@ function Qualifications() {
     { name: "JavaScript", huge: JavaScriptIcon },
     { name: "TypeScript", huge: Typescript01Icon },
     { name: "React", huge: ReactIcon },
-    { name: "Wix", lucide: Globe },
+
     { name: "Django", lucide: Code2 },
     { name: "TailwindCSS", huge: TailwindcssIcon },
     { name: "Supabase", lucide: Database },
@@ -119,7 +119,7 @@ function Qualifications() {
               <motion.div
                 variants={itemVariants}
                 key={tech.name}
-                className="group relative aspect-square flex flex-col items-center justify-center gap-4 border border-tertiary/10 rounded-2xl bg-tertiary/[0.01] hover:bg-tertiary/[0.03] hover:border-secondary/40 transition-all duration-300 ease-out"
+                className="group relative aspect-square flex flex-col items-center justify-center gap-4 border border-tertiary/10 rounded-2xl bg-tertiary/[0.01] hover:bg-tertiary/[0.03] hover:border-secondary/40 transition-all duration-300 ease-out "
               >
                 <div className="text-tertiary group-hover:text-secondary group-hover:scale-110 transition-all duration-300">
                   {tech.huge ? (
@@ -140,6 +140,7 @@ function Qualifications() {
                     className="fill-secondary text-secondary opacity-0 group-hover:opacity-100 transition-opacity"
                   />
                 </div>
+                <div className="absolute w-25 h-25 border bg-secondary/10 filter blur-2xl border-secondary rounded-full bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out p"></div>
               </motion.div>
             ))}
           </motion.div>
