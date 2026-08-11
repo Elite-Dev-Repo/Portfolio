@@ -14,7 +14,31 @@ import square from "./assets/square.png";
 import cortex from "./assets/cortex.png";
 import voyant from "./assets/voyant.png";
 import lexiq from "./assets/lexiq.png";
+import pseudopay from "./assets/pseudopay.png";
 const works = [
+  {
+    id: "pseudopay",
+    top: 0,
+    image: pseudopay,
+    title: "PseudoPay - Mock Payment Gateway for Developers",
+    description:
+      "A developer utility replicating a payment processor (like Paystack or Stripe) that lets merchants create currency wallets, generate API keys, initialize transactions, redirect customers to a hosted checkout, and receive payment notifications in real-time via webhooks.",
+    techs: [
+      "React.js",
+      "Vite",
+      "TailwindCSS",
+      "Django",
+      "DRF",
+      "PostgreSQL",
+      "Webhook",
+      "Google OAuth",
+    ],
+    link: "https://pseudo-pay.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/PseudoPayFrontend",
+    howIMadeIt:
+      "I built PseudoPay to solve the lack of mock payment API testing environments for developers building Django and React apps. The frontend is built on Vite, React 19, and Tailwind CSS v4, utilizing Lucide and Hugeicons. For authentication, I integrated Google OAuth and raw email registration secured with JWT access/refresh tokens. The backend is run on Django and Django REST Framework with a PostgreSQL database, exposing REST endpoints for merchant profiles, wallet management, and API key generation. A core highlight of the project is the transaction gateway: when a merchant initializes a transaction with their secret API key, they receive a checkout URL; when the mock checkout resolves, the database updates balances atomically and triggers an asynchronous webhook notifying the customer's endpoint. The biggest challenge was implementing secure, prefix-based API key validation (using SHA-256 hashes) and designing robust API rate limiters across different endpoint scopes.",
+  },
   {
     id: "square",
     top: 0,
