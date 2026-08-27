@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import Elite from "../assets/Elite.jpeg";
+import elite2 from "../assets/elite2.jpg";
 
 MoveDown;
 
 function About() {
   return (
     <div>
-      <section className="flex-col">
+      <section className="flex-col lg:h-screen overflow-hidden">
         <div
           id="about"
           className={`about mt-[2em] cont max-sm:flex-col md:flex-col  max-md:flex-col w-full flex min-lg:flex-row block`}
@@ -24,7 +25,7 @@ function About() {
               The Developer behind the screen.
             </h4>
 
-            <p className="leading-7 tracking-wide text-[19px]">
+            <p className="leading-7 tracking-wider text-[19px]">
               <span className="text-4xl font-light">I</span>’m{" "}
               <span className="text-[var(--color-secondary)]">
                 Oyenekan Emmanuel
@@ -48,7 +49,7 @@ function About() {
               solutions, I ensure every build is polished and performant. When
               I’m not coding, you’ll find me over a{" "}
               <span className="italic">chess board</span> or discovering new
-              music—pursuits that keep my logic sharp and my creativity in
+              music pursuits that keep my logic sharp and my creativity in
               rhythm.
             </p>
           </motion.div>
@@ -59,7 +60,11 @@ function About() {
             transition={{ duration: 0.5 }}
             className="img-cont cont md:w-[40%] flex-1 max-sm:w-full md:w-full flex items-center justify-center"
           >
-            <img src={Elite} alt="" className="max-sm:w-full object-cover" />
+            <img
+              src={elite2}
+              alt=""
+              className="max-sm:w-full object-cover grayscale"
+            />
           </motion.div>
         </div>
       </section>

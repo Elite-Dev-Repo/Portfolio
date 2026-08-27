@@ -21,11 +21,11 @@ function Qualifications() {
       place: "Web Developer",
       duration: "2021 - Till Date",
     },
-    {
-      position: "Square / Lexiq",
-      place: "Founder",
-      duration: "2026",
-    },
+    // {
+    //   position: "Square / Lexiq",
+    //   place: "Founder",
+    //   duration: "2026",
+    // },
     {
       position: "Elite DEV",
       place: "",
@@ -38,6 +38,7 @@ function Qualifications() {
   const techData = [
     { name: "JavaScript", huge: JavaScriptIcon },
     { name: "TypeScript", huge: Typescript01Icon },
+    { name: "Next.js", huge: Typescript01Icon },
     { name: "React", huge: ReactIcon },
 
     { name: "Django", lucide: Code2 },
