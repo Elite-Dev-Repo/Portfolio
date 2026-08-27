@@ -15,6 +15,7 @@ import cortex from "./assets/cortex.png";
 import voyant from "./assets/voyant.png";
 import lexiq from "./assets/lexiq.png";
 import pseudopay from "./assets/pseudopay.png";
+import digitallair from "./assets/digitallair.png";
 const works = [
   {
     id: "pseudopay",
@@ -61,6 +62,28 @@ const works = [
     git: "https://github.com/Elite-Dev-Repo/square",
     howIMadeIt:
       "I built Square to solve the trust and verification gap in Nigeria's artisan economy. The frontend is built with React and TypeScript using Vite, with shadcn/ui components and Tailwind CSS for the design system. Framer-motion powers scroll-triggered animations throughout the landing page. For auth, I integrated Google OAuth alongside JWT token-based authentication with automatic refresh handling via axios interceptors. The backend runs on Django REST Framework with PostgreSQL. Key features include an escrow payment system backed by Paystack (with transaction initialization, verification, and dispute resolution), real-time messaging via Django Channels WebSockets, and role-based workflows for clients vs artisans. The biggest challenge was designing the escrow lifecycle — from pending funding through funded, in-progress, completed, and disputed states — ensuring both parties have clear confirmation steps before funds are released.",
+  },
+  {
+    id: "digital-lair",
+    top: 0,
+    image: digitallair,
+    title: "Digital Lair - Premium Digital Products Marketplace",
+    description:
+      "A premium e-commerce storefront for buying high-quality digital goods. It features a catalog with dynamic category filtering, paginated browsing, a persistent shopping cart, secure order placement, and user authentication in a sleek, modern UI.",
+    techs: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Django",
+      "DRF",
+      "PostgreSQL",
+      "Hugeicons",
+    ],
+    link: "https://digital-lair.vercel.app/", // Replace with the actual deployment link if necessary
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/DigitalLairFrontend",
+    howIMadeIt:
+      "I built Digital Lair as a performant, high-end marketplace storefront. The frontend is powered by Next.js and Tailwind CSS (v4) with TypeScript for complete type safety. I designed a paginated product catalog with reactive category changes to ensure super-fast loading and dynamic filtering. The main challenges included constructing a responsive landing page layout containing featured alternating showcases (like Electronics and Logistics) with fluid zoom-hover animations, as well as fixing state synchronization for category filtering during pagination transitions.",
   },
   {
     id: "Cortex",
