@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import works from "../data";
 import Nav from "./Nav";
-import Footer from "./Footer";
-import { useParams, Link } from "react-router-dom";
+import Contact from "./Contact";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { MoveLeft } from "lucide-react";
 
 function Project() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Find the project that matches the ID in the URL
@@ -19,7 +21,7 @@ function Project() {
 
   if (!project) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-secondary">
         <p>
           Project not found.{" "}
           <Link to="/" className="text-blue-500">
@@ -31,10 +33,18 @@ function Project() {
   }
 
   return (
-    <div className=" min-h-screen">
-      <Nav />
-
-      <main className="max-w-6xl mx-auto px-6 py-20">
+    <div className=" min-h-screen bg-secondary">
+      <main className="cont mx-auto px-6 py-20">
+        <div className="w-full h-10">
+          {" "}
+          <p
+            onClick={() => navigate(-1)}
+            className="flex items-center justify-center w-fit gap-3"
+          >
+            {" "}
+            <MoveLeft size={19} /> Go Back
+          </p>
+        </div>
         {/* Header Section */}
         <div className="mb-12">
           <span className="text-sm font-semibold text-tertiary/70 uppercase tracking-widest">
@@ -116,7 +126,7 @@ function Project() {
         </div>
       </main>
 
-      <Footer />
+      <Contact />
     </div>
   );
 }

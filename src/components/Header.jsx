@@ -1,78 +1,41 @@
-import { Download, Send } from "lucide-react";
+import {
+  AtSign,
+  Download,
+  Flame,
+  Hash,
+  Palette,
+  Send,
+  SunSnow,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { HugeiconsIcon } from "@hugeicons/react";
-import {
-  JavaScriptIcon,
-  CodeFolderIcon,
-  PythonIcon,
-  ShadcnSquareIcon,
-  ReactIcon,
-  HtmlFile01FreeIcons,
-} from "@hugeicons/core-free-icons";
+import { NaturalFoodIcon, Rotate360Icon } from "@hugeicons/core-free-icons";
+
 import StarfieldHero from "./StarFieldHero";
-import resume from "../assets/01_Oyenekan_Oluwapelumi_Emmanuel_Resume.pdf";
+// import touch from "../assets/touch.png";
 
 function Header() {
-  const proof = [
-    {
-      name: "JavaScript",
-      icon: <HugeiconsIcon icon={JavaScriptIcon} size={24} strokeWidth={1.5} />,
-    },
-    {
-      name: "React Js",
-      icon: <HugeiconsIcon icon={ReactIcon} size={24} strokeWidth={1.5} />,
-    },
-    {
-      name: "Django",
-      icon: <HugeiconsIcon icon={PythonIcon} size={24} strokeWidth={1.5} />,
-    },
-    {
-      name: "TypeScript",
-      icon: <HugeiconsIcon icon={CodeFolderIcon} size={24} strokeWidth={1.5} />,
-    },
-    {
-      name: "Shadcn",
-      icon: (
-        <HugeiconsIcon icon={ShadcnSquareIcon} size={24} strokeWidth={1.5} />
-      ),
-    },
-    {
-      name: "HTML/ CSS",
-      icon: (
-        <HugeiconsIcon icon={HtmlFile01FreeIcons} size={24} strokeWidth={1.5} />
-      ),
-    },
-  ];
-
-  const proofitem = proof.map((proof) => {
-    return (
-      <p
-        key={proof.name}
-        className="text-[15px] flex items-center gap-3 text-tertiary"
-      >
-        <span className="text-3xl ">{proof.icon}</span> {proof.name}
-      </p>
-    );
-  });
-
   return (
     <>
-      <header className="d-grid text-tertiary relative overflow-hidden min-h-[screen] max-sm:min-h-[calc(100vh+10em)]  max-lg:min-h-[calc(100vh+10em)] ">
-        <div className="w-80 h-80 bg-secondary/8 absolute right-30 top-20 blur-3xl"></div>
+      <header className="d-grid text-secondary relative overflow-hidden min-h-screen w-screen">
+        <div className="w-80 h-80 bg-secondary/20 absolute right-30 top-20 blur-3xl pointer-events-none"></div>
         <StarfieldHero> </StarfieldHero>
-        <div className="px-5">
-          <main className=" w-full min-h-screen md:h-screen flex flex-col md:block items-center md:items-stretch justify-center relative pt-24 md:pt-0 gap-10 md:gap-0 pb-10 md:pb-0">
+        <div className="h-screen cont relative top-5">
+          <main className=" cont h-screen flex flex-col items-center relative pt-24 md:pt-12 gap-10 pb-20 text-center">
             <motion.div
               initial={{ opacity: 0, x: -120 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className=" w-fit mx-auto  md:mt-15 flex items-center gap-3 px-3 py-1 border border-secondary/20 bg-secondary/[0.03] rounded-full"
+              className="w-fit tracking-wider mx-auto flex items-center mt-10 gap-3 border-2 border-secondary bg-secondary rounded-sm"
             >
-              <div className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+              <div className="rounded-sm flex text-[12px] font-bold items-center gap-2 px-2 py-1 bg-tertiary text-secondary">
+                <p>Elite</p>
+                <span>
+                  <HugeiconsIcon icon={NaturalFoodIcon} strokeWidth={1} />
+                </span>
               </div>
-              <span className="font-light text-[12px] tracking-widest uppercase  px-3">
+
+              <span className="text-[11px] text-white tracking-normal uppercase px-3">
                 FullStack Website Developer
               </span>
             </motion.div>
@@ -81,103 +44,214 @@ function Header() {
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col items-center md:absolute text-5xl md:text-[5em] md:left-1/2 md:-translate-x-1/2  font-semibold md:mt-[.4em] order-1 md:order-0 text-center w-full md:w-auto"
+              className="flex flex-col items-center text-5xl md:text-[3.4em] font-semibold text-center w-full"
             >
-              <div className="bg-secondary text-primary text-[25px] px-3 py-1">
-                I am
-              </div>
               <div className="">
-                Oyenekan<span className="opacity-65 "> Emmanuel</span>
+                <p className="flex gap-x-3 items-center justify-center ">
+                  Turning Ideas
+                </p>
+                <p className="opacity-75 "> Into Reality.</p>
               </div>
             </motion.h1>
-            <motion.div
-              initial={{ opacity: 0, x: -120 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="list py-4 md:py-8 flex flex-col gap-4 relative md:absolute md:bottom-[8em] md:left-[2em] items-center md:items-start text-center md:text-left order-2 md:order-0 w-full md:w-auto px-4 md:px-0"
-            >
-              <p className="text-tertiary sm:text-[.9rem] md:text-[1rem]">
-                Helping businesses and individuals build high-performing <br />
-                Software Solutions. <br /> Transforming ideas into fast, scalable
-                web experiences that drive growth.
-              </p>
-              <div className="ctas flex flex-wrap justify-center md:justify-start gap-8">
-                <button className="sm:text-[.9rem] md:text-[1rem]">
-                  <a
-                    href={resume}
-                    className=" gap-2 flex items-center px-5 py-3 rounded-sm text-primary bg-secondary hover:bg-tertiary border hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition duration-300 ease-in-out uppercase tracking-wide"
-                  >
-                    Download Resume
-                    <span>
-                      <Download className="text-primary" />
-                    </span>
-                  </a>
-                </button>
-                <button className="sm:text-[.9rem] md:text-[1rem]">
-                  <a
-                    href="mailto:oyenekantomiwa2@gmail.com"
-                    target="_blank"
-                    className="flex items-center gap-2 px-6 py-3 text-tertiary border border-tertiary shad"
-                  >
-                    Message Me <Send />
-                  </a>
-                </button>
-              </div>
-            </motion.div>
-            <div className="trust py-4  md:py-8 flex flex-col gap-4 bottom-[7em] relative md:absolute max-lg:bottom-[-3em] md:right-[2em] items-center md:items-end order-3 md:order-0 w-full md:w-auto">
-              <h3 className="mr-45 text-tertiary text-md uppercase tracking-widest">
-                My TechStack.
-              </h3>
 
-              {/* Marquee Wrapper */}
-              <div className="relative flex overflow-hidden w-full max-w-[500px] md:w-[500px] [--gap:3rem] [gap:var(--gap)]">
-                {/* First set of items */}
-                <div className="flex shrink-0 items-center justify-around [gap:var(--gap)] animate-marquee min-w-full">
-                  {proofitem}
-                </div>
+            <div className="w-190  max-w-screen h-80 relative">
+              <motion.div
+                initial={{ x: "-120px" }}
+                whileInView={{ x: "0px" }}
+                transition={{ duration: 0.5 }}
+                className="absolute left-5 bottom-0 w-15 h-15 bg-purple-600 flex items-center justify-center rounded-full"
+              >
+                <Flame size={32} />
+              </motion.div>
 
-                {/* Duplicate set of items (Required for infinite loop) */}
-                <div
-                  aria-hidden="true"
-                  className="flex shrink-0 items-center justify-around [gap:var(--gap)] animate-marquee min-w-full"
-                >
-                  {proofitem}
-                </div>
-              </div>
-
-              {/* Your existing style tag stays here */}
-              <style
-                dangerouslySetInnerHTML={{
-                  __html: `
-        @keyframes marquee {
-          from { transform: translateX(0); }
-          to { transform: translateX(calc(-100% - var(--gap))); }
-        }
-        .animate-marquee {
-          animation: marquee 30s linear infinite;
-        }
-      `,
+              <motion.div
+                initial={{ x: "-120px", y: "-20px", opacity: 0 }}
+                whileInView={{
+                  x: "0px",
+                  y: "0px",
+                  opacity: 1,
+                  rotate: "360deg",
                 }}
-              />
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="absolute left-41 bottom-12 w-15 h-15 bg-[#FFCA3A] flex items-center justify-center rounded-full"
+              >
+                <Palette size={32} />
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "-20px", y: "-40px", opacity: 0 }}
+                whileInView={{
+                  x: "0px",
+                  y: "0px",
+                  opacity: 1,
+                }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="px-5 py-2.5 bg-teal-400 left-49 font-semibold rotate-5 bottom-24 absolute rounded-full"
+              >
+                {" "}
+                SEO Optimized
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "-120px", opacity: 0 }}
+                whileInView={{ x: "0px", opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="px-5 py-2.5 bg-orange-500 font-semibold rotate-30 bottom-10 absolute rounded-full"
+              >
+                {" "}
+                Software Development
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "-10px", y: "100px", opacity: 0 }}
+                whileInView={{
+                  x: "0px",
+                  y: "0px",
+                  opacity: 1,
+                }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="left-49 px-5 py-2.5 bg-secondary text-primary font-semibold -rotate-22 bottom-8 absolute rounded-full"
+              >
+                {" "}
+                Frontend Development
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "-120px", y: "-20px", opacity: 0 }}
+                whileInView={{
+                  x: "0px",
+                  y: "0px",
+                  opacity: 1,
+                  rotate: "360deg",
+                }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="absolute right-67 bottom-14 w-15 h-15 bg-orange-400 flex items-center justify-center rounded-full"
+              >
+                <SunSnow size={32} />
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "120px", y: "-20px", opacity: 0 }}
+                whileInView={{
+                  x: "0px",
+                  y: "0px",
+                  opacity: 1,
+                  rotate: "360deg",
+                }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="absolute right-52 bottom-18 w-15 h-15 bg-blue-400 flex items-center justify-center rounded-full"
+              >
+                <Hash size={32} />
+              </motion.div>
+
+              <motion.div
+                initial={{ x: "10px", y: "100px", opacity: 0 }}
+                whileInView={{
+                  x: "0px",
+                  y: "0px",
+                  opacity: 1,
+                }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="left-86 px-5 py-2.5 bg-tertiary text-secondary font-semibold bottom-2 absolute rounded-full"
+              >
+                {" "}
+                API Integration
+              </motion.div>
+              <motion.div
+                initial={{ x: "120px", opacity: 0 }}
+                whileInView={{ x: "0px", opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="right-14 px-5 py-2.5 -rotate-15 bottom-11 bg-yellow-400 text-secondary font-semibold  absolute rounded-full"
+              >
+                {" "}
+                Backend Development
+              </motion.div>
+              <motion.div
+                initial={{ x: "120px" }}
+                whileInView={{ x: "0px" }}
+                transition={{ duration: 0.5 }}
+                className="absolute right-15 bottom-0 w-15 h-15 bg-[#FE5FC2] flex items-center justify-center rounded-full"
+              >
+                <AtSign size={32} />
+              </motion.div>
             </div>
-            <style
-              dangerouslySetInnerHTML={{
-                __html: `
-          @keyframes marquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(calc(-100% - var(--gap))); }
-          }
-          .animate-marquee {
-            animation: marquee 30s linear infinite;
-          }
-        `,
-              }}
-            />
           </main>
         </div>{" "}
       </header>
     </>
   );
 }
+
+/* <header className="d-grid text-secondary relative overflow-hidden min-h-screen -mt-20 w-screen">
+  <div className="w-80 h-80 bg-secondary/20 absolute right-30 top-20 blur-3xl pointer-events-none"></div>
+  <StarfieldHero> </StarfieldHero>
+  <div className="h-screen cont relative top-15">
+    <main className=" cont min-h-screen flex flex-col items-center relative pt-24 md:pt-12 gap-10 pb-20 text-center">
+      <motion.div
+        initial={{ opacity: 0, x: -120 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className="w-fit tracking-wider mx-auto flex items-center mt-10 gap-3 border-2 border-secondary bg-secondary rounded-sm"
+      >
+        <div className="rounded-sm flex text-[12px] font-bold items-center gap-2 px-2 py-1 bg-tertiary text-secondary">
+          <p>Elite</p>
+          <span>
+            <HugeiconsIcon icon={NaturalFoodIcon} strokeWidth={1} />
+          </span>
+        </div>
+
+        <span className="text-[11px] text-white tracking-normal uppercase px-3">
+          FullStack Website Developer
+        </span>
+      </motion.div>
+
+      <motion.h1
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col items-center text-5xl md:text-[4em] font-semibold text-center w-full"
+      >
+        <div className="">
+          <p className="flex gap-x-3 items-center justify-center">
+            Turning{" "}
+            <span className="animate-bounce p-3 flex items-center justify-center rounded-full bg-tertiary text-secondary">
+              <HugeiconsIcon icon={Rotate360Icon} size={29} strokeWidth={2.5} />
+            </span>{" "}
+            Ideas{" "}
+          </p>
+          <span className="opacity-75 ">
+            {" "}
+            <br /> Into Reality.
+          </span>
+        </div>
+      </motion.h1>
+
+      <div className="absolute w-screen h-screen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inset-x-0 -bottom-10 flex justify-center pointer-events-none overflow-hidden px-5">
+        <img
+          src={touch}
+          alt=""
+          className=" w-full max-w-[1280px] mx-auto object-cover relative -bottom-40"
+        />
+      </div>
+    </main>
+  </div>{" "}
+  <div className="h-16 w-full bg-tertiary relative overflow-hidden">
+    <motion.div
+      animate={{ x: ["0%", "-50%"] }}
+      transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+      className="w-fit h-full flex"
+    >
+      {Array(4)
+        .fill(null)
+        .map(() => {
+          return (
+            <div className="w-screen h-full overflow-hidden flex items-center  justify-around">
+              {proofitem}
+            </div>
+          );
+        })}
+    </motion.div>
+  </div>
+</header>; */
 
 export default Header;

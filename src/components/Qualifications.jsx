@@ -7,7 +7,16 @@ import {
   TailwindcssIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Database, Layers, Globe, Code2, Circle } from "lucide-react";
+import {
+  Database,
+  Layers,
+  Globe,
+  Code2,
+  Terminal,
+  Cpu,
+  Smartphone,
+  Wrench,
+} from "lucide-react";
 
 function Qualifications() {
   const qual = [
@@ -21,11 +30,6 @@ function Qualifications() {
       place: "Web Developer",
       duration: "2021 - Till Date",
     },
-    // {
-    //   position: "Square / Lexiq",
-    //   place: "Founder",
-    //   duration: "2026",
-    // },
     {
       position: "Elite DEV",
       place: "",
@@ -33,35 +37,70 @@ function Qualifications() {
     },
   ];
 
-  // Tech stack data
-  // Using Hugeicons where available, Lucide components as fallbacks
-  const techData = [
-    { name: "JavaScript", huge: JavaScriptIcon },
-    { name: "TypeScript", huge: Typescript01Icon },
-    { name: "Next.js", huge: Typescript01Icon },
-    { name: "React", huge: ReactIcon },
-
-    { name: "Django", lucide: Code2 },
-    { name: "TailwindCSS", huge: TailwindcssIcon },
-    { name: "Supabase", lucide: Database },
-    { name: "ShadcnUI", lucide: Layers },
+  const stackData = [
+    {
+      title: "Frontend",
+      categoryIcon: Globe,
+      data: [
+        { name: "JavaScript", huge: JavaScriptIcon },
+        { name: "TypeScript", huge: Typescript01Icon },
+        { name: "React.js", huge: ReactIcon },
+        { name: "Next.js", huge: Typescript01Icon },
+        { name: "TailwindCSS", huge: TailwindcssIcon },
+        { name: "HTML / CSS", lucide: Code2 },
+      ],
+    },
+    {
+      title: "Backend",
+      categoryIcon: Cpu,
+      data: [
+        { name: "Python", lucide: Code2 },
+        { name: "Django", lucide: Code2 },
+        { name: "DRF", lucide: Code2 },
+        { name: "Next.js", lucide: Code2 },
+        { name: "PostgreSQL", lucide: Database },
+        { name: "Redis", lucide: Database },
+      ],
+    },
+    {
+      title: "Mobile",
+      categoryIcon: Smartphone,
+      data: [
+        { name: "React Native", huge: ReactIcon },
+        { name: "Expo", lucide: Code2 },
+      ],
+    },
+    {
+      title: "Tools & Ecosystem",
+      categoryIcon: Wrench,
+      data: [
+        { name: "Postman" },
+        { name: "VS Code" },
+        { name: "Playwright" },
+        { name: "Celery" },
+        { name: "ShadcnUI", lucide: Layers },
+        { name: "Supabase", lucide: Database },
+      ],
+    },
   ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.1 },
+      transition: {
+        staggerChildren: 0.1,
+      },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, scale: 0.9, y: 10 },
-    visible: { opacity: 1, scale: 1, y: 0 },
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   return (
-    <div className="py-20 bg-background text-tertiary">
+    <div className="py-20 bg-secondary text-tertiary">
       {/* Qualifications Section */}
       <section className="flex flex-col mb-32">
         <div
@@ -71,6 +110,7 @@ function Qualifications() {
           <motion.h2
             initial={{ opacity: 0, y: -70 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="text-[7em] max-sm:text-[2.5em] max-lg:text-[6em] uppercase font-semibold text-center leading-none"
           >
@@ -84,6 +124,7 @@ function Qualifications() {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 key={index}
                 className="flex flex-col items-center"
@@ -92,60 +133,57 @@ function Qualifications() {
                   {item.position}
                 </h5>
                 <p className="opacity-70 text-center">{item.place || ""}</p>
-                <p className="text-secondary font-mono mt-2">{item.duration}</p>
+                <p className="text-primary font-mono mt-2">{item.duration}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Tech Stack Section */}
-      <section id="tech-stack" className="flex flex-col items-center px-5">
-        <div className="w-full max-w-5xl">
-          <div className="flex flex-col items-center gap-3 mb-16">
-            <h4 className="font-bold text-md tracking-[0.4em] uppercase opacity-50 text-secondary">
-              Tech Stack
-            </h4>
-            <div className="h-[1px] w-12 bg-secondary" />
-          </div>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
+      {/* Modernized Technologies / Tech Stack Section */}
+      {/* Technologies Section */}
+      <section id="tech-stack" className="w-full max-w-6xl mx-auto px-5">
+        <div className="flex flex-col items-center mb-16">
+          <motion.h3
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+            transition={{ duration: 0.5 }}
+            className="text-[5em] max-sm:text-[2.8em] uppercase font-semibold text-center leading-none"
           >
-            {techData.map((tech) => (
+            Technologies
+          </motion.h3>
+        </div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-5"
+        >
+          {stackData
+            .flatMap((category) => category.data)
+            .filter(
+              (item, index, self) =>
+                index === self.findIndex((tech) => tech.name === item.name),
+            )
+            .map((item, index) => (
               <motion.div
+                key={item.name}
                 variants={itemVariants}
-                key={tech.name}
-                className="group relative aspect-square flex flex-col items-center justify-center gap-4 border border-tertiary/10 rounded-2xl bg-tertiary/[0.01] hover:bg-tertiary/[0.03] hover:border-secondary/40 transition-all duration-300 ease-out "
+                className="group flex items-center gap-3 py-3 border-b border-tertiary/10"
               >
-                <div className="text-tertiary group-hover:text-secondary group-hover:scale-110 transition-all duration-300">
-                  {tech.huge ? (
-                    <HugeiconsIcon icon={tech.huge} size={40} />
-                  ) : (
-                    <tech.lucide size={40} strokeWidth={1.5} />
-                  )}
-                </div>
+                <span className="text-primary font-mono text-xs opacity-60">
+                  0{index + 1}
+                </span>
 
-                <p className="text-[11px] tracking-[0.2em] uppercase font-bold opacity-40 group-hover:opacity-100 group-hover:text-secondary transition-all">
-                  {tech.name}
-                </p>
-
-                {/* Corner Dot decoration */}
-                <div className="absolute top-3 right-3">
-                  <Circle
-                    size={4}
-                    className="fill-secondary text-secondary opacity-0 group-hover:opacity-100 transition-opacity"
-                  />
-                </div>
-                <div className="absolute w-25 h-25 border bg-secondary/10 filter blur-2xl border-secondary rounded-full bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out p"></div>
+                <span className="text-base md:text-lg font-medium group-hover:text-primary transition-colors duration-200">
+                  {item.name}
+                </span>
               </motion.div>
             ))}
-          </motion.div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

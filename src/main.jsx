@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import Error from "./components/Error.jsx";
 import Project from "./components/Project.jsx";
 import Who from "./Who.jsx";
+import AllProjects from "./components/AllProjects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/who-is-elite-dev",
     element: <Who />,
+  },
+  {
+    path: "/all-projects/",
+    element: <AllProjects />,
   },
   {
     path: "/project/:id",

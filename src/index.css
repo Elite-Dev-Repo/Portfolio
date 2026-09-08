@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #131313;
-  --color-secondary: #ccf720;
-  --color-tertiary: #f2f2f2;
+  --color-primary: #f8f6f2; /* ededef  */
+  --color-secondary: #0a0a0a;
+  --color-tertiary: #c0ff71;
 }
 
 * {
   box-sizing: border-box;
   list-style: none;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 body {
   color: #fff;
   text-decoration: none;
-  overflow-x: hidden;
-  width: 100vw;
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--color-primary);
   min-height: 100vh;
+}
+
+html {
+  overflow-x: clip;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 /* Scrollbar Styling */
@@ -42,23 +54,13 @@ body {
 /* Components Layer */
 @layer components {
   .cont {
-    padding-inline: 20px;
-    max-width: 1250px;
-    @apply min-h-screen w-full flex justify-evenly flex-col items-center mx-auto relative;
+    @apply w-full max-w-300 px-5 mx-auto;
   }
 
   .cta {
     border: 1px solid #fff;
     background-color: var(--color-primary);
   }
-}
-
-/* Header & Navigation */
-header {
-  height: 100vh;
-  width: 100%;
-  position: relative; /* Essential for the grid to align */
-  background: var(--color-primary);
 }
 
 nav {
@@ -70,7 +72,8 @@ nav {
 }
 
 section {
-  @apply w-full min-h-screen flex;
+  @apply w-full min-h-screen flex flex-col items-center;
+  /* center section content — children with .cont will be perfectly centered */
 }
 
 .d-grid::before {
@@ -155,7 +158,6 @@ section {
 }
 
 ::selection {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
 }
-    

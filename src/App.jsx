@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // Added Framer Motion
 import Header from "./components/Header.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
-import Portfolio from "./components/Portfolio.jsx";
+import ProjectsSection from "./components/ProjectsSection.jsx";
 import Qualifications from "./components/Qualifications.jsx";
 import Footer from "./components/Footer.jsx";
 import Nav from "./components/Nav.jsx";
@@ -23,11 +23,11 @@ function App() {
 
     app
       .use(Stick({ padding: 15 }))
-      .use(Dot({ size: 6, color: "#ccf720", hideOnShape: true }))
+      .use(Dot({ size: 6, color: "#000", hideOnShape: true }))
       .use(
         SmartRing({
           size: 30,
-          color: "#ccf720",
+          color: "#000",
           enableSkew: true,
           enableScale: true,
         }),
@@ -43,12 +43,19 @@ function App() {
         initial={{ filter: "blur(15px)" }}
         animate={{ filter: "blur(0px)" }}
         transition={{ duration: 0.5 }}
+        style={{ overflow: "visible" }}
       >
         <About />
-        <Portfolio />
+      </motion.div>
+      <ProjectsSection />
+      <motion.div
+        initial={{ filter: "blur(15px)" }}
+        animate={{ filter: "blur(0px)" }}
+        transition={{ duration: 0.5 }}
+        style={{ overflow: "visible" }}
+      >
         <Qualifications />
         <Contact />
-        <Footer />
       </motion.div>
     </>
   );

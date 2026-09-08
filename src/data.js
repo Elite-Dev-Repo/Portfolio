@@ -1,6 +1,5 @@
 import tabbiebites from "./assets/tabbiebites.png";
 import vesta from "./assets/vesta.png";
-import soda from "./assets/soda.png";
 import child from "./assets/tchild.png";
 import offertrail from "./assets/offertrail.png";
 import learnstack from "./assets/learnstack.png";
@@ -9,13 +8,13 @@ import lemur from "./assets/lemur.png";
 import paysctackfordja from "./assets/paystackfordja.png";
 import driphvn from "./assets/driphvn.png";
 import amber from "./assets/amber.png";
-import greenarchive from "./assets/greenarchive.png";
 import square from "./assets/square.png";
 import cortex from "./assets/cortex.png";
 import voyant from "./assets/voyant.png";
 import lexiq from "./assets/lexiq.png";
 import pseudopay from "./assets/pseudopay.png";
 import digitallair from "./assets/digitallair.png";
+import elucid from "./assets/elucid.png";
 const works = [
   {
     id: "pseudopay",
@@ -26,10 +25,10 @@ const works = [
       "A developer utility replicating a payment processor (like Paystack or Stripe) that lets merchants create currency wallets, generate API keys, initialize transactions, redirect customers to a hosted checkout, and receive payment notifications in real-time via webhooks.",
     techs: [
       "React.js",
-      "Vite",
-      "TailwindCSS",
+
       "Django",
       "DRF",
+      "TailwindCSS",
       "PostgreSQL",
       "Webhook",
       "Google OAuth",
@@ -38,7 +37,7 @@ const works = [
     label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo/PseudoPayFrontend",
     howIMadeIt:
-      "I built PseudoPay to solve the lack of mock payment API testing environments for developers building Django and React apps. The frontend is built on Vite, React 19, and Tailwind CSS v4, utilizing Lucide and Hugeicons. For authentication, I integrated Google OAuth and raw email registration secured with JWT access/refresh tokens. The backend is run on Django and Django REST Framework with a PostgreSQL database, exposing REST endpoints for merchant profiles, wallet management, and API key generation. A core highlight of the project is the transaction gateway: when a merchant initializes a transaction with their secret API key, they receive a checkout URL; when the mock checkout resolves, the database updates balances atomically and triggers an asynchronous webhook notifying the customer's endpoint. The biggest challenge was implementing secure, prefix-based API key validation (using SHA-256 hashes) and designing robust API rate limiters across different endpoint scopes.",
+      "I built PseudoPay to solve the lack of mock payment API testing environments for developers building Django and React apps. The frontend is built on Vite, React 19, and Tailwind CSS , utilizing Lucide and Hugeicons. For authentication, I integrated Google OAuth and raw email registration secured with JWT access/refresh tokens. The backend is run on Django and Django REST Framework with a PostgreSQL database, exposing REST endpoints for merchant profiles, wallet management, and API key generation. A core highlight of the project is the transaction gateway: when a merchant initializes a transaction with their secret API key, they receive a checkout URL; when the mock checkout resolves, the database updates balances atomically and triggers an asynchronous webhook notifying the customer's endpoint. The biggest challenge was implementing secure, prefix-based API key validation (using SHA-256 hashes) and designing robust API rate limiters across different endpoint scopes.",
   },
   {
     id: "square",
@@ -64,6 +63,32 @@ const works = [
       "I built Square to solve the trust and verification gap in Nigeria's artisan economy. The frontend is built with React and TypeScript using Vite, with shadcn/ui components and Tailwind CSS for the design system. Framer-motion powers scroll-triggered animations throughout the landing page. For auth, I integrated Google OAuth alongside JWT token-based authentication with automatic refresh handling via axios interceptors. The backend runs on Django REST Framework with PostgreSQL. Key features include an escrow payment system backed by Paystack (with transaction initialization, verification, and dispute resolution), real-time messaging via Django Channels WebSockets, and role-based workflows for clients vs artisans. The biggest challenge was designing the escrow lifecycle — from pending funding through funded, in-progress, completed, and disputed states — ensuring both parties have clear confirmation steps before funds are released.",
   },
   {
+    id: "elucid",
+    top: 0,
+    image: elucid,
+    title: "Elucid — The AI-Powered LinkedIn Post Generator",
+    description:
+      "AI-powered LinkedIn post generator that turns raw prompts into long-form, publish-ready posts and publishes them directly to LinkedIn — with history-aware personalization, multi-image uploads (up to 9), and post history management.",
+    techs: [
+      "Next.js 16",
+      "TypeScript",
+      "Tailwind CSS ",
+      "Framer Motion",
+      "Hugeicons",
+      "Django 6",
+      "DRF",
+      "PostgreSQL",
+      "SimpleJWT",
+      "OpenRouter AI",
+      "LinkedIn REST API",
+    ],
+    link: "https://elucid-ai.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/elucidfrontend",
+    howIMadeIt:
+      "I built Elucid as a full-stack LinkedIn automation tool. The frontend is Next.js 16 (App Router) + TypeScript + Tailwind CSS  with a brutalist design system (Bricolage Grotesque for the font), Framer Motion, Hugeicons, Axios, and Sonner. Core UI is a single-prompt generator with a history toggle, animated processing steps (analyzing → drafting → polishing), 9-image upload with previews/validation (10MB, jpg/png/webp/gif), and live preview + copy. Auth is LinkedIn OAuth 2.0 (openid profile email w_member_social) — the backend exchanges the code for tokens, fetches /v2/userinfo, upserts the custom User (linkedin_sub) and issues JWT (10-day access / 30-day refresh). Axios uses a selective interceptor that auto-attaches Bearer tokens only for protected routes and handles FormData for multipart uploads. On POST /api/post-create/ the backend validates context + LinkedIn token, optionally loads PostHistory for context, generates a long-form post via OpenRouter (openrouter/free) with a strict SECURE_PROMPT that prevents hallucination and enforces Hook→Context→Story→Insight structure, then handles LinkedIn's 3-step image flow (initializeUpload → PUT binary → urn:li:image) with dynamic LinkedIn-Version fallback for 426 errors, publishes to /rest/posts (media / multiImage), saves to PostHistory (PostgreSQL + Supabase), and fires a confirmation email via SMTP. A dedicated /history page offers searchable, sortable, accordion-based history with expand/collapse and copy. Deployed on Vercel (frontend) and Render + Gunicorn (backend) with PostgreSQL and CORS locked to elucid-ai.vercel.app.",
+  },
+  {
     id: "digital-lair",
     top: 0,
     image: digitallair,
@@ -79,11 +104,11 @@ const works = [
       "PostgreSQL",
       "Hugeicons",
     ],
-    link: "https://digital-lair.vercel.app/", // Replace with the actual deployment link if necessary
+    link: "https://digital-lair.vercel.app/",
     label: "Full Stack",
     git: "https://github.com/Elite-Dev-Repo/DigitalLairFrontend",
     howIMadeIt:
-      "I built Digital Lair as a performant, high-end marketplace storefront. The frontend is powered by Next.js and Tailwind CSS (v4) with TypeScript for complete type safety. I designed a paginated product catalog with reactive category changes to ensure super-fast loading and dynamic filtering. The main challenges included constructing a responsive landing page layout containing featured alternating showcases (like Electronics and Logistics) with fluid zoom-hover animations, as well as fixing state synchronization for category filtering during pagination transitions.",
+      "I built Digital Lair as a performant, high-end marketplace storefront. The frontend is powered by Next.js and Tailwind CSS () with TypeScript for complete type safety. I designed a paginated product catalog with reactive category changes to ensure super-fast loading and dynamic filtering. The main challenges included constructing a responsive landing page layout containing featured alternating showcases (like Electronics and Logistics) with fluid zoom-hover animations, as well as fixing state synchronization for category filtering during pagination transitions.",
   },
   {
     id: "Cortex",
@@ -148,27 +173,6 @@ const works = [
     git: "https://github.com/Elite-Dev-Repo/Voyant",
     howIMadeIt:
       "I built Voyant to let music lovers guess and visualize their Spotify Wrapped predictions. The frontend is built using React and styled with Tailwind CSS to offer a sleek, responsive interface. I integrated the Spotify Scraper API via RapidAPI using Axios to let users search for any artist, song, or album in real-time. Once the user curates their top 5 slots, the custom card is generated dynamically on the client-side using the HTML5 Canvas API, allowing them to download high-quality images of their predictions on their choice of custom-designed backgrounds.",
-  },
-  {
-    id: "green-archive",
-    top: 0,
-    image: greenarchive,
-    title: "Green Archive",
-    description:
-      "An AI-powered Nigerian history and current affairs quiz API — backend infrastructure for quiz apps, CBT platforms, schools, and educational games, serving WAEC/JAMB-style questions with daily AI-generated content.",
-    techs: [
-      "React.js",
-      "TypeScript",
-      "Django",
-      "PostgreSQL",
-      "DRF",
-      "Google O-auth",
-    ],
-    link: "https://naij-archive.vercel.app/",
-    label: "Full Stack",
-    git: "https://github.com/Elite-Dev-Repo/Naij-Archive",
-    howIMadeIt:
-      "I built GreenArchive to solve the lack of structured, developer-friendly access to Nigerian educational content. The frontend is built with React and TypeScript, providing an interactive API explorer and documentation interface. On the backend, I used Django and Django REST Framework to expose clean REST endpoints for question retrieval, category filtering, and AI-assisted question generation. PostgreSQL handles the question bank and metadata storage, while Google OAuth covers developer authentication. The biggest challenge was designing a schema flexible enough to support WAEC/JAMB past questions, AI-generated content, and daily current affairs — all under a single unified API.",
   },
   {
     id: "paystack-for-django",
@@ -308,20 +312,20 @@ const works = [
     howIMadeIt:
       "I designed a relational database schema in PostgreSQL to handle multi-user application tracking. The backend uses Django's built-in authentication, while the frontend utilizes a modular dashboard architecture for real-time status updates.",
   },
-  {
-    id: "soda-sphere",
-    top: 66,
-    image: soda,
-    title: "Soda Sphere",
-    description:
-      "A vibrant, immersive landing page for a fictional beverage brand. This project focuses on high-impact visual storytelling, utilizing bold typography and a crisp, refreshing UI to showcase product features and brand identity through a modern digital lens.",
-    techs: ["React .js", "TailwindCSS", "JavaScript"],
-    link: "https://soda-sphere.vercel.app/",
-    label: "Front End",
-    git: "https://github.com/Elite-Dev-Repo/soda-sphere.git",
-    howIMadeIt:
-      "I pushed the boundaries of Tailwind's utility classes to create complex color gradients and layout shifts that respond to scroll depth, creating a refreshing, brand-aligned experience.",
-  },
+  // {
+  //   id: "soda-sphere",
+  //   top: 66,
+  //   image: soda,
+  //   title: "Soda Sphere",
+  //   description:
+  //     "A vibrant, immersive landing page for a fictional beverage brand. This project focuses on high-impact visual storytelling, utilizing bold typography and a crisp, refreshing UI to showcase product features and brand identity through a modern digital lens.",
+  //   techs: ["React .js", "TailwindCSS", "JavaScript"],
+  //   link: "https://soda-sphere.vercel.app/",
+  //   label: "Front End",
+  //   git: "https://github.com/Elite-Dev-Repo/soda-sphere.git",
+  //   howIMadeIt:
+  //     "I pushed the boundaries of Tailwind's utility classes to create complex color gradients and layout shifts that respond to scroll depth, creating a refreshing, brand-aligned experience.",
+  // },
 
   {
     id: "the-better-child",
@@ -420,6 +424,27 @@ const works = [
   //   git: "https://github.com/Elite-Dev-Repo/Beady.git",
   //   howIMadeIt:
   //     "Designed the UI to spotlight product imagery. I used custom CSS transitions and Tailwind for a minimalist aesthetic that emphasizes the craftsmanship of the artisanal products.",
+  // },
+  // {
+  //   id: "green-archive",
+  //   top: 0,
+  //   image: greenarchive,
+  //   title: "Green Archive",
+  //   description:
+  //     "An AI-powered Nigerian history and current affairs quiz API — backend infrastructure for quiz apps, CBT platforms, schools, and educational games, serving WAEC/JAMB-style questions with daily AI-generated content.",
+  //   techs: [
+  //     "React.js",
+  //     "TypeScript",
+  //     "Django",
+  //     "PostgreSQL",
+  //     "DRF",
+  //     "Google O-auth",
+  //   ],
+  //   link: "https://naij-archive.vercel.app/",
+  //   label: "Full Stack",
+  //   git: "https://github.com/Elite-Dev-Repo/Naij-Archive",
+  //   howIMadeIt:
+  //     "I built GreenArchive to solve the lack of structured, developer-friendly access to Nigerian educational content. The frontend is built with React and TypeScript, providing an interactive API explorer and documentation interface. On the backend, I used Django and Django REST Framework to expose clean REST endpoints for question retrieval, category filtering, and AI-assisted question generation. PostgreSQL handles the question bank and metadata storage, while Google OAuth covers developer authentication. The biggest challenge was designing a schema flexible enough to support WAEC/JAMB past questions, AI-generated content, and daily current affairs — all under a single unified API.",
   // },
 ];
 

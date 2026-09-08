@@ -43,7 +43,7 @@ const StarfieldHero = () => {
         }
 
         // 2. Draw the Grain
-        ctx.fillStyle = `rgba(204, 247, 32, ${star.opacity}  )`;
+        ctx.fillStyle = `rgba(192, 255, 113, ${star.opacity}  )`;
 
         ctx.fillRect(star.x, star.y, star.size, star.size); // Square grains look more industrial
 
@@ -57,7 +57,7 @@ const StarfieldHero = () => {
           if (dist < CONNECTION_DIST) {
             ctx.beginPath();
             // Very faint lines to match your 0.03 opacity grid
-            ctx.strokeStyle = `rgba(204, 247, 32, ${
+            ctx.strokeStyle = `rgba(192, 255, 113, ${
               (1 - dist / CONNECTION_DIST) * 0.3
             })`;
             ctx.lineWidth = 0.5;
