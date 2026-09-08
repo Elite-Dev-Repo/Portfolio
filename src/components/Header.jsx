@@ -35,7 +35,7 @@ function Header() {
                 </span>
               </div>
 
-              <span className="text-[11px] text-white tracking-normal uppercase px-3">
+              <span className="text-[10px] text-white tracking-wide uppercase px-3">
                 FullStack Website Developer
               </span>
             </motion.div>
@@ -86,7 +86,7 @@ function Header() {
                   opacity: 1,
                 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="px-5 py-2.5 bg-teal-400 left-49 font-semibold rotate-5 bottom-24 absolute rounded-full"
+                className="px-5 py-2.5 md:text-sm text-[11px] bg-teal-400 left-49 font-semibold rotate-5 bottom-24 absolute rounded-full"
               >
                 {" "}
                 SEO Optimized
@@ -96,7 +96,7 @@ function Header() {
                 initial={{ x: "-120px", opacity: 0 }}
                 whileInView={{ x: "0px", opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="px-5 py-2.5 bg-orange-500 font-semibold rotate-30 bottom-10 absolute rounded-full"
+                className="px-5 py-2.5 md:text-sm text-[11px] bg-orange-500 font-semibold rotate-30 bottom-10 absolute rounded-full"
               >
                 {" "}
                 Software Development
@@ -110,7 +110,7 @@ function Header() {
                   opacity: 1,
                 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="left-49 px-5 py-2.5 bg-secondary text-primary font-semibold -rotate-22 bottom-8 absolute rounded-full"
+                className="left-49 px-5 py-2.5 md:text-sm text-[11px] bg-secondary text-primary font-semibold -rotate-22 bottom-8 absolute rounded-full"
               >
                 {" "}
                 Frontend Development
@@ -139,7 +139,7 @@ function Header() {
                   rotate: "360deg",
                 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="absolute right-52 bottom-18 w-15 h-15 bg-blue-400 flex items-center justify-center rounded-full"
+                className="absolute right-52 bottom-18 w-15 h-15  bg-blue-400 flex items-center justify-center rounded-full"
               >
                 <Hash size={32} />
               </motion.div>
@@ -152,7 +152,7 @@ function Header() {
                   opacity: 1,
                 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="left-86 px-5 py-2.5 bg-tertiary text-secondary font-semibold bottom-2 absolute rounded-full"
+                className="left-86 px-5 py-2.5 md:text-sm text-[11px] bg-tertiary text-secondary font-semibold bottom-2 absolute rounded-full"
               >
                 {" "}
                 API Integration
@@ -161,7 +161,7 @@ function Header() {
                 initial={{ x: "120px", opacity: 0 }}
                 whileInView={{ x: "0px", opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="right-14 px-5 py-2.5 -rotate-15 bottom-11 bg-yellow-400 text-secondary font-semibold  absolute rounded-full"
+                className="right-20 px-5 py-2.5 -rotate-15 bottom-11 md:text-sm text-[11px] bg-yellow-400 text-secondary font-semibold  absolute rounded-full"
               >
                 {" "}
                 Backend Development

@@ -55,7 +55,7 @@ function About() {
     return (
       <p
         key={proof.name}
-        className="text-[15px] font-bold flex items-center gap-[2em] text-secondary"
+        className="text-[15px] font-bold flex items-center gap-3 text-secondary"
       >
         <span className="text-3xl">{proof.icon}</span> {proof.name}
       </p>
@@ -146,13 +146,13 @@ function About() {
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="w-fit h-full flex"
+          className="w-fit h-full flex gap-4"
         >
           {Array(4)
             .fill(null)
             .map(() => {
               return (
-                <div className="w-screen h-full overflow-hidden flex items-center  justify-around">
+                <div className="w-screen h-full overflow-hidden gap-[2em] flex items-center justify-around">
                   {proofitem}
                 </div>
               );

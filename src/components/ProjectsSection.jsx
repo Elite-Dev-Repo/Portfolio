@@ -69,7 +69,7 @@ function ProjectsSection() {
                 <button
                   onClick={() => setFilter(category)}
                   key={index}
-                  className={` border max-sm:text-[.8em] font-semibold px-5 py-2 text-[1em] rounded-full hover:bg-secondary hover:text-[var(--color-tertiary)] transition duration-300 ease-in-out ${
+                  className={` border max-sm:text-[.5em] font-semibold px-5 py-2 text-[1em] rounded-lg hover:bg-secondary hover:text-[var(--color-tertiary)] transition duration-300 ease-in-out ${
                     filter === category
                       ? "bg-secondary text-tertiary"
                       : "bg-tertiary text-secondary"
