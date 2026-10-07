@@ -5,8 +5,8 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import Qualifications from "./components/Qualifications.jsx";
-import Footer from "./components/Footer.jsx";
 import Nav from "./components/Nav.jsx";
+import { AiAgent } from "kora-agent";
 
 // Supermouse imports
 import { Supermouse } from "@supermousejs/core";
@@ -57,6 +57,7 @@ function App() {
         <Qualifications />
         <Contact />
       </motion.div>
+      <AiAgent api_key="sk_kora_ff3iReYTkkWWM1O4OROJ0Q" />
     </>
   );
 }
