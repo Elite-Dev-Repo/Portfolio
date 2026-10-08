@@ -12,10 +12,38 @@ import square from "./assets/square.png";
 import cortex from "./assets/cortex.png";
 import voyant from "./assets/voyant.png";
 import lexiq from "./assets/lexiq.png";
+import kora from "./assets/kora.png";
 import pseudopay from "./assets/pseudopay.png";
 import digitallair from "./assets/digitallair.png";
 import elucid from "./assets/elucid.png";
 const works = [
+  {
+    id: "kora",
+    top: 0,
+    image: kora,
+    title: "Kora - Personalized AI Agent for Websites",
+    description:
+      "An embeddable AI assistant that answers website visitors' questions using your own content. Build personal context (bio, past projects, resume PDF) from the dashboard, generate API keys, then drop the kora-agent React chat widget onto any site.",
+    techs: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Axios",
+      "JWT",
+      "Google OAuth",
+      "Django",
+      "DRF",
+      "PostgreSQL",
+      "tsup",
+      "npm",
+    ],
+    link: "https://kora-ai-agent.vercel.app/",
+    label: "Full Stack",
+    git: "https://github.com/Elite-Dev-Repo/KoraFrontend",
+    howIMadeIt:
+      "I built Kora as two parts: a Next.js 16 (App Router) + TypeScript + Tailwind CSS platform (korafrontend) and a published React widget library (kora-agent v2.1.3). The platform has a landing page (Platform, Capabilities, Use Cases, FAQ sections), Google OAuth + JWT access/refresh auth with an axios interceptor and localStorage session tracking, and a dashboard with three sections — User Information (profile, education, projects, skills, hobbies, contact info), Create Context (personal context + past projects text + resume PDF upload sent as multipart to generate_info/, then saved to the profile view), and API Keys (GET/POST/DELETE api-keys/ with name, prefix, created_at, full key shown once at creation with reveal/copy, and revoke). The docs page covers the two-step integration. The kora-agent package is a drop-in Client Component (<KoraAgent baseUrl apiKey />) rendered via a React portal into document.body with fully inline styles so hosts don't need Tailwind, featuring a floating button, modal with auto-scroll, Escape-to-close, and loading state. It POSTs { input } to the backend (default https://kora-backend-livid.vercel.app/api/message/) with Authorization: Api-Key <key> and reads response/message from the JSON reply. The library is bundled with tsup and ships precompiled CSS.",
+  },
   {
     id: "pseudopay",
     top: 0,
