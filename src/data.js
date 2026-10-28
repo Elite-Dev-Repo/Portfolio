@@ -16,7 +16,30 @@ import kora from "./assets/kora.png";
 import pseudopay from "./assets/pseudopay.png";
 import digitallair from "./assets/digitallair.png";
 import elucid from "./assets/elucid.png";
+import bnxn from "./assets/bnxn.png";
+
 const works = [
+  {
+    id: "bnxn",
+    top: 0,
+    image: bnxn,
+    title: "BNXN - Un-official Artist Website",
+    description:
+      "An immersive website for BNXN (fka Buju), the Afro-fusion singer and songwriter from Lagos. The site brings his world together through an animated hero, discography, career milestones, a visual archive lightbox, his latest release, and an interactive FAQ — all wrapped in a bold, editorial dark aesthetic.",
+    techs: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Hugeicons",
+    ],
+    link: "https://bnxn.pxxl.click/",
+    label: "Front End",
+    git: "https://github.com/Elite-Dev-Repo/BNXN_CAPTAIN",
+    howIMadeIt:
+      "I built the site with Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, and Framer Motion. The experience opens on a branded loading screen, then moves into a fullscreen hero with an infinite portrait carousel and a custom audio player. I mapped the discography from a structured album dataset with Spotify artwork rendered through next/image and remote patterns, and built a visual archive grid with a keyboard-dismissible lightbox, plus a tracklist-driven latest-release section and an accessible FAQ accordion. Scroll-triggered reveals are handled by a reusable ScrollReveal component, and the fullscreen navigation is rendered through a portal with Escape-to-close and scroll locking. The site is fully responsive, with dedicated mobile and desktop layouts, and deployed on pxxl.",
+  },
   {
     id: "kora",
     top: 0,
