@@ -26,14 +26,9 @@ function Qualifications() {
       duration: "2022 - 2025",
     },
     {
-      position: "Bofheart Creative Studios",
-      place: "Web Developer",
-      duration: "2021 - Till Date",
-    },
-    {
-      position: "Elite DEV",
-      place: "",
-      duration: "2021 - 2025",
+      position: "Deus Studios",
+      place: "Software Developer",
+      duration: "2025 - Till Date",
     },
   ];
 
