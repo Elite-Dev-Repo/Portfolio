@@ -35,7 +35,7 @@ function Header() {
                 </span>
               </div>
 
-              <span className="text-[10px] text-white tracking-wide uppercase px-3">
+              <span className="text-[10px] text-white tracking-widest uppercase px-3">
                 FullStack Website Developer
               </span>
             </motion.div>
@@ -46,7 +46,7 @@ function Header() {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center text-5xl md:text-[3.4em] font-semibold text-center w-full"
             >
-              <div className="">
+              <div className="tracking-wide leading-normal">
                 <p className="flex gap-x-3 items-center justify-center ">
                   Turning Ideas
                 </p>
@@ -59,7 +59,7 @@ function Header() {
                 initial={{ x: "-120px" }}
                 whileInView={{ x: "0px" }}
                 transition={{ duration: 0.5 }}
-                className="absolute left-5 bottom-0 w-15 h-15 bg-purple-600 flex items-center justify-center rounded-full"
+                className="absolute max-md:hidden left-5 bottom-0 w-15 h-15 bg-purple-600 flex items-center justify-center rounded-full"
               >
                 <Flame size={32} />
               </motion.div>
@@ -161,7 +161,7 @@ function Header() {
                 initial={{ x: "120px", opacity: 0 }}
                 whileInView={{ x: "0px", opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="right-20 px-5 py-2.5 -rotate-15 bottom-11 md:text-sm text-[11px] bg-yellow-400 text-secondary font-semibold  absolute rounded-full"
+                className="right-20 px-5 py-2.5 max-sm -rotate-15 bottom-11 md:text-sm text-[11px] bg-yellow-400 text-secondary font-semibold  absolute rounded-full"
               >
                 {" "}
                 Backend Development
@@ -170,7 +170,7 @@ function Header() {
                 initial={{ x: "120px" }}
                 whileInView={{ x: "0px" }}
                 transition={{ duration: 0.5 }}
-                className="absolute right-15 bottom-0 w-15 h-15 bg-[#FE5FC2] flex items-center justify-center rounded-full"
+                className=" max-md:hidden absolute right-15 bottom-0 w-15 h-15 bg-[#FE5FC2] flex items-center justify-center rounded-full"
               >
                 <AtSign size={32} />
               </motion.div>

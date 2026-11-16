@@ -80,7 +80,7 @@ function ProjectsSection() {
               ))}
             </div>
 
-            <Link to={"/all-projects/"}>
+            <Link to={"/projects/"}>
               <button className="flex items-center gap-8 border-b pb-2 ">
                 All <MoveRight />
               </button>
@@ -89,7 +89,7 @@ function ProjectsSection() {
 
           <div className="w-full  flex flex-col mt-[4em] items-center ">
             {filteredWorks.slice(0, 6).map((work, index) => (
-              <Link to={`/project/${work.id}`} className="w-full">
+              <Link to={`/projects/${work.id}`} className="w-full">
                 <motion.div
                   layout
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -105,7 +105,7 @@ function ProjectsSection() {
                       {work.title}
                     </h3>
                     <div className="flex flex-col gap-2 items-center">
-                      <Link to={`/project/${work.id}`} className="">
+                      <Link to={`/projects/${work.id}`} className="">
                         <p className=" text-sm font-light w-full mx-auto group-hover:text-secondary text-primary/80 tracking-wide line-clamp-2 ">
                           {work.description}
                         </p>
@@ -161,7 +161,7 @@ function ProjectsSection() {
   // style={{ top: `calc(3px + ${index * 6}px)` }}
   className={`bg-[#111] border shadow-[0_0_15px_rgba(255,255,255,0.1)] w-full max-w-[50rem] shadow-secondary/3 border-tertiary/20 rounded-lg flex flex-col gap-2 sticky -top-40 mx-auto`}
   >
-  <Link to={`/project/${work.id}`}>
+  <Link to={`/projects/${work.id}`}>
     <div className="w-full h-[60%] bg-secondary flex items-center justify-between relative overflow-hidden">
       <img
         className=" hover:scale-105 hover:opacity-70 transition duration-300 ease-in-out object-cover mx-auto"
@@ -177,7 +177,7 @@ function ProjectsSection() {
     </h3>
     <div className="flex flex-col gap-2 items-center">
       <Link
-        to={`/project/${work.id}`}
+        to={`/projects/${work.id}`}
         className="hover:underline underline-offset-5 decoration-primary"
       >
         <p className=" text-sm font-light w-full mx-auto text-primary/80 tracking-wide line-clamp-3 ">

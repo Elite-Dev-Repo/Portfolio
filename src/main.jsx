@@ -23,11 +23,11 @@ const router = createBrowserRouter([
     element: <Who />,
   },
   {
-    path: "/all-projects/",
+    path: "/projects/",
     element: <AllProjects />,
   },
   {
-    path: "/project/:id",
+    path: "/projects/:id",
     element: <Project />,
   },
 ]);

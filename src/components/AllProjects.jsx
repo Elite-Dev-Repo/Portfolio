@@ -103,7 +103,7 @@ function AllProjects() {
 
             <div className="w-full  flex flex-col mt-[4em] items-center ">
               {filteredWorks.map((work, index) => (
-                <Link to={`/project/${work.id}`} className="w-full">
+                <Link to={`/projects/${work.id}`} className="w-full">
                   <motion.div
                     layout
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -119,7 +119,7 @@ function AllProjects() {
                         {work.title}
                       </h3>
                       <div className="flex flex-col gap-2 items-center">
-                        <Link to={`/project/${work.id}`} className="">
+                        <Link to={`/projects/${work.id}`} className="">
                           <p className=" text-sm font-light w-full mx-auto group-hover:text-secondary text-primary/80 tracking-wide line-clamp-2 ">
                             {work.description}
                           </p>
