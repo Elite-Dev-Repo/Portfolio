@@ -5,6 +5,7 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import Qualifications from "./components/Qualifications.jsx";
+import { Sabilytics } from "./Sabilytics.jsx";
 import Nav from "./components/Nav.jsx";
 import { AiAgent } from "kora-agent";
 
@@ -36,6 +37,7 @@ function App() {
 
   return (
     <>
+      <Sabilytics />
       <Nav />
       <Header />
 
